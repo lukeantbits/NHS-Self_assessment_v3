@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>60</id>		
+		<title>Healthy eating self-assessment</title>		
+		<colour_1>669900|9BC363</colour_1>
+		<colour_2>990000|DD645F</colour_2>
+		<colour_3>FF6600|FF9800</colour_3>
+		<intro_title><![CDATA[How much do you know?]]></intro_title>		
+		<intro_copy><![CDATA[We all know that eating healthily is a good thing, but how much do we really know – and how good are we at making healthier choices?<br><br>The first nine questions will test your ability to make healthier choices when faced with a variety of options. The five questions that follow will test your knowledge of nutrition. At the end, you’ll receive a score and a summary of your results. &nbsp;]]></intro_copy>		
+		<intro_copy_alt><![CDATA[We all know that eating healthily is a good thing, but how much do we really know – and how good are we at making healthier choices?<br><br>The first nine questions will test your ability to make healthier choices when faced with a variety of options. The five questions that follow will test your knowledge of nutrition. At the end, you’ll receive a score and a summary of your results.&nbsp;]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Healthy_eating_self-assessment.jpg]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[img_Healthy_eating_self-assessment.jpg]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[7]]></intro_graphic_position_m>		
+		<dimensions_f>362x480</dimensions_f>		
+		<dimensions_j>362x480</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt>healthy eating</img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "227" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Which of these breakfast options is healthiest?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Porridge made with semi-skimmed milk topped with a selection of dried fruits]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[860]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[ Muesli, fresh fruit and low-fat yoghurt]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[860]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Wholegrain cereal with semi-skimmed milk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[860]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Boiled egg with wholemeal toast]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[860]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Grilled mushrooms and tomatoes on a wholegrain bagel]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[860]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[They are all as good as each other]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[861]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[On average, which of the following coffee shop drinks contains the most calories?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Small cappuccino made with whole milk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[862]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Small latte made with whole milk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[863]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Small white coffee made with whole milk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[864]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Small mocha made with whole milk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[865]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[On average, which of the following is the most calorific?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Blueberry muffin]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[866]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Flapjack]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[867]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Brownie]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[868]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Plain croissant]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[869]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Fruit scone]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[870]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Which of the following does not count as one of your 5 A DAY?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[A medium apple]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[872]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Two halves of canned peaches]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[873]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[One handful of dried banana chips]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[874]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Two handfuls of new potatoes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[875]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Three heaped tablespoons of canned sweetcorn]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[876]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Three heaped tablespoons of cooked kidney beans]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[877]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[On average, which of the following supermarket sandwich options is highest in calories?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Ham and salad]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[878]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Cheese and tomato]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[879]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Prawn mayonnaise]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[880]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Egg mayo and cress]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[881]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[BLT (bacon, lettuce and tomato)]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[882]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "228" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How many litres of fluids should you drink each day?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[600ml for women, 800ml for men]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[883]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[1 litre for women 1.6 litres for men]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[884]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[1.6 litres for women 2 litres for men]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[885]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[3 litres regardless of whether you're male or female]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[886]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[On average, which of the following takeaway options is lowest in calories?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[9-10 inch meat or fish pizza]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[887]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Sweet and sour pork with small egg fried rice]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[888]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Fish and chips]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[889]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Chicken korma with pilau rice]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[890]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[A chicken shish kebab in pitta with salad]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[891]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[On average, which of the following shop-bought drinks is healthiest?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[A diet fizzy soft drink]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[892]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[A smoothie]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[893]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Fresh orange juice]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[894]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Bottled water]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[895]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How much of our diet should be made up of starchy foods (carbohydrates) such as rice, potatoes, pasta and bread?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Half]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[896]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[A third]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[897]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[A quarter]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[898]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[None, it isn't essential for a healthy diet]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[899]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How much red meat (beef, lamb, pork) should a non-vegetarian eat each day?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[As much as possible – it's full of nutrients]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[900]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[About 70g]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[901]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[About 150g]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[902]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How many times a week should a non-vegetarian eat fish (as a minimum)?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Once]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[903]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[At least twice]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[904]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Every day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[905]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[If you have a vegetarian diet, what in particular should you eat to ensure a balanced diet?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Quorn and tofu]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[906]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Meat, it's the only way to achieve a balanced diet]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[907]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Pulses, Quorn, tofu, nuts and seeds]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[908]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How many eggs can you eat in a week in order to stay within recommendations?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Just one or two – they're high in cholesterol]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[909]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Two or three is fine]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[910]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Three or four is OK]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[911]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[As many as you like]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[912]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[As a guide, how many calories should we eat each day?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[2000 for a woman, 2500 for a man]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[913]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[2500 for a woman, 3000 for a man]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[914]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[1500 for a woman, 2000 for a man]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[915]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "progress bar" p1 = "0" p2 = "42" p3 = "Points"><![CDATA[Your healthy eating score]]></ri>
+		<ri type = "points triggered result" p1 = "35" p2 = "43" p3 = ""><![CDATA[<div>Based on your answers today you know a lot about making healthier choices and nutrition. Well done!&nbsp;The key is to ensure you apply your knowledge to your diet. See useful links for articles, videos and tools that will help you.&nbsp;</div><div><br></div><div>Here is a summary of your answers:</div>]]></ri>
+		<ri type = "points triggered result" p1 = "20" p2 = "35" p3 = ""><![CDATA[<div>Based on your answers today you know quite a bit about healthy eating. However, there is room for improvement.&nbsp;See useful links for&nbsp;articles, videos and tools that will help you.</div><div><br></div><div>Here is a summary of your answers:</div>]]></ri>
+		<ri type = "points triggered result" p1 = "10" p2 = "20" p3 = ""><![CDATA[<div>Based on your answers today you don’t know that much about healthy eating and there is room for improvement.&nbsp;See useful links for&nbsp;articles, videos and tools that will help you.</div><div><br></div><div>Here is a summary of your answers:</div>]]></ri>
+		<ri type = "points triggered result" p1 = "0" p2 = "10" p3 = ""><![CDATA[<div>Based on your answers today your ability to make healthier choices and your knowledge of nutrition is poor. If this is reflected in your diet then it might be time to brush up your knowledge to reduce the chances of long-term health problems such as obesity or heart disease.&nbsp;See useful links for&nbsp;articles, videos and tools that will help you.</div><div><br></div><div>Here is a summary of your answers:</div>]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[494]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[495]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[496]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[497]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[746897747001]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[498]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[499]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[500]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[501]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[502]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[503]]></li>
+	</links>
+	<result_items>
+		<ri id = "860" priority = "0"><![CDATA[All the breakfast options provided offer an equally healthy start to the day.]]></ri>
+		<ri id = "861" priority = "0"><![CDATA[Correct. All the breakfast options provided offer an equally healthy start to the day.]]></ri>
+		<ri id = "862" priority = "0"><![CDATA[A mocha is the most calorific of the options provided at around 157kcal. A small cappuccino contains around 87. A white coffee is only around 18kcal.]]></ri>
+		<ri id = "863" priority = "0"><![CDATA[A mocha is the most calorific of the options provided at around 157kcal. A small latte contains around 120. A white coffee is only around 18kcal.]]></ri>
+		<ri id = "864" priority = "0"><![CDATA[A mocha is the most calorific of the options provided at around 157kcal. A small white coffee contains around 18kcal.]]></ri>
+		<ri id = "865" priority = "0"><![CDATA[Correct. A small mocha is the most calorific of the options provided at around 157kcal. A white coffee is only around 18kcal.]]></ri>
+		<ri id = "866" priority = "0"><![CDATA[Correct. A blueberry muffin is the most calorific of the options provided at 355kcal. A fruit scone is a better option at around 195kcal.]]></ri>
+		<ri id = "867" priority = "0"><![CDATA[A blueberry muffin is the most calorific of the options provided at 355kcal. A flapjack is around 272kcal. A fruit scone is a better option at around 195kcal.]]></ri>
+		<ri id = "868" priority = "0"><![CDATA[A blueberry muffin is the most calorific of the options provided at 355kcal. A brownie is around 264kcal. A fruit scone is a better option at around 195kcal.]]></ri>
+		<ri id = "869" priority = "0"><![CDATA[A blueberry muffin is the most calorific of the options provided at 355kcal. A plain croissant is around 300kcal. A fruit scone is a better option at around 195kcal.]]></ri>
+		<ri id = "870" priority = "0"><![CDATA[A blueberry muffin is the most calorific of the options provided at 355kcal. A fruit scone is a better option at around 195kcal.]]></ri>
+		<ri id = "872" priority = "0"><![CDATA[An apple counts towards your 5 A DAY but potatoes do not.]]></ri>
+		<ri id = "873" priority = "0"><![CDATA[Two halves of canned peaches count towards your 5 A DAY but potatoes do not.]]></ri>
+		<ri id = "874" priority = "0"><![CDATA[Banana chips count towards your 5 A DAY but potatoes do not.]]></ri>
+		<ri id = "875" priority = "0"><![CDATA[Correct. Potatoes do not count towards your 5 A DAY.]]></ri>
+		<ri id = "876" priority = "0"><![CDATA[Canned sweetcorn counts towards your 5 A DAY but potatoes do not.]]></ri>
+		<ri id = "877" priority = "0"><![CDATA[Kidney beans count towards your 5 A DAY but potatoes do not.]]></ri>
+		<ri id = "878" priority = "0"><![CDATA[Cheese and tomato is generally the highest calorie sandwich at around 472kcal. Ham and salad is generally lowest at around 284.]]></ri>
+		<ri id = "879" priority = "0"><![CDATA[Correct. Cheese and tomato is generally the highest calorie sandwich at around 472kcal. Ham and salad is generally lowest at around 284.]]></ri>
+		<ri id = "880" priority = "0"><![CDATA[Cheese and tomato is generally the highest calorie sandwich at around 472kcal. Prawn mayo is around 350. Ham and salad is generally lowest at around 284kcal.]]></ri>
+		<ri id = "881" priority = "0"><![CDATA[Cheese and tomato is generally the highest calorie sandwich at around 472kcal. Egg mayo is around 367. Ham and salad is generally lowest at around 284kcal.]]></ri>
+		<ri id = "882" priority = "0"><![CDATA[Cheese and tomato is generally the highest calorie sandwich at around 472kcal. A BLT is around 420. Ham and salad is generally lowest at around 284kcal.]]></ri>
+		<ri id = "883" priority = "0"><![CDATA[600 or 800ml is not enough fluids in a day. The recommendation is that women drink around 1.6 litres (around 8 glasses) and men, 2 litres (around 10 glasses).]]></ri>
+		<ri id = "884" priority = "0"><![CDATA[The recommendation is that women drink around 1.6 litres (around 8 glasses) and men, 2 litres (around 10 glasses).]]></ri>
+		<ri id = "885" priority = "0"><![CDATA[Correct. The recommendation is that women drink around 1.6 litres (around 8 glasses) and men, 2 litres (around 10 glasses).]]></ri>
+		<ri id = "886" priority = "0"><![CDATA[3 litres is over the recommended amount of fluid you should drink each day. The recommendation is that women drink around 1.6 litres (around 8 glasses) and men, 2 litres (around 10 glasses).]]></ri>
+		<ri id = "887" priority = "0"><![CDATA[The lowest calorie takeaway is the chicken shish at around 356kcal. The pizza would be around 744kcal. Choosing a thin crust, veggie toppings and no extra cheese would reduce this.]]></ri>
+		<ri id = "888" priority = "0"><![CDATA[The lowest calorie takeaway is the chicken shish at around 356kcal. The sweet and sour pork would be around 1238kcal. Stir-fries with boiled or steamed rice are a better option.]]></ri>
+		<ri id = "889" priority = "0"><![CDATA[The lowest calorie takeaway is the chicken shish at around 356kcal. The fish and chips would be around 838kcal. The batter alone can contain over 300kcal so removing it would reduce the calorie count.]]></ri>
+		<ri id = "890" priority = "0"><![CDATA[The lowest calorie takeaway is the chicken shish at around 356kcal. The chicken korma would be around 1059kcal. Dry curries such as tandoori chicken or vegetables are better options.]]></ri>
+		<ri id = "891" priority = "0"><![CDATA[Correct. The lowest calorie takeaway is the chicken shish at around 356kcal. The most calorific would be the sweet and sour pork at around 1238kcal.]]></ri>
+		<ri id = "892" priority = "0"><![CDATA[Of the drinks, water is always best. Even diet fizzy drinks contain ingredients that are bad for your teeth.]]></ri>
+		<ri id = "893" priority = "0"><![CDATA[Of the drinks, water is always best. However smoothies can count towards your 5 A DAY – but it's best to drink it with a meal as they contain sugar that can damage your teeth.]]></ri>
+		<ri id = "894" priority = "0"><![CDATA[Of the drinks, water is always best. However, fresh orange can count towards your 5 A DAY – but it's best to drink it with a meal as it contains sugar that can damage your teeth.]]></ri>
+		<ri id = "895" priority = "0"><![CDATA[Correct. Of the drinks, water is the healthiest option.]]></ri>
+		<ri id = "896" priority = "0"><![CDATA[Starchy food should make up around a third of your diet. Choose wholegrain varieties where you can.]]></ri>
+		<ri id = "897" priority = "0"><![CDATA[Correct. Starchy food should make up around a third of your diet. Choose wholegrain varieties where you can.]]></ri>
+		<ri id = "898" priority = "0"><![CDATA[Starchy food should make up around a third of your diet. Choose wholegrain varieties where you can.]]></ri>
+		<ri id = "899" priority = "0"><![CDATA[Starchy food should make up around a third of your diet. Choose wholegrain varieties where you can.]]></ri>
+		<ri id = "900" priority = "0"><![CDATA[Eating a lot of red or processed meat can increase your risk of bowel cancer so it's best not to exceed 70g per day.]]></ri>
+		<ri id = "901" priority = "0"><![CDATA[Correct. It is recommended we eat no more than 70g of red meat per day. Eating more can increase your risk of bowel cancer.]]></ri>
+		<ri id = "902" priority = "0"><![CDATA[Eating a lot of red or processed meat can increase your risk of bowel cancer so it's best not to exceed 70g per day.]]></ri>
+		<ri id = "903" priority = "0"><![CDATA[A healthy diet should include at least two portions of fish a week, including one of oily fish.]]></ri>
+		<ri id = "904" priority = "0"><![CDATA[Correct. A healthy diet should include at least two portions of fish a week, including one of oily fish.]]></ri>
+		<ri id = "905" priority = "0"><![CDATA[A healthy diet should include at least two portions of fish a week, including one of oily fish. Every day is fine, but there are maximum recommended amounts for certain fish.]]></ri>
+		<ri id = "906" priority = "0"><![CDATA[As well as Quorn and tofu, it's important to eat protein from a variety of sources to ensure a vegetarian diet is balanced. Pulses, nuts and seeds are also key.]]></ri>
+		<ri id = "907" priority = "0"><![CDATA[It isn't essential to eat meat to have a balanced diet. It can be achieved by eating a variety of proteins such as pulses, Quorn, tofu, nuts and seeds.]]></ri>
+		<ri id = "908" priority = "0"><![CDATA[Correct. For a vegetarian diet to be balanced, you need to eat protein from a variety of sources to get the right mixture of amino acids, which are used to build and repair the body's cells.]]></ri>
+		<ri id = "909" priority = "0"><![CDATA[Eggs do contain cholesterol but there is no recommended limit. Just make sure you have as balanced a diet as possible.]]></ri>
+		<ri id = "910" priority = "0"><![CDATA[There is no recommended limit for eggs. Just make sure you have as balanced a diet as possible.]]></ri>
+		<ri id = "911" priority = "0"><![CDATA[There is no recommended limit for eggs. Just make sure you have as balanced a diet as possible.]]></ri>
+		<ri id = "912" priority = "0"><![CDATA[Correct. There is no recommended limit for eggs. Just make sure you have as balanced a diet as possible.]]></ri>
+		<ri id = "913" priority = "0"><![CDATA[Correct. As a guide a man needs around 2500kcal a day to maintain a healthy body weight, and a woman - 2000kcal.]]></ri>
+		<ri id = "914" priority = "0"><![CDATA[As a guide a man needs around 2500kcal a day to maintain a healthy body weight, and a woman - 2000kcal.]]></ri>
+		<ri id = "915" priority = "0"><![CDATA[As a guide a man needs around 2500kcal a day to maintain a healthy body weight, and a woman - 2000kcal.]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "494" url = "http://www.nhs.uk/Livewell/loseweight/Pages/Healthybreakfasts.aspx"><![CDATA[Find out about healthier breakfasts]]></ri>		<ri id = "495" url = "http://www.nhs.uk/Livewell/Goodfood/Pages/water-drinks.aspx"><![CDATA[Water and drinks]]></ri>		<ri id = "496" url = "http://www.nhs.uk/Livewell/loseweight/Pages/Healthyfoodswaps.aspx"><![CDATA[Healthy food swaps]]></ri>		<ri id = "497" url = "http://www.nhs.uk/Livewell/5ADAY/Pages/Whatcounts.aspx"><![CDATA[5 A DAY: what counts?]]></ri>		<ri id = "498" url = "http://www.nhs.uk/Livewell/men1839/Pages/Dodgytakeaways.aspx"><![CDATA[How to order a healthier takeaway]]></ri>		<ri id = "499" url = "http://www.nhs.uk/Livewell/Goodfood/Pages/meat.aspx"><![CDATA[All about meat]]></ri>		<ri id = "500" url = "http://www.nhs.uk/Livewell/Goodfood/Pages/fish-shellfish.aspx"><![CDATA[Fish and shellfish]]></ri>		<ri id = "501" url = "http://www.nhs.uk/Livewell/Vegetarianhealth/Pages/Vegetarianhealthhome.aspx"><![CDATA[Vegetarian health]]></ri>		<ri id = "502" url = "http://www.nhs.uk/Livewell/Goodfood/Pages/eggs-nutrition.aspx"><![CDATA[Eggs and nutrition]]></ri>		<ri id = "503" url = "http://www.nhs.uk/Livewell/Goodfood/Pages/eat-less.aspx"><![CDATA[Why most of us should eat fewer calories]]></ri>	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "227">
+			<title><![CDATA[Make a healthier breakfast]]></title>
+			<body><![CDATA[<div>A healthier breakfast has lots of benefits and can be quicker and easier to prepare than you might think.</div><div><br></div><div>People who eat breakfast every day tend to be healthier and manage their weight better, as they're not tempted to eat an unhealthy snack mid-morning. And research shows that children who eat breakfast perform better on standard attainment tests (SATs) and have fewer behavioral problems in school.</div><div><br></div><div>As a guide, you should aim for around 400kcal at breakfast time.</div>]]></body>
+			<name><![CDATA[Make a healthier breakfast]]></name>
+		</ib>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "228">
+			<title><![CDATA[What counts as fluids?]]></title>
+			<body><![CDATA[<div>Everything counts, but the healthiest options are water, milk and fruit juices. It is best to avoid alcoholic drinks.</div><div><br></div><div>Try to avoid sugary soft and fizzy drinks that can be high in added sugars. These can be high in calories and bad for teeth.</div>]]></body>
+			<name><![CDATA[What counts as fluids?]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>746897747001</v>	</videos>
+</root>

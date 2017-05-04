@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>47</id>		
+		<title>Carer self-assessment</title>		
+		<colour_1>006699|0799C6</colour_1>
+		<colour_2>A90000|FB3103</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[Looking after someone]]></intro_title>		
+		<intro_copy><![CDATA[Caring for someone can be very difficult and many people find that they need extra help with the care that they provide.<br><br>Find out what support you might be able to receive with this short assessment.&nbsp;]]></intro_copy>		
+		<intro_copy_alt><![CDATA[]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[carers assessment.swf]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<dimensions_f>344x410</dimensions_f>		
+		<dimensions_j>344x410</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "178" info_box_position = "1">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you feel you have enough information about being a carer and know where to go if you need it?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, I have the information I need]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have enough information now but I'm not always sure where to get more]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[359]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[150]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[359]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[150]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "179" info_box_position = "1">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you feel physically capable of caring?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Most of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[358]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[357]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "180" info_box_position = "1">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Does caring cause you sleepless nights, feelings of loneliness or being overwhelmed?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[356]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[149]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Sometimes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[718]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[149]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[149]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "181" info_box_position = "1">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Would any of the following make caring easier? (you can pick more than one)]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Financial help or benefits]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[719]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[393]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Equipment or adaptations to your house]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[720]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[394]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Mobility aids]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[721]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[395]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Someone to help or talk to]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[722]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[396]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Better communication with professionals]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[723]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[396]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Contact with others in a similar situation]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[724]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[398]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you get breaks or time off from your caring role?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, I regularly get time off]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, but not on a regular basis]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[725]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[399]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[726]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[399]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "182" info_box_position = "1">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you find it hard to keep up with other areas of your life? If so, which areas: (you can pick more than one)]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Studying or going to school]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[727]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[400]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Working]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[728]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[401]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Keeping healthy]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[729]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[401]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Time to myself]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Keeping up with friends and family]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[730]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[403]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "text" p1 = "" p2 = "" p3 = ""><![CDATA[Based on your responses we recommend you:]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "accumulated links" p1 = "" p2 = ""><![CDATA[]]></li>
+	</links>
+	<result_items>
+		<ri id = "359" priority = "0"><![CDATA[Use the NHS Choices website for up-to-date carer information or call the Carers Direct helpline]]></ri>
+		<ri id = "358" priority = "0"><![CDATA[Be aware of the physical demands of caring as it could start to affect your own health]]></ri>
+		<ri id = "357" priority = "0"><![CDATA[Speak to your GP about the physical demands of caring as it may already be affecting your health]]></ri>
+		<ri id = "356" priority = "0"><![CDATA[Speak to your GP or social services urgently to ensure you get the emotional support you need]]></ri>
+		<ri id = "718" priority = "0"><![CDATA[Look after your emotional wellbeing by speaking to your GP or joining a local carer's group]]></ri>
+		<ri id = "719" priority = "0"><![CDATA[Find out more about the financial benefits available to you including discounts for carers]]></ri>
+		<ri id = "720" priority = "0"><![CDATA[Find out from social services about home adaptations that may be available]]></ri>
+		<ri id = "721" priority = "0"><![CDATA[Check with social services about mobility aids]]></ri>
+		<ri id = "722" priority = "0"><![CDATA[Contact your local authority to ask for an assessment of your own needs]]></ri>
+		<ri id = "723" priority = "0"><![CDATA[Use the NHS Choices website for up-to-date carer information or call the Carers Direct helpline]]></ri>
+		<ri id = "724" priority = "0"><![CDATA[Consider joining a local carer group who can help you get the right emotional support]]></ri>
+		<ri id = "725" priority = "0"><![CDATA[Ask social services about respite care and possible holiday expenses to help you get a regular break]]></ri>
+		<ri id = "726" priority = "0"><![CDATA[Ask social services about respite care and possible holiday expenses to help you get a break]]></ri>
+		<ri id = "727" priority = "0"><![CDATA[Speak to social services about help to ensure you can continue your education more easily]]></ri>
+		<ri id = "728" priority = "0"><![CDATA[Find out about your rights to flexible working arrangements]]></ri>
+		<ri id = "729" priority = "0"><![CDATA[Get advice about taking care of yourself]]></ri>
+		<ri id = "730" priority = "0"><![CDATA[Get a break from caring to help you socialise]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "150" url = "http://www.nhs.uk/CarersDirect/carerslives/updates/Pages/CarersDirecthelpline.aspx">
+Get in touch with a Carers Direct advisor		</ri>
+		<ri id = "149" url = "http://www.nhs.uk/CarersDirect/yourself/takingcareofyourself/Pages/Physicalwellbeing.aspx">
+Getting emotional support and advice		</ri>
+		<ri id = "393" url = "http://www.nhs.uk/CarersDirect/moneyandlegal/finance/Pages/Overview.aspx">
+Find out about financial help		</ri>
+		<ri id = "394" url = "http://www.nhs.uk/CarersDirect/guide/practicalsupport/Pages/Careathome.aspx">
+Getting help within the home		</ri>
+		<ri id = "395" url = "http://www.nhs.uk/CarersDirect/guide/practicalsupport/Pages/Othersupport.aspx">
+Find out about equipment		</ri>
+		<ri id = "396" url = "http://www.nhs.uk/CarersDirect/carerslives/updates/Pages/Directoryenquiries.aspx">
+Find your local authority on our directory		</ri>
+		<ri id = "398" url = "http://www.nhs.uk/ServiceDirectories/Pages/ServiceSearchAdditional.aspx?ServiceType=RespiteCare">
+Find local carer groups		</ri>
+		<ri id = "399" url = "http://www.nhs.uk/CarersDirect/yourself/timeoff/Pages/Overview.aspx">
+Get information about a break from caring		</ri>
+		<ri id = "400" url = "http://www.nhs.uk/CarersDirect/workandlearning/learning/Pages/Overview.aspx">
+Keep up with learning		</ri>
+		<ri id = "401" url = "http://www.nhs.uk/CarersDirect/workandlearning/work/Pages/Flexibleworking.aspx">
+Find out about flexible working		</ri>
+		<ri id = "403" url = "http://www.nhs.uk/CarersDirect/yourself/timeoff/Pages/Overview.aspx">
+Get information about a break from caring		</ri>
+	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "178">
+			<title><![CDATA[Getting the right info]]></title>
+			<body><![CDATA[<div>Even if you think you've got all the information you need, it's well worth having a look through the NHS Choices website to check. Alternatively you can call the Carers Direct helpline on 0808 802 0202.</div><div>Advice can also be found through local carer groups, where meeting others in a similar situation to you can be helpful.</div>]]></body>
+			<name><![CDATA[Getting the right info]]></name>
+		</ib>
+		<ib  id = "179">
+			<title><![CDATA[Physical problems]]></title>
+			<body><![CDATA[<div>The demands of caring can be physically demanding and often carers overlook their own health because they are busy caring.</div><div><br></div><div>Carers commonly suffer from back pain, tiredness or physical exhaustion.</div>]]></body>
+			<name><![CDATA[Physical problems]]></name>
+		</ib>
+		<ib  id = "180">
+			<title><![CDATA[Common emotions]]></title>
+			<body><![CDATA[<div>People looking after someone else can bottle up their feelings in order to protect themselves and the person they look after. However, the caring role is often accompanied by feelings of guilt, regret, anger, fear and depression.</div><div><br></div><div>If you're not sure whether you're coping with caring, the chances are you might not be and should seek further medical advice.</div>]]></body>
+			<name><![CDATA[Common emotions]]></name>
+		</ib>
+		<ib  id = "181">
+			<title><![CDATA[Practical support]]></title>
+			<body><![CDATA[<div>There are lots of practical benefits and aids available to help make caring easier.</div><div><br></div><div>These range from help to adapt your house and mobility scooters to discounts on your gas bill and payments for a personal assistant to support you in the home.</div>]]></body>
+			<name><![CDATA[Practical support]]></name>
+		</ib>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "182">
+			<title><![CDATA[Study and work]]></title>
+			<body><![CDATA[Practical help is available to carers who want&nbsp;to combine working or studying with a caring role.
+]]></body>
+			<name><![CDATA[Study and work]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+	</videos>
+</root>

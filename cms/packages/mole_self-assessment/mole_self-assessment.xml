@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>62</id>		
+		<title>Mole self-assessment</title>		
+		<colour_1>006699|0799C6</colour_1>
+		<colour_2>669900|9BC363</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[Could you have a cancerous mole?]]></intro_title>		
+		<intro_copy><![CDATA[Skin cancer is one of the most common cancers in the UK but the good news is that if the signs and symptoms are spotted early it's easier to treat.<br><br>Use this test to find out whether you may have a mole that needs to be checked.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[<br>]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Mole_self-assessment.swf]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[]]></intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<dimensions>362x390</dimensions>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+	</config>
+	<questions>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have a combination of fair skin, blue eyes and fair hair?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>2</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "233" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Approximately how many moles do you have?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[I have more than 20]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>2</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have between 10 and 20]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>1</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have just a few moles]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have no moles]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you ever been severely sunburnt, with blistering and pain afterwards?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>2</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, not severely]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Has a close family member ever had a cancerous mole?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>1</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Don't know]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have a mole with any of the following characteristics?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Larger than 4mm diameter or has got bigger]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>8</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Changed colour, developed different colours or got darker]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>8</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Changed shape or become irregular around the border]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>8</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Has risen above the skin surface]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>8</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Does your mole bleed, itch, scale or ulcer?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, I have two or more of these signs]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>8</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, I have one of these signs]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>3</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, I don't have any of these signs]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have any large, irregular (atypical) moles?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, I have 6 or more large irregular moles]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>3</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, I have 1 to 5 moles]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>2</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, I have no large irregular moles]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "232" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How often do you use sunbeds?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Often, at least once a week]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>4</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Sometimes - once or twice a month]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>2</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Every 2-3 months]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>2</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely, less than once every six months]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>1</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Never, but I have in the past]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Never]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "points triggered result" p1 = "0" p2 = "9" p3 = ""><![CDATA[<div>Based on your responses today it's unlikely you have a cancerous mole.</div><div><br></div><div>Skin cancer is becoming more common in this country, which is why it's important to be aware of your skin and regularly check your moles, both old and new.</div><div><br></div><div>The best prevention against skin cancer is:</div><div><ul><li>Spend time in the shade when the sun is at its strongest - between 11am and 3pm in the UK</li><li>Make sure you never burn</li><li>Aim to cover up with a T-shirt, hat and sunglasses</li><li>Remember to take extra care with children</li><li>Then use factor 25-30 SPF sunscreen.</li><li>Remember, if you have any concerns or your moles change, tell your GP.</li></ul></div>]]></ri>
+		<ri type = "points triggered result" p1 = "9" p2 = "13" p3 = ""><![CDATA[<div>Based on your responses today you should have your moles checked by your GP or health professional.</div><div><br></div><div>They will ask you about any recent changes to your mole and when the changes started. They may also ask you about your family history to see how likely you are to be at risk of a cancerous mole.</div><div><br></div><div>The best prevention against skin cancer is:</div><div><ul><li>Spend time in the shade when the sun is at its strongest - between 11am and 3pm in the UK</li><li>Make sure you never burn</li><li>Aim to cover up with a T-shirt, hat and sunglasses</li><li>Remember to take extra care with children</li><li>Then use factor 25-30 SPF sunscreen.</li></ul></div>]]></ri>
+		<ri type = "points triggered result" p1 = "13" p2 = "31" p3 = ""><![CDATA[<div>Based on your responses today you have a mole that needs to be checked by a GP or health professional, who will give you a proper examination and diagnosis.</div><div><br></div><div>They will ask you about any recent changes to your mole and when the changes started. They may also ask you about your family history to find out how likely you are to be at risk of a cancerous mole (malignant melanoma).&nbsp;</div><div><br></div><div>The fact that your score is high does not necessarily mean that you have a nasty mole, merely that the mole should be examined.</div><div><br></div><div>And remember, the earlier a possible cancerous mole is checked, the easier it is to treat so see your GP as soon as possible.</div>]]></ri>
+	</results>
+	<links>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[519]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[520]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[521]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[522]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[523]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[524]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[848657144001]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[969278254001]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[848799255001]]></li>
+	</links>
+	<result_items>
+	</result_items>
+	<link_items>
+		<ri id = "519" url = "http://www.nhs.uk/livewell/skin/pages/sunsafe.aspx">
+Keep safe in the sun		</ri>
+		<ri id = "520" url = "http://www.nhs.uk/Conditions/Malignant-melanoma/Pages/Realstorypage.aspx">
+Real life: why routine checks are important		</ri>
+		<ri id = "521" url = "http://www.nhs.uk/conditions/moles/Pages/Introduction.aspx">
+More on moles		</ri>
+		<ri id = "522" url = "http://www.nhs.uk/Conditions/Malignant-melanoma/Pages/Diagnosis.aspx">
+Diagnosing malignant melanoma		</ri>
+		<ri id = "523" url = "http://www.nhs.uk/Tools/Pages/Mole-slideshow.aspx">
+The ABCDE of moles		</ri>
+		<ri id = "524" url = "http://www.sunsmart.org.uk/index.htm">
+More on being sun smart		</ri>
+	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "233">
+			<title><![CDATA[Did you know?]]></title>
+			<body><![CDATA[<div>Skin cancer is one of the most common types of cancer in the UK, and the number of people who develop skin cancer is increasing. According to Cancer Research UK, 12,800 people were diagnosed with malignant melanoma (a type of skin cancer) in 2010 in the UK.</div><div><br></div><div>Remember, some melanomas do not start in a mole so any new pigmented blemish should be examined.</div>]]></body>
+			<name><![CDATA[Did you know?]]></name>
+		</ib>
+		<ib  id = "232">
+			<title><![CDATA[Sunbeds and the law]]></title>
+			<body><![CDATA[<div>In April 2011, it became illegal for under 18s to use sunbeds. The Sunbeds Regulation Act 2010 aims to protect under 18s in search of a year-round tan from putting their health at risk.</div><div><br></div><div>The Act means that under 18s cannot use tanning salons and sunbeds at premises including beauty salons, leisure centres, gyms &amp; hotels.</div>]]></body>
+			<name><![CDATA[Sunbeds and the law]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>848657144001</v>			<v>969278254001</v>			<v>848799255001</v>	</videos>
+</root>

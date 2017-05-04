@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>67</id>		
+		<title>Type 2 diabetes self-assessment</title>		
+		<colour_1>669900|9BC363</colour_1>
+		<colour_2>669900|9BC363</colour_2>
+		<colour_3>0064B7|0684EB</colour_3>
+		<intro_title><![CDATA[Are you at risk of type 2 diabetes?]]></intro_title>		
+		<intro_copy><![CDATA[Diabetes is a long-term condition that causes a person's blood sugar level to become too high. In the UK, about 90% of all adults with diabetes have type 2 diabetes.&nbsp;<br><br>Take this short test to discover your risk of having or developing type 2 diabetes.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[<br>]]></intro_copy_alt>		
+		<intro_foot><![CDATA[Based on the <a href="https://www.diabetes.org.uk/Riskscore/" title="Risk score" target="_blank">Diabetes Risk Score</a>&nbsp;developed by Diabetes UK, the University of Leicester and University Hospitals of Leicester NHS Trust.]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Diabetes_self-assessment_test_.jpg]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<dimensions>362x430</dimensions>		
+		<print_title>Your results</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+	</config>
+	<questions>
+		<q type = "gender" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[male]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[female]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>1</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How old are you?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[49 or younger]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[50-59]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>5</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[60-69]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>9</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[70 or older]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>13</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[What is your ethnic background?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[White European]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Other ethnic group]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>6</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have a father, mother, brother, sister or own child with type 1 or type 2 diabetes?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>5</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "245" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[What is your waist size?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Less than 90cm (35.3 inches)]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[90-99.9cm (35.4-39.3 inches)]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>4</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[100-109.9cm (39.4-42,9 inches)]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>6</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[110cm (43 inches) or more]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>9</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "246" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[What is your BMI (body mass index) score?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Less than 25]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[25-29.9]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>3</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[30-34.9]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>5</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[35 or above]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>8</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "247" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you been given medicine for high blood pressure OR told by a doctor that you have high blood pressure?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>5</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+							<value>0</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "points triggered result" p1 = "0" p2 = "7" p3 = ""><![CDATA[<b><u>Your risk level is low</u></b><div><br></div><div>There is a 1 in 200 chance that you have type 2 diabetes now&nbsp;and a 1 in 20 chance that you could develop diabetes in the next 10 years.</div><div><br></div><div>Even though you have been identified as 'low risk', it is important to maintain a healthy lifestyle. Watching what you eat and increasing the amount of activity you do will help to reduce your risk of diabetes.&nbsp;</div>]]></ri>
+		<ri type = "points triggered result" p1 = "7" p2 = "16" p3 = ""><![CDATA[<b><u>Your risk level is increased</u></b><div><br></div><div>There is a 1 in 50 chance that you have type 2 diabetes now and a 1 in 10 chance that you could develop diabetes in the next 10 years.</div><div><br></div><div><div>Remember, as you get older your risk of developing type 2 diabetes may increase further – especially if you have a family history of diabetes.</div><div><br></div><div>Take action now and look at what lifestyle changes you can make in order to reduce your risk. You may need to reduce your weight or waist measurement, or increase your level of physical activity.</div><div><br></div><div>See useful links for a range of resources that could help you.</div></div>]]></ri>
+		<ri type = "points triggered result" p1 = "16" p2 = "25" p3 = ""><![CDATA[<b><u>Your risk level is moderate</u></b><div><br></div><div>There is a 1 in 33 chance that you have type 2 diabetes now and a 1 in 7 chance that you could develop diabetes in the next 10 years.</div><div><br></div><div><div>You need to make an appointment to see your GP to discuss this risk.</div><div><br></div><div><div>For many people who are diagnosed with type 2 diabetes, the first approach to treatment is to make lifestyle changes. These include:&nbsp;</div><div><br></div><div><ul><li>taking regular exercise</li><li>eating healthily</li><li>losing weight if you are overweight or obese (a BMI of 30 or over)</li></ul></div><div>This may be enough to keep your blood glucose at a safe and healthy level without the need for other treatment.&nbsp;However, you may need, or eventually need, medicines that reduce high levels of blood glucose. Initially, this will usually be in the form of tablets, and may sometimes be a combination of more than one type of tablet. It may also include insulin or other medication that you inject.</div><div><br>See useful links for a range of resources that could help you.</div></div></div>]]></ri>
+		<ri type = "points triggered result" p1 = "25" p2 = "48" p3 = ""><![CDATA[<b><u>Your risk level is high</u></b><div><br></div><div>There is a 1 in 14 chance that you have type 2 diabetes now&nbsp;and a 1 in 3 chance that you could develop diabetes in the next 10 years.</div><div><br></div><div>You need to make an appointment with your GP to discuss this risk and to have a simple blood test to measure your blood glucose level.</div><div><br></div><div><div><div>For many people who are diagnosed with type 2 diabetes, the first approach to treatment is to make lifestyle changes. These include:&nbsp;</div><div><br></div><div><ul><li>taking regular exercise</li><li>eating healthily</li><li>losing weight if you are overweight or obese (a BMI of 30 or over)</li></ul></div><div>This may be enough to keep your blood glucose at a safe and healthy level without the need for other treatment.&nbsp;However, you may need, or eventually need, medicines that reduce high levels of blood glucose. Initially, this will usually be in the form of tablets, and may sometimes be a combination of more than one type of tablet. It may also include insulin or other medication that you inject.</div><div><br></div><div>See useful links for a range of resources that could help you.</div></div></div>]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[<div>The following articles and videos may be of interest. Please note these links will open in a new window.</div>]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[808583357001]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[540]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[544]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[543]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[542]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[709288257001]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[541]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[548]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[545]]></li>
+	</links>
+	<result_items>
+	</result_items>
+	<link_items>
+		<ri id = "540" url = "http://www.diabetes.org.uk/">
+Visit the Diabetes UK website		</ri>
+		<ri id = "544" url = "http://www.nhs.uk/Livewell/SouthAsianhealth/Pages/Diabetescasestudy.aspx">
+Real story: 'Diabetes and me'		</ri>
+		<ri id = "543" url = "http://www.nhs.uk/Tools/Pages/Healthyweightcalculator.aspx">
+Find out if you are a healthy weight		</ri>
+		<ri id = "542" url = "http://www.nhs.uk/Conditions/Diabetes-type2/Pages/SteveRedgrave.aspx">
+Steve Redgrave's story of type 2 diabetes		</ri>
+		<ri id = "541" url = "http://www.nhs.uk/livewell/Diabetes/Pages/Avoiddiabetes.aspx">
+Reduce your risk of type 2 diabetes		</ri>
+		<ri id = "548" url = "http://www.nhs.uk/conditions/Blood-pressure-(high)/Pages/Introduction.aspx">
+Health A-Z: High blood pressure		</ri>
+		<ri id = "545" url = "http://www.nhs.uk/Livewell/Blackhealth/Pages/Mydiabetes.aspx">
+Real story: 'How diabetes affects my daily life'		</ri>
+	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "245">
+			<title><![CDATA[How to measure your waist]]></title>
+			<body><![CDATA[<div>When measuring your waist you need to ensure the tape is snug and is parallel to the floor. Place the tape measure in the point midway between the top of the hip bone and lowest rib. Take the measurement when you are breathing out.</div><div><br></div><div>Fat around your abdomen (tummy) puts you at increased risk. This is because it releases chemicals that can upset the body's cardiovascular and metabolic systems. This then increases your risk of developing various conditions, including heart disease, stroke and some types of cancer.</div>]]></body>
+			<name><![CDATA[How to measure your waist]]></name>
+		</ib>
+		<ib  id = "246">
+			<title><![CDATA[Working out your BMI]]></title>
+			<body><![CDATA[The BMI calculation divides weight in kilograms by height in metres squared. Use the<a href="http://www.nhs.uk/Tools/Pages/Healthyweightcalculator.aspx" title="" target="">&nbsp;BMI healthy weight calculator</a> to check yours now. (Link will open in a new window)]]></body>
+			<name><![CDATA[Working out your BMI]]></name>
+		</ib>
+		<ib  id = "247">
+			<title><![CDATA[About high blood pressure]]></title>
+			<body><![CDATA[<div><div>Known as the 'silent killer', high blood pressure rarely has obvious symptoms. Around 30% of people in England have high blood pressure but many don't know it. If left untreated, high blood pressure increases your risk of a heart attack or stroke.</div><div><br></div><div>The only way of knowing there is a problem is to have your blood pressure measured.</div><div><br></div><div>Blood pressure measures how strongly blood presses against the walls of your arteries as it is pumped around the body by your heart. If this pressure is too high, it puts a strain on your arteries and your heart, which increases your risk of suffering a heart attack, a stroke or kidney disease.</div></div>]]></body>
+			<name><![CDATA[About high blood pressure]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>808583357001</v>			<v>709288257001</v>	</videos>
+</root>

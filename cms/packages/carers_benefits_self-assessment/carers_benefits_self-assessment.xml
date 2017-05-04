@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+	<config>
+		<id>46</id>		
+		<title>Carers benefits self-assessment</title>		
+		<colour_1>006699|0799C6</colour_1>
+		<colour_2>A90000|FB3103</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[Could you be entitled?]]></intro_title>		
+		<intro_copy><![CDATA[As a carer you may be able to claim several benefits to help you make ends meet.&nbsp;Take this short test to work out which benefits you are likely to be eligible for.<br><br>Benefit rules can be complicated and your own circumstances will affect your eligibility. This quick quiz cannot guarantee you will receive any benefits, but should give you some idea about what benefits carers might want to think about applying for.<br><br>It assumes that you are <br>aged 16 or over. The <br>suggestions given are <br>not financial or legal <br>advice.]]></intro_copy>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[carers assessment.swf]]></intro_graphic>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<dimensions>362x430</dimensions>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+	</config>
+	<questions>
+		<q type = "yes/no" info_box = "174" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you reached state pension age?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type>result</type>
+							<value>708</value>
+						</ac>
+						<ac>
+							<type>link</type>
+							<value>382</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type>link</type>
+							<value>382</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "175" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you earn more than £100 per week or have more than £16,000 in savings or capital?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type>result</type>
+							<value>709</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type>result</type>
+							<value>710</value>
+						</ac>
+						<ac>
+							<type>link</type>
+							<value>383</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "107" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you disabled?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type>result</type>
+							<value>711</value>
+						</ac>
+						<ac>
+							<type>link</type>
+							<value>384</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "176" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you care for someone for at least 35 hours a week?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type>result</type>
+							<value>712</value>
+						</ac>
+						<ac>
+							<type>link</type>
+							<value>385</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have any children aged under 16?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type>result</type>
+							<value>713</value>
+						</ac>
+						<ac>
+							<type>link</type>
+							<value>386</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type>points</type>
+							<operator>+</operator>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "177" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you currently working?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes]]></body>
+					<actions>
+						<ac>
+							<type>link</type>
+							<value>387</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, I'm ill/disabled and unable to work]]></body>
+					<actions>
+						<ac>
+							<type>result</type>
+							<value>715</value>
+						</ac>
+						<ac>
+							<type>link</type>
+							<value>388</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, I'm looking for work]]></body>
+					<actions>
+						<ac>
+							<type>result</type>
+							<value>716</value>
+						</ac>
+						<ac>
+							<type>link</type>
+							<value>389</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, I'm retired]]></body>
+					<actions>
+						<ac>
+							<type>link</type>
+							<value>390</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, I'm a full-time carer]]></body>
+					<actions>
+						<ac>
+							<type>link</type>
+							<value>391</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you pay council tax?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type>result</type>
+							<value>717</value>
+						</ac>
+						<ac>
+							<type>link</type>
+							<value>392</value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type>link</type>
+							<value>392</value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "text" p1 = "" p2 = "" p3 = ""><![CDATA[<div>Based on your responses today, you may be entitled to some benefits.</div><div><br></div><div>However, your responses may result in "overlapping benefits", and you should seek advice on which is best to claim.</div><div><br></div><div>Your responses suggest you should find out more about:</div>]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[<div>For more information about benefits, contact details for support organisations, or for any question about caring, please call Carers Direct free on 0808 802 0202.</div><div><br></div><div>In the meantime, here are some useful links:</div><div><br></div>]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[381]]></li>
+		<li type = "accumulated links" p1 = "" p2 = ""><![CDATA[]]></li>
+	</links>
+	<result_items>
+		<ri id = "708" priority = "0"><![CDATA[State Pension, plus Pension Credit Savings Credit if you are on a low income]]></ri>
+		<ri id = "709" priority = "0"><![CDATA[Working Tax Credit - unless you are a high earner]]></ri>
+		<ri id = "710" priority = "0"><![CDATA["Top-up benefits" such as Income Support (or Pension Credit if you have reached pension age)]]></ri>
+		<ri id = "711" priority = "0"><![CDATA[Disability Living Allowance. If you are over 65, claim Attendance Allowance instead.]]></ri>
+		<ri id = "712" priority = "0"><![CDATA[Carer's Allowance, or a carer's premium or addition if you claim other, overlapping benefits.]]></ri>
+		<ri id = "713" priority = "0"><![CDATA[Child Tax Credit - unless you are a high earner.]]></ri>
+		<ri id = "715" priority = "0"><![CDATA[Employment and Support Allowance - if you are below state pension age.]]></ri>
+		<ri id = "716" priority = "0"><![CDATA[Jobseeker's Allowance - to claim you must be available for work, capable of working and actively looking for work for 40 hours a week.]]></ri>
+		<ri id = "717" priority = "0"><![CDATA[Housing Benefit and Council Tax Benefit - you can claim these together]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "382" url = "http://www.direct.gov.uk/en/Pensionsandretirementplanning/StatePension/DG_4017919">
+Calculate your pension age		</ri>
+		<ri id = "383" url = "http://www.nhs.uk/CarersDirect/moneyandlegal/otherbenefits/Pages/IncomeSupport.aspx">
+Income Support		</ri>
+		<ri id = "384" url = "http://www.nhs.uk/CarersDirect/moneyandlegal/disabilitybenefits/Pages/Overview.aspx">
+Disability benefits		</ri>
+		<ri id = "385" url = "http://www.nhs.uk/CarersDirect/moneyandlegal/carersbenefits/Pages/carersallowance.aspx">
+Carers' allowance		</ri>
+		<ri id = "386" url = "http://www.nhs.uk/CarersDirect/moneyandlegal/taxcredits/Pages/ChildTaxCredit.aspx">
+Child Tax Credit		</ri>
+		<ri id = "387" url = "http://www.nhs.uk/CarersDirect/moneyandlegal/taxcredits/Pages/WorkingTaxCredit.aspx">
+Working Tax Credit		</ri>
+		<ri id = "388" url = "http://www.nhs.uk/CarersDirect/moneyandlegal/otherbenefits/Pages/EmploymentandSupportAllowance.aspx">
+Employment and Support Allowance		</ri>
+		<ri id = "389" url = "http://www.nhs.uk/CarersDirect/moneyandlegal/otherbenefits/Pages/JobseekersAllowance.aspx">
+Jobseeker's Allowance		</ri>
+		<ri id = "390" url = "http://www.nhs.uk/CarersDirect/guide/kinds/Pages/Careinretirement.aspx">
+Caring in retirement		</ri>
+		<ri id = "391" url = "http://www.nhs.uk/CarersDirect/guide/kinds/Pages/morethan50hours.aspx">
+Caring full-time		</ri>
+		<ri id = "392" url = "http://www.direct.gov.uk/en/Diol1/DoItOnline/DoItOnlineByCategory/DG_172666">
+Directgov online benefits adviser		</ri>
+		<ri id = "381" url = "http://www.nhs.uk/CarersDirect/guide/assessments/Pages/Carersassessments.aspx">
+Carer`s assessments		</ri>
+	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "174">
+			<title><![CDATA[More on state pension]]></title>
+			<body><![CDATA[<div>To calculate your pension age, follow the link at the end of this quiz.</div><div><br></div><div>As a pensioner you may be entitled to extra help, such as a Winter Fuel Payment.</div><div><br></div><div>You'll no longer be eligible for Carer's Allowance. However, a "carer's addition" can be added to Pension Credit, or a "carer's premium" on Housing Benefit or Council Tax Benefit.</div>]]></body>
+			<name><![CDATA[More on state pension]]></name>
+		</ib>
+		<ib  id = "175">
+			<title><![CDATA[More on income]]></title>
+			<body><![CDATA[<div>If you have a low income you may be entitled to means-tested benefits and extra help with health costs.</div><div><br></div><div>Income can include earnings from work, rent from tenants or lodgers, benefits and charitable income.</div><div><br></div><div>Capital can include savings, investments and the value of property you own but are not living in.</div>]]></body>
+			<name><![CDATA[More on income]]></name>
+		</ib>
+		<ib  id = "107">
+			<title><![CDATA[More on disability]]></title>
+			<body><![CDATA[<div>Disabled people may be entitled to help with additional costs caused by their disability.</div><div><br></div><div>If you are disabled, you should check your eligibility for help with health costs.</div>]]></body>
+			<name><![CDATA[More on disability]]></name>
+		</ib>
+		<ib  id = "176">
+			<title><![CDATA[More on carers]]></title>
+			<body><![CDATA[<div>If you are looking after someone for 35 or more hours a week, this is is considered full-time caring. Your caring role might include physical care such as lifting or washing, cooking, and emotional support.</div><div><br></div><div>Carers can access practical help by asking the local authority for a carer's assessment.</div>]]></body>
+			<name><![CDATA[More on carers]]></name>
+		</ib>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "177">
+			<title><![CDATA[Your working status]]></title>
+			<body><![CDATA[<div>Your working status and your ability to work will affect the benefits you are eligible to claim.</div><div><br></div><div>Schemes such as Next Step can help carers find a job or get trained for the workplace.</div>]]></body>
+			<name><![CDATA[Your working status]]></name>
+		</ib>
+	</info_boxes>
+</root>

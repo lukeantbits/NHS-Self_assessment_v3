@@ -1,0 +1,4936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>63</id>		
+		<title>Bowel cancer symptom checker</title>		
+		<colour_1>006699|0799C6</colour_1>
+		<colour_2>FF6600|FF9800</colour_2>
+		<colour_3>FF6600|FF9800</colour_3>
+		<intro_title><![CDATA[Do you have any symptoms?]]></intro_title>		
+		<intro_copy><![CDATA[Bowel cancer is a general term for any cancer that begins in the large bowel. It is one of the four most common types of cancer in England after breast, prostate and lung.<br><br>There are three key symptoms you need to look out for. Use this symptom checker to find out if your symptoms require further investigation.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[Bowel cancer is a general term for any cancer that begins in the large bowel. It's the third most common type of cancer in England.<br><br>There are three key symptoms you need to look out for. Use this self-assessment to find out if your symptoms require further investigation.]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[bowel-sa.png]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[bowel-sa.png]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[7]]></intro_graphic_position_m>		
+		<dimensions_f>362x450</dimensions_f>		
+		<dimensions_j>362x450</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt>bowel</img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+		<quiz>0</quiz>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How old are you?]]></body>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm under 50 years old]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[under50]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm 50 or over]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[over50]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "241" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[What is your main symptom?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>under50</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_RB]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[A change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Abdominal pain or discomfort]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Another symptom]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "241" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[What is your main symptom?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>over50</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[A change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Abdominal pain or discomfort]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[ Another symptom]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[6]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you also had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_RB</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have had no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_RB_CIBH_new]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[Noother]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[990]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_RB_CIBH_new]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[DH]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[991]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet to open my bowels more often, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_RB_CIBH_new]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[993]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[998]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_RB_CIBH_new]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[Noother]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[992]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_RB_CIBH_new</property>
+				<operator><![CDATA[=]]></operator>
+				<value>Noother</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1000]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1047]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[994]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1107]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_RB_CIBH_new</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1048]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1002]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1048]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you had rectal bleeding?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_RB</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_less_than_4]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[less]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_less_than_4]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[more]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you also had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_RB_less_than_4</property>
+				<operator><![CDATA[=]]></operator>
+				<value>more</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have had no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_more_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[No]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[990]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_more_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[otherDH]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[991]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet to open my bowels more often, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_more_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_more_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[otherDH]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[990]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you also had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_RB_less_than_4</property>
+				<operator><![CDATA[=]]></operator>
+				<value>less</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have had no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_less_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[Noother]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[990]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_less_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[DH]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[991]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet to open my bowels more often, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_less_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_RB_less_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[Noother]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[992]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_RB_more_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1004]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1004]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_RB_less_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>Noother</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1000]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1002]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[994]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1002]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_RB_more_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>No</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1004]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1004]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1049]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_RB_less_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[993]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[998]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1002]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1109]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "243" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you also had bleeding from your bottom (rectal bleeding) in addition to the change in bowel habit?</div><div><br></div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I also have rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_CIBH_RB]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have any rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_CIBH_RB]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[false]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Please describe how your bowel habits have changed]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_CIBH_RB</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_CIBH_RB_how]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[DH]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[991]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_CIBH_RB_how]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1005]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[998]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in my bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_CIBH_RB_how]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[other]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_CIBH_RB_how</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1048]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1048]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_CIBH_RB_how</property>
+				<operator><![CDATA[=]]></operator>
+				<value>DH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1108]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1047]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1018]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1107]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_CIBH_RB</property>
+				<operator><![CDATA[=]]></operator>
+				<value>false</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_CIBH_RB_less_than_4]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_CIBH_RB_less_than_4]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[false]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Please describe how your bowel habits have changed:]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_CIBH_RB_less_than_4</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1015]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1011]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1125]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1007]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1010]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1124]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in my bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1009]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1012]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1124]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Please describe how your bowel habits have changed:</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_CIBH_RB_less_than_4</property>
+				<operator><![CDATA[=]]></operator>
+				<value>false</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1015]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1018]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1125]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1007]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1013]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in my bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1009]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1012]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1124]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_CIBH_RB_how</property>
+				<operator><![CDATA[=]]></operator>
+				<value>other</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[991]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1141]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1047]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[992]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1012]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1107]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "243" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you also had bleeding from your bottom (rectal bleeding) in addition to the change in bowel habit?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I also have rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have any rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[false]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_RB</property>
+				<operator><![CDATA[=]]></operator>
+				<value>false</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_noRB_less]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[less]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_noRB_less]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[more]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Please describe how your bowel habits have changed:]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_noRB_less</property>
+				<operator><![CDATA[=]]></operator>
+				<value>less</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1015]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1011]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1127]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1007]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1010]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1126]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in my bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1009]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1017]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Please describe how your bowel habits have changed:]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_noRB_less</property>
+				<operator><![CDATA[=]]></operator>
+				<value>more</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1015]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1018]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1009]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1013]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1126]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in my bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1009]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1012]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you had rectal bleeding?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_RB</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[false]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks ]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Please describe how your bowel habit has changed:</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_RB_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>false</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB_less_how]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[DH]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[991]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB_less_how]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in my bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB_less_how]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[other]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[992]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Please describe how your bowel habits have changed:</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_RB_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB_more_how]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[NoDHother]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1130]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB_more_how]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1129]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in my bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_CIBH_RB_more_how]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[NoDHother]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1131]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_RB_more_how</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_RB_more_how</property>
+				<operator><![CDATA[=]]></operator>
+				<value>NoDHother</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms ]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_RB_less_how</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[993]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1010]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1128]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_RB_less_how</property>
+				<operator><![CDATA[=]]></operator>
+				<value>DH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1108]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1018]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "249" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you had abdominal pain or discomfort?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[false]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks
+]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any decrease in your appetite because of the abdominal pain?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[My appetite has decreased; I feel full soon after eating; and/or I'm eating less because it causes abdominal discomfort]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1040]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1132]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[My appetite is normal and I generally enjoy eating]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more_normal]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "250" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you also had bleeding from your bottom (rectal bleeding) or a change in bowel habit?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more_normal</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have no rectal bleeding and no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1022]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1134]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have rectal bleeding; or I have rectal bleeding with a change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more_normal_RBorCIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[RB]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit without rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more_normal_RBorCIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[CIBH]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you also had a change in bowel habit?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more_normal_RBorCIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>RB</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have had no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more_normal_RB_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[No]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1023]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet to open my bowels more often, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more_normal_RB_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1024]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1048]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more_normal_RB_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[DH]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1025]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more_normal_RB_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[other]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1024]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more_normal_RB_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>No</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1032]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1136]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more_normal_RB_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any symptoms of piles?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more_normal_RB_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>DH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1032]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1107]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any symptoms of piles?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more_normal_RB_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>other</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1032]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1107]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more_normal_RBorCIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>CIBH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more_normal_RB_CIBH_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[less]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_more_normal_RB_CIBH_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[more]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Please describe how your bowel habits have changed:]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more_normal_RB_CIBH_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>more</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1028]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1027]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different to the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1027]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Please describe how your bowel habits have changed:</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more_normal_RB_CIBH_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>less</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1028]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1027]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different to the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1029]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "250" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you also had bleeding from your bottom (rectal bleeding) or a change in bowel habit?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>false</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have no rectal bleeding and no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1022]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1134]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have rectal bleeding; or I have rectal bleeding with a change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_less_RBorCIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[RB]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit without rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_less_RBorCIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[CIBH]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you also had a change in your bowel habit?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_less_RBorCIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>RB</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have had no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_less_RB_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[No]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet to open my bowels more often, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_less_RB_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_less_RB_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[DH]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_less_RB_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[other]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_less_RB_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>No</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1037]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1139]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1037]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1107]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>How long have you had a change in bowel habit?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_less_RBorCIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>CIBH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_less_CIBH_moreorless]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[less]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[U50_AP_less_CIBH_moreorless]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[more]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Please describe how your bowel habits have changed:]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_less_CIBH_moreorless</property>
+				<operator><![CDATA[=]]></operator>
+				<value>more</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1028]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1029]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different to the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1029]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_less_RB_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1024]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1048]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1024]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1048]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_less_RB_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>DH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1039]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1039]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1107]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you had any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_less_RB_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>other</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1024]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1139]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1024]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1107]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Please describe how your bowel habits have changed:]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_AP_less_CIBH_moreorless</property>
+				<operator><![CDATA[=]]></operator>
+				<value>less</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1028]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1140]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1027]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different to the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1029]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1137]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "249" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>How long have you had your abdominal pain or discomfort?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_moreorless]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[less]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_moreorless]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[more]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any decrease in your appetite because of the abdominal pain?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_moreorless</property>
+				<operator><![CDATA[=]]></operator>
+				<value>more</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[My appetite has decreased; I feel full soon after eating; and/or I'm eating less because it causes abdominal discomfort]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_more_normal]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[false]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1040]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1132]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[My appetite is normal and I generally enjoy eating]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_more_normal]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[true]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "250" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you also had bleeding from your bottom (rectal bleeding) or a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_more_normal</property>
+				<operator><![CDATA[=]]></operator>
+				<value>true</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have no rectal bleeding and no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1041]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1135]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have rectal bleeding; or I have rectal bleeding with a change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_more_normal_RBorCIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[RB]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit without rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_more_normal_RBorCIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[CIBH]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you had rectal bleeding?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_more_normal_RBorCIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>RB</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_more_normal_RB_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[less]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_more_normal_RB_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[more]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you also had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_more_normal_RB_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>more</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have had no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1131]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1136]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet to open my bowels more often, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1129]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1128]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1135]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1129]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1136]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you also had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_more_normal_RB_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>less</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have had no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1037]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1136]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1025]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet to open my bowels more often, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1046]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1024]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1136]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_more_normal_RBorCIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>CIBH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks ]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_more_normal_CIBH_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[less]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_more_normal_CIBH_more]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[more]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Please describe how your bowel habits have changed:]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_more_normal_CIBH_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>more</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1028]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1128]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1049]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in my bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1027]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Please describe how your bowel habits have changed:</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_more_normal_CIBH_more</property>
+				<operator><![CDATA[=]]></operator>
+				<value>less</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1028]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1027]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1049]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different to the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1029]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "250" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you also had bleeding from your bottom (rectal bleeding) or a change in bowel habit?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_moreorless</property>
+				<operator><![CDATA[=]]></operator>
+				<value>less</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have no rectal bleeding and no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[988]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1041]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1135]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have rectal bleeding; or I have rectal bleeding with a change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RBorCIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[RB]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit without rectal bleeding]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RBorCIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[CIBH]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>How long have you had rectal bleeding?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RBorCIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>RB</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_moreorless]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[less]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_moreorless]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[more]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you also had a change in bowel habit?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_moreorless</property>
+				<operator><![CDATA[=]]></operator>
+				<value>more</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have had no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_more_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[No]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet to open my bowels more often, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_more_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_more_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[DH]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_more_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[other]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any symptoms of piles?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_more_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>No</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1131]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1131]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_more_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1138]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1129]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>&nbsp;Have you had any symptoms of piles?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_more_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>DH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1130]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1130]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any symptoms of piles?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_more_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>other</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1131]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1131]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you also had a change in bowel habit?</div><div><br></div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_moreorless</property>
+				<operator><![CDATA[=]]></operator>
+				<value>less</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have had no change in bowel habit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_less_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[No]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet to open my bowels more often, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_less_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[LS]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_less_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[DH]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_RB_less_CIBH]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[other]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any symptoms of piles?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_less_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>No</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1037]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1139]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1037]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How long have you been&nbsp;passing looser, softer stools and/or&nbsp;going to the toilet more frequently to open your bowels?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_less_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>LS</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1046]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1109]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1052]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any symptoms of piles?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_less_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>DH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1039]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1108]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1039]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any symptoms of piles?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RB_less_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>other</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1024]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1139]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have pile symptoms]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1024]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>How long have you had a change in your bowel habits?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_RBorCIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>CIBH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[Less than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_CIBH_moreorless]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[less]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than four weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[O50_AP_less_CIBH_moreorless]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[more]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Please describe how your bowel habits have changed:</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_CIBH_moreorless</property>
+				<operator><![CDATA[=]]></operator>
+				<value>more</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1028]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1140]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1129]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1126]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in my bowel habit that is different from the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1029]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "248" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Please describe how your bowel habits have changed:</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_AP_less_CIBH_moreorless</property>
+				<operator><![CDATA[=]]></operator>
+				<value>less</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I'm going to the toilet less often, I have harder, drier stools, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1028]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1034]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm going to the toilet more often to open my bowels, my stools are persistently looser and softer, or I have both of these changes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1027]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1033]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1126]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have a change in bowel habit that is different to the other options]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1029]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1133]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>U50_RB_CIBH_new</property>
+				<operator><![CDATA[=]]></operator>
+				<value>DH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1108]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1047]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have no symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1054]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1107]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_RB_more_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>otherDH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1004]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have no symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1055]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1049]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_RB_less_CIBH</property>
+				<operator><![CDATA[=]]></operator>
+				<value>DH</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1108]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1002]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have no symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[989]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1011]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1003]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "242" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you any symptoms of piles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>O50_CIBH_RB_less_how</property>
+				<operator><![CDATA[=]]></operator>
+				<value>other</value>
+			</action>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[I have no symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1017]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1002]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1051]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have symptoms of piles]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1141]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1002]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1050]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "points triggered result" p1 = "5" p2 = "6" p3 = ""><![CDATA[<div>If your symptom is not one of the three key symptoms listed on the previous page, see useful links and visit Health A-Z to see if your symptom is listed.&nbsp;</div><div><br></div><div>However if your symptom is:</div><div><ul><li>Any type of visible bleeding from your bottom, no matter how you noticed it or its colour or amount, click on rectal bleeding on the first page.</li><li>Any type of change in bowel habit, including the shape or colour of your stools, click on change in bowel habit.</li><li>Any type of abdominal pain, discomfort, bowel spasm, colic or even just bloating, click on abdominal pain or discomfort.</li></ul><div><div><b>Important:</b>&nbsp;If your symptoms are severe, or you also feel generally unwell, or the symptoms keep coming back – see your GP.</div></div></div>]]></ri>
+		<ri type = "points triggered result" p1 = "6" p2 = "7" p3 = ""><![CDATA[<div>If your symptom is not one of the three key symptoms listed on the previous page, see useful links and visit Health A-Z to see if your symptom is listed.&nbsp;</div><div><br></div><div>However if your symptom is:</div><div><ul><li>Any type of visible bleeding from your bottom, no matter how you noticed it or its colour or amount, click on rectal bleeding on the first page.</li><li>Any type of change in bowel habit, including the shape or colour of your stools, click on change in bowel habit.</li><li>Any type of abdominal pain, discomfort, bowel spasm, colic or even just bloating, click on abdominal pain or discomfort.</li></ul><div><b>Important:</b>&nbsp;If your symptoms are severe, or you also feel generally unwell, or the symptoms keep coming back – see your GP.</div></div>]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[Here are some links and videos that you might helpful:]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[610]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[615]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[747074337001]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[808357192001]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[619]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[647]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[648]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[648]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[563]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[553]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[560]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[556]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[555]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[549]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[616]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[561]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[558]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[613]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[614]]></li>
+	</links>
+	<result_items>
+		<ri id = "988" priority = "1"><![CDATA[Advice: It's safe to wait four more weeks to see if your symptoms settle.]]></ri>
+		<ri id = "990" priority = "0"><![CDATA[Cause of your symptoms: It's probably from piles.]]></ri>
+		<ri id = "991" priority = "0"><![CDATA[Cause of your symptoms: The rectal bleeding is probably from piles, caused by your constipation.]]></ri>
+		<ri id = "993" priority = "0"><![CDATA[Cause of your symptoms: The bleeding is probably from piles and your change in bowel habit could be the after-effects of a mild gut infection.]]></ri>
+		<ri id = "998" priority = "0"><![CDATA[Treatment: Try some simple treatments, if you haven't tried them before. If you have and they don't work, see your GP. Otherwise, try eating less fibre and taking a bowel sedative to reduce the number of times you go to the toilet. If you have any pile symptoms, try cleaning around the anus carefully and use creams and suppositories. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "992" priority = "0"><![CDATA[Cause of your symptoms: The bleeding is probably from piles and your change in bowel habit could be the result of something you have eaten or a mild gut infection.]]></ri>
+		<ri id = "1000" priority = "0"><![CDATA[Treatment: Try some simple treatments, if you haven't tried them before. If you have and they don't work, see your GP. Otherwise, try eating more fibre to make your stools softer and easier to pass. It is normal to strain a little when passing a stool, but too much can cause bleeding. Try cleaning around the anus carefully and, if necessary, use creams and suppositories for your pile symptoms. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1003" priority = "0"><![CDATA[What now? If you get better, nothing further needs to be done. However, see your GP if your symptoms persist or come back.]]></ri>
+		<ri id = "1047" priority = "0"><![CDATA[What your GP might do: Your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. If these are normal it would be reasonable for you to try a further period of treat, watch and wait. However, if you continue to bleed, your GP is likely to advise referral to a routine hospital clinic.]]></ri>
+		<ri id = "994" priority = "0"><![CDATA[Treatment: Try some simple treatments, if you haven't tried them before. If you have and they don't work, see your GP. Otherwise, try eating more fibre to make your stools softer and easier to pass. It's normal to strain a little when passing a stool, but too much can cause bleeding.]]></ri>
+		<ri id = "1107" priority = "0"><![CDATA[What your GP might do: Your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. If these are normal it would be reasonable for you to try a further period of treat, watch and wait. However, if you continue to bleed without pile symptoms, your GP is likely to advise referral to a routine hospital clinic.]]></ri>
+		<ri id = "1048" priority = "0"><![CDATA[What your GP might do: If you are over the age of 40 and have had this pattern of symptoms for six weeks, your GP may advise referral to a hospital clinic within the next two weeks. If you're under 40, your GP will probably examine your tummy and bottom and do a blood test for iron deficiency anaemia. Even if these are normal your GP may still advise referral to a routine hospital clinic.]]></ri>
+		<ri id = "989" priority = "1"><![CDATA[Advice: It's safe to wait for another two weeks to see if your symptoms settle.]]></ri>
+		<ri id = "1002" priority = "0"><![CDATA[What now? If you get better, nothing further needs to be done. However, see your GP if your symptoms persist or come back.]]></ri>
+		<ri id = "1004" priority = "0"><![CDATA[Advice: See your GP
+Your persistent bleeding may be being caused by piles, but it is worth discussing this with your GP as people over 50 are more likely to have easily removable polyps, which, if left, could develop into more serious problems in the future.]]></ri>
+		<ri id = "1052" priority = "0"><![CDATA[What your GP might do: If you've had this pattern of symptoms for six weeks your GP will probably refer you to a hospital clinic within the next two weeks.]]></ri>
+		<ri id = "1050" priority = "0"><![CDATA[What your GP might do: Your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. If these are normal it would be reasonable for you to try a further period of treat, watch and wait. However, if your symptoms don't settle quickly, your GP may refer you to a routine hospital clinic for a screening technique known as a flexible sigmoidoscopy.]]></ri>
+		<ri id = "1051" priority = "0"><![CDATA[What your GP might do: If you are over the age of 60, and continue to have bleeding without pile symptoms for six weeks, your GP may advise referral to a hospital clinic within the next two weeks. If you are under 60 your GP may examine your tummy and bottom and a do a blood test for iron deficiency anaemia. Even if these are normal, you may still be referred to a routine hospital clinic for a screening technique known as a flexible sigmoidoscopy.]]></ri>
+		<ri id = "1049" priority = "0"><![CDATA[What your GP might do: If you are over the age of 60, your GP may refer you to a hospital clinic within the next two weeks. If you're under 60 you will probably have an examination of your bottom and tummy and a blood test for iron deficiency anaemia. Even if these are normal it is still likely you will be referred to a routine hospital clinic for a screening technique known as a flexible sigmoidoscopy.]]></ri>
+		<ri id = "1109" priority = "0"><![CDATA[Advice: See your GP.
+Your rectal bleeding could be from piles and your change in bowel habit could be caused by a mild gut infection but it is worth discussing your symptoms further with your GP.]]></ri>
+		<ri id = "1005" priority = "0"><![CDATA[Cause of your symptoms: The bleeding is probably from piles and your change in bowel habit could be the after-effects of a mild gut infection.]]></ri>
+		<ri id = "1108" priority = "0"><![CDATA[Treatment: Try eating more fibre and taking laxatives to make your stools softer and easier to pass. It's normal to strain a little when passing a stool, but too much can cause bleeding. Try cleaning around the anus carefully after passing a stool and, if necessary, use creams and suppositories for the pile symptoms. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1018" priority = "0"><![CDATA[Treatment: Try eating more fibre and taking laxatives to make the stools softer and easier to pass. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1015" priority = "0"><![CDATA[Cause of your symptoms: Your constipation is unlikely to have a serious cause, particularly if you don't have any abdominal pain. If you do, go back to the beginning of the checker and click on abdominal pain.]]></ri>
+		<ri id = "1011" priority = "0"><![CDATA[Treatment: It is safe to see if you get better with simple treatments. Try eating more fibre and taking laxatives to make your stools softer and easier to pass. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1125" priority = "0"><![CDATA[What your GP might do: Your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. If these are normal it would be reasonable for you to try a further period of treat, watch and wait. However, if you continue to have constipation, your GP is likely to advise referral to a routine hospital clinic.]]></ri>
+		<ri id = "1007" priority = "0"><![CDATA[Cause of your symptoms: Your change in bowel habit is probably caused by the after-effects of a mild gut infection.]]></ri>
+		<ri id = "1010" priority = "0"><![CDATA[Treatment: It is safe to try some simple treatments. Try eating less fibre and taking bowel sedatives to reduce the number of times you go to the toilet. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1124" priority = "0"><![CDATA[What your GP might do: Your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. If these were normal it would be reasonable for you to try a further period of treat, watch and wait. However, if you continue to have this pattern of change in bowel habit, your GP is likely to advise referral to a routine hospital clinic.]]></ri>
+		<ri id = "1009" priority = "0"><![CDATA[Cause of your symptoms: Your change in bowel habit may be caused by something you've eaten or a mild gut infection.]]></ri>
+		<ri id = "1012" priority = "0"><![CDATA[Treatment: It is safe to see if you get better just by eating a healthy regular diet.]]></ri>
+		<ri id = "1013" priority = "0"><![CDATA[Treatment: Try eating less fibre and taking bowel sedatives to reduce the number of times you go to the toilet. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1141" priority = "0"><![CDATA[Treatment: Try eating a healthy regular diet. Also try cleaning around the anus carefully and use creams and suppositories for your pile symptoms. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1127" priority = "0"><![CDATA[What your GP might do: Your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. If these were normal and you have no abdominal pain, it would be reasonable for you to try a further period of treat, watch and wait. However, if you continue to have constipation, your GP is likely to advise referral to a routine hospital clinic for a screening technique known as a flexible sigmoidoscopy.]]></ri>
+		<ri id = "1126" priority = "0"><![CDATA[What your GP might do: If you're over 60 years old, and your change in bowel habit has persisted for six weeks, your GP may advise referral to a hospital clinic within the next two weeks. If you're under 60, your GP may examine your tummy and bottom and a do a blood test for iron deficiency anaemia. Even if these are normal you may still be referred to a routine hospital clinic for a screening technique known as a flexible sigmoidoscopy.]]></ri>
+		<ri id = "1017" priority = "0"><![CDATA[Treatment: It is safe to see if you get better by eating a healthy regular diet.]]></ri>
+		<ri id = "1130" priority = "0"><![CDATA[Advice: See your GP.
+Although your bleeding is probably from piles caused by constipation, it is worth discussing this with your GP.]]></ri>
+		<ri id = "1129" priority = "0"><![CDATA[Advice: See your GP.
+As you have persistent symptoms it is worth discussing this with your GP.]]></ri>
+		<ri id = "1131" priority = "0"><![CDATA[Advice: See your GP.
+Although it is likely that your bleeding is caused by piles, it is worth discussing this with your GP.]]></ri>
+		<ri id = "1128" priority = "0"><![CDATA[Advice: See your GP.
+As your symptoms have persisted for more than four weeks it is worth discussing this with your GP.]]></ri>
+		<ri id = "1040" priority = "1"><![CDATA[Advice: See your GP.
+Abdominal pain or discomfort provoked every time you eat, feelings of fullness soon after eating, or symptoms that cause you to eat less, always require prompt investigation by your GP.]]></ri>
+		<ri id = "1132" priority = "0"><![CDATA[What your GP will do: If you continue to have this pattern of symptoms, it could indicate a partial bowel blockage. If this is the case, your GP will arrange prompt referral to hospital.]]></ri>
+		<ri id = "1022" priority = "0"><![CDATA[Cause of your symptoms: It's very unlikely you have anything seriously wrong if your abdominal discomfort or pain doesn't stop any of your activities, particularly eating, working or sleeping. It is likely to be caused by some bowel spasm.]]></ri>
+		<ri id = "1133" priority = "0"><![CDATA[Treatment: Try eating regular, healthy, smaller meals and try taking an antispasmodic tablet for the abdominal discomfort. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1134" priority = "0"><![CDATA[What your GP might do: Your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. If these were normal it would be reasonable for you to try a further period of treat, watch and wait. However, if your abdominal pain doesn't get better you may be referred to a routine hospital clinic.]]></ri>
+		<ri id = "1023" priority = "0"><![CDATA[Cause of your symptoms: The bleeding is likely to be from piles and the abdominal pain or discomfort is likely to be the result of bowel spasm.]]></ri>
+		<ri id = "1024" priority = "0"><![CDATA[Cause of your symptoms: The bleeding is likely to be from piles and the change in bowel habit and abdominal problems could be the result of a mild gut infection.]]></ri>
+		<ri id = "1033" priority = "0"><![CDATA[Treatment: Try eating less fibre and taking bowel sedatives to reduce the number of times you are going to the toilet. You could also try antispasmodic tablets for the abdominal discomfort. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1025" priority = "0"><![CDATA[Cause of your symptoms: Your abdominal discomfort is likely to be caused by bowel spasm, and the bleeding is likely to be from piles and caused by your constipation.]]></ri>
+		<ri id = "1032" priority = "0"><![CDATA[Treatment: Try eating more fibre to make your stools softer and easier to pass, and if necessary take antispasmodic tablets for the abdominal discomfort. Try careful cleaning around the anus after passing a stool and, if necessary, use creams and suppositories for the pile symptoms. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1137" priority = "0"><![CDATA[What your GP might do: Your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. If these were normal it would be reasonable for you to try a further period of treat, watch and wait. However, if your symptoms don't get better you may be referred to a routine hospital clinic.]]></ri>
+		<ri id = "1136" priority = "0"><![CDATA[What your GP might do: If you have had bleeding without pile symptoms for more than six weeks, your GP may advise referral to a hospital clinic within the next two weeks. Otherwise, your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. Even if these were normal it would still be likely that you would be referred to a routine hospital clinic for a screening technique known as a flexible sigmoidoscopy.]]></ri>
+		<ri id = "1034" priority = "0"><![CDATA[Treatment: Try eating more fibre and taking a laxative to make your stools softer and easier to pass. The abdominal discomfort is likely to be caused by bowel spasm and an antispasmodic tablet might help. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1028" priority = "0"><![CDATA[Cause of your symptoms: If your abdominal pain or discomfort doesn't put you off eating, it's probably the result of bowel spasm caused by constipation.]]></ri>
+		<ri id = "1027" priority = "0"><![CDATA[Cause of your symptoms: If your abdominal pain or discomfort doesn't put you off eating, it's probably caused by bowel spasm. The change in your bowel habit could be the after-effects of a mild gut infection.]]></ri>
+		<ri id = "1029" priority = "0"><![CDATA[Cause of your symptoms: If your abdominal pain or discomfort doesn't put you off eating, it's probably caused by bowel spasm and your change in bowel habit is likely to be the result of something you have eaten.]]></ri>
+		<ri id = "1037" priority = "0"><![CDATA[Cause of your symptoms: The bleeding is probably from piles, and if you have no loss of appetite, your abdominal pain or discomfort is probably caused by bowel spasm.]]></ri>
+		<ri id = "1139" priority = "0"><![CDATA[Treatment: It's safe to try some simple treatments, if you haven't tried them before. If you have and they haven't worked, see your GP. Try eating healthy, regular and smaller meals, and, if necessary, take antispasmodic tablets for the abdominal discomfort. Try cleaning around the anus carefully after passing a stool and, if necessary, use creams and suppositories for the pile symptoms. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1039" priority = "0"><![CDATA[Cause of your symptoms: The bleeding is probably from piles and caused by the constipation. If the abdominal pain or discomfort hasn't put you off eating, it is likely to be down to bowel spasm, again the result of the constipation.]]></ri>
+		<ri id = "1140" priority = "0"><![CDATA[Treatment: Try eating regular, healthy, smaller meals and try taking mild laxatives. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1041" priority = "0"><![CDATA[Cause of your symptoms: If your abdominal discomfort or pain doesn't stop any of your activities, such as eating, working or sleeping it is probably caused by simple bowel spasm.]]></ri>
+		<ri id = "1135" priority = "0"><![CDATA[What your GP might do: Your GP may examine your bottom and tummy and do a blood test for iron deficiency anaemia. If these were normal it would be reasonable for you to try a further period of treat, watch and wait. However, if your abdominal pain doesn't get better you may be referred to a routine hospital clinic for a screening technique known as a flexible sigmoidoscopy.]]></ri>
+		<ri id = "1046" priority = "0"><![CDATA[Cause of your symptoms: The bleeding is probably from piles, and the change in bowel habit could be the after-affects of a mild gut infection.]]></ri>
+		<ri id = "1138" priority = "0"><![CDATA[Advice: See your GP.
+As you have persistent rectal bleeding, it is worth discussing this with your GP.]]></ri>
+		<ri id = "1054" priority = "0"><![CDATA[Treatment: Try eating more fibre and taking laxatives to make your stools softer and easier to pass. It's normal to strain a little when passing a stool, but too much can cause bleeding. A pharmacist can advise on suitable treatments.]]></ri>
+		<ri id = "1055" priority = "0"><![CDATA[Advice: See your GP.
+Your persistent rectal bleeding may be the result of piles caused by your other symptoms but it's worth discussing this with your GP, as people over the age of 50 are more likely to have easily removable polyps, which, if left, could develop into more serious problems in the future.]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "610" url = "https://www.gov.uk/topic/population-screening-programmes/bowel"><![CDATA[NHS Bowel Cancer Screening Programme]]></ri>		<ri id = "615" url = "http://www.haveigotbowelcancer.com/"><![CDATA[Visit the 'Have I got bowel cancer?' website]]></ri>		<ri id = "619" url = "http://www.haveigotbowelcancer.com/Information.aspx?id=43"><![CDATA[More on bowel symptoms]]></ri>		<ri id = "647" url = "http://www.haveigotbowelcancer.com/Information.aspx?id=135"><![CDATA[More on treatment of bowel symptoms]]></ri>		<ri id = "648" url = "http://www.haveigotbowelcancer.com/Information.aspx?id=122"><![CDATA[Video on flexible sigmoidoscopy]]></ri>		<ri id = "563" url = "http://www.nhs.uk/Conditions/Pages/hub.aspx"><![CDATA[Search Health A-Z for your symptoms]]></ri>		<ri id = "553" url = "http://www.nhs.uk/conditions/Cancer-of-the-colon-rectum-or-bowel/Pages/Introduction.aspx"><![CDATA[Health A-Z: bowel cancer]]></ri>		<ri id = "560" url = "http://www.nhs.uk/conditions/rectal-bleeding/Pages/Introduction.aspx"><![CDATA[Health A-Z: rectal bleeding]]></ri>		<ri id = "556" url = "http://www.nhs.uk/conditions/Diarrhoea/Pages/Introduction.aspx"><![CDATA[Health A-Z: diarrhoea]]></ri>		<ri id = "555" url = "http://www.nhs.uk/conditions/Constipation/Pages/Introduction.aspx"><![CDATA[Health A-Z: constipation]]></ri>		<ri id = "549" url = "http://www.nhs.uk/conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx"><![CDATA[Health A-Z: abdominal pain]]></ri>		<ri id = "616" url = "http://www.nhs.uk/conditions/lumps-swellings/Pages/Introduction.aspx"><![CDATA[Health A-Z: lump or swelling]]></ri>		<ri id = "561" url = "http://www.nhs.uk/conditions/unexpected-weight-loss/Pages/Introduction.aspx"><![CDATA[Health A-Z: unexpected weight loss]]></ri>		<ri id = "558" url = "http://www.nhs.uk/livewell/tiredness-and-fatigue/Pages/tiredness-and-fatigue.aspx"><![CDATA[Tiredness and fatigue]]></ri>		<ri id = "613" url = "http://www.beatingbowelcancer.org/"><![CDATA[Beating Bowel Cancer]]></ri>		<ri id = "614" url = "http://www.bowelcanceruk.org.uk/"><![CDATA[Bowel Cancer UK]]></ri>	</link_items>
+	<qvars>
+		<v  name = "under50">
+<val>true</val><val>false</val>		</v>
+		<v  name = "over50">
+<val>true</val><val>false</val>		</v>
+		<v  name = "U50_RB">
+<val>true</val><val>false</val>		</v>
+		<v  name = "U50_CIBH">
+<val>true</val><val>false</val>		</v>
+		<v  name = "U50_AP">
+<val>true</val><val>false</val>		</v>
+		<v  name = "O50_RB">
+<val>true</val><val>false</val>		</v>
+		<v  name = "O50_CIBH">
+<val>true</val><val>false</val>		</v>
+		<v  name = "O50_AP">
+<val>true</val><val>false</val>		</v>
+		<v  name = "U50_RB_CIBH_new">
+<val>Noother</val><val>LS</val><val>DH</val>		</v>
+		<v  name = "O50_RB_less_than_4">
+<val>less</val><val>more</val>		</v>
+		<v  name = "O50_RB_more_CIBH">
+<val>No</val><val>otherDH</val><val>LS</val>		</v>
+		<v  name = "O50_RB_less_CIBH">
+<val>Noother</val><val>DH</val><val>LS</val>		</v>
+		<v  name = "U50_CIBH_RB">
+<val>true</val><val>false</val>		</v>
+		<v  name = "U50_CIBH_RB_how">
+<val>DH</val><val>other</val><val>LS</val>		</v>
+		<v  name = "U50_CIBH_RB_less_than_4">
+<val>true</val><val>false</val>		</v>
+		<v  name = "O50_CIBH_RB">
+<val>true</val><val>false</val>		</v>
+		<v  name = "O50_CIBH_noRB_less">
+<val>less</val><val>more</val>		</v>
+		<v  name = "O50_CIBH_RB_more">
+<val>true</val><val>false</val>		</v>
+		<v  name = "O50_CIBH_RB_less_how">
+<val>DH</val><val>other</val><val>LS</val>		</v>
+		<v  name = "O50_CIBH_RB_more_how">
+<val>NoDHother</val><val>LS</val>		</v>
+		<v  name = "U50_AP_more">
+<val>true</val><val>false</val>		</v>
+		<v  name = "U50_AP_more_normal">
+<val>true</val><val>false</val>		</v>
+		<v  name = "U50_AP_more_normal_RBorCIBH">
+<val>RB</val><val>CIBH</val>		</v>
+		<v  name = "U50_AP_more_normal_RB_CIBH">
+<val>No</val><val>LS</val><val>DH</val><val>other</val>		</v>
+		<v  name = "U50_AP_more_normal_RB_CIBH_more">
+<val>more</val><val>less</val>		</v>
+		<v  name = "U50_AP_less_RBorCIBH">
+<val>RB</val><val>CIBH</val>		</v>
+		<v  name = "U50_AP_less_RB_CIBH">
+<val>No</val><val>LS</val><val>DH</val><val>other</val>		</v>
+		<v  name = "U50_AP_less_CIBH_moreorless">
+<val>less</val><val>more</val>		</v>
+		<v  name = "O50_AP_moreorless">
+<val>more</val><val>less</val>		</v>
+		<v  name = "O50_AP_more_normal">
+<val>true</val><val>false</val>		</v>
+		<v  name = "O50_AP_more_normal_RBorCIBH">
+<val>RB</val><val>CIBH</val>		</v>
+		<v  name = "O50_AP_more_normal_RB_more">
+<val>more</val><val>less</val>		</v>
+		<v  name = "O50_AP_more_normal_CIBH_more">
+<val>more</val><val>less</val>		</v>
+		<v  name = "O50_AP_less_RBorCIBH">
+<val>RB</val><val>CIBH</val>		</v>
+		<v  name = "O50_AP_less_RB_moreorless">
+<val>more</val><val>less</val>		</v>
+		<v  name = "O50_AP_less_RB_more_CIBH">
+<val>No</val><val>LS</val><val>DH</val><val>other</val>		</v>
+		<v  name = "O50_AP_less_RB_less_CIBH">
+<val>No</val><val>LS</val><val>DH</val><val>other</val>		</v>
+		<v  name = "O50_AP_less_CIBH_moreorless">
+<val>more</val><val>less</val>		</v>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "241">
+			<title><![CDATA[More about these symptoms]]></title>
+			<body><![CDATA[<b>Rectal bleeding:&nbsp;</b>any bleeding from the bottom (rectal or anal) you notice on toilet paper or in the toilet. It is important to check rectal bleeding even if yours is subtle, barely noticeable small amounts, fresh and bright red in colour, or dark or changed in colour.<div><br></div><div><div><b>A change: </b>can include going to the loo more often than normal, going to the loo less often, passing poo that's harder and drier or looser and softer, changes in the shape or colour of your poo, and the feeling your bowels aren't emptying completely.</div><div><br></div><div><div><b>Abdominal pain or discomfort:&nbsp;</b>can include bloating, as well as mild pain anywhere in the tummy. If it's severe pain, you should see your doctor for treatment.</div></div></div>]]></body>
+			<name><![CDATA[More about these symptoms]]></name>
+		</ib>
+		<ib  id = "248">
+			<title><![CDATA[A different change]]></title>
+			<body><![CDATA[You may have noticed your poo is a different shape or colour - for example, thinner, narrower, darker or lighter. You may be feeling you're not emptying your bowels properly. But only choose this option if there have been no additional changes in the number of times you're going to the toilet or the consistency of your poo. If there have also been changes in how often you go to the toilet or the consistency of your poo, choose one of the two other options that most closely resembles the way your bowel habits have changed.]]></body>
+			<name><![CDATA[A different change]]></name>
+		</ib>
+		<ib  id = "242">
+			<title><![CDATA[What are the symptoms of piles?]]></title>
+			<body><![CDATA[<div>The term "piles" is used to describe any of the following symptoms;</div><div><br></div><div><ul><li>Itching</li><li>Discomfort or soreness</li><li>Lumpiness or swelling</li><li>A heavy dragging feeling</li></ul>Most of these symptoms are caused by problems with the skin around the anus splitting or becoming sore and itchy, perhaps from wiping too harshly with dry paper or because the skin becomes sensitive to material in your poo. Most of these symptoms can usually be controlled by 'gentle cleaning' after opening your bowels.&nbsp;</div>]]></body>
+			<name><![CDATA[What are the symptoms of piles?]]></name>
+		</ib>
+		<ib  id = "243">
+			<title><![CDATA[How much blood?]]></title>
+			<body><![CDATA[<div>Even if you have only seen a small amount of blood on toilet paper, select "I also have rectal&nbsp;bleeding".</div>]]></body>
+			<name><![CDATA[How much blood?]]></name>
+		</ib>
+		<ib  id = "249">
+			<title><![CDATA[About adominal pain]]></title>
+			<body><![CDATA[<div>Abdominal pain or discomfort can include bloating, as well as mild pain anywhere in the stomach, tummy or belly.</div><div>Remember, if it's severe pain, you should see your doctor for treatment.</div>]]></body>
+			<name><![CDATA[About adominal pain]]></name>
+		</ib>
+		<ib  id = "250">
+			<title><![CDATA[More details about these symptoms]]></title>
+			<body><![CDATA[<b>Rectal bleeding:&nbsp;</b>any bleeding from the bottom (rectal or anal) you notice on toilet paper or in the toilet. It is important to choose rectal bleeding even if yours is subtle, in barely noticeable small amounts, fresh and bright red in colour, or dark or changed in colour.<div><br></div><div><b>A change in bowel habit:&nbsp;</b>can include going to the loo more often than normal, going to the loo less often, passing poo that's harder and drier, or looser and softer than normal for you, changes in the shape or colour of your poo, and the feeling your bowels aren't emptying completely.</div>]]></body>
+			<name><![CDATA[More details about these symptoms]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>747074337001</v>			<v>808357192001</v>	</videos>
+</root>

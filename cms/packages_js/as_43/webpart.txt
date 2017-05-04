@@ -1,0 +1,21 @@
+<div id="assessment_webpart_wrapper">		
+<script type="text/javascript">
+$(document).ready(function() {
+	var __assessment = document.createElement('script'); 
+	var __assessment_obj = document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 1]; 
+	__assessment.id = 'assessment_webpart';
+	__assessment.preview= null;   
+	__assessment.ASid = '43'; 
+	__assessment.APPpath = '/tools/documents/self_assessments_js/';
+	__assessment.dimensions = Array(362,435);
+	__assessment.XMLpath = '/tools/documents/self_assessments_js/packages/';
+	__assessment.type = 'text/javascript';
+	__assessment.async = true;
+	__assessment.src = __assessment.APPpath+'js/assessment.js';
+	__assessment_obj.parentNode.insertBefore(__assessment, __assessment_obj); 
+})
+</script>
+<noscript>
+Your browser appears to have Javascript disabled, to view this information in an accessible format please go to <a href = "http://nhs.uk/tools/documents/self_assessments_js/packages/as_43/accessible.html">http://nhs.uk/tools/documents/self_assessments_js/packages/as_43/accessible.html</a>
+</noscript>
+</div>	

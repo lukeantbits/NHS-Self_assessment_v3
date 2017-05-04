@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>55</id>		
+		<title>Healthy workplace assessment</title>		
+		<colour_1>2859A1|5EA3D6</colour_1>
+		<colour_2>669900|9BC363</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[How healthy is your workplace?]]></intro_title>		
+		<intro_copy><![CDATA[Health and safety is vital in a workplace and can protect and even improve the health of its employees.<br><br>Answer the following questions to assess your workplace. Questions 1-9 will assess whether your workplace is following the UK’s health and safety laws.&nbsp;<br>Questions 10-12 cover issues to do&nbsp;<br>with overall health and wellbeing.&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br><br>At the end you’ll get a list of things&nbsp;<br>to raise with your employer.<br>]]></intro_copy>		
+		<intro_copy_alt><![CDATA[Health and safety is vital in a workplace and can protect and even improve the health of its employees.<br><br>Answer the following questions to assess your workplace. Questions 1-9 will assess whether your workplace is following the UK’s health and safety laws.&nbsp;<br>Questions 10-12 cover issues to do with overall health and wellbeing.&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;At the end you’ll get a list of things to raise with your employer.<br>]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Healthy_workplace_assessment.png]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[img_Healthy_workplace_assessment.png]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[7]]></intro_graphic_position_m>		
+		<dimensions_f>362x440</dimensions_f>		
+		<dimensions_j>362x420</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt>healthandsafety</img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "206" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Let's start with your work area. Is there sufficient space to work comfortably?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, I have plenty of room]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, my work area is tiny and cramped]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[814]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[It's OK but could be improved]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[814]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "207" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[A workplace shouldn’t be cooler than 16C, how would you rate the temperature and ventilation in your workplace?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Just right]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Too hot and stuffy]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[815]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Changeable and unpredictable]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[815]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Cold and draughty]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[815]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "208" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How would you rate the lighting in the workplace?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Just right]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Overly bright]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[816]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Too dark]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[816]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Which of the following can you control? You can pick one or more]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Heating]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[817]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Lighting ]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[817]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Ventilation]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[817]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Chair height]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[817]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[None of these]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "209" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How often are working areas cleaned and waste removed?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Daily]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Weekly]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Monthly]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[818]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Never]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[818]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "210" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Is there is a supply of easily accessible drinking water or water coolers?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[819]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Don't know]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[819]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "211" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are the toilets clean and in good working order?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Very clean and checked regularly]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Moderately clean but could be checked more often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[820]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Not very clean and rarely checked]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[820]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Really dirty and are never checked or cleaned]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[820]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "212" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Does your workplace have a ‘rest’ or seating area for use during breaks?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, we have a seated area and a private room if we need to lie down]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, we use the canteen for breaks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, there is no separate area for us to use during our breaks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[821]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "214" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[If there’s an accident at work are there adequate first aid facilities?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[There's a first aid kit and trained first aider]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[There's a first aid kit but not sure about a trained first aider]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[822]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm not sure if we have a first aid kit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[822]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[There is no first aid kit or first aider]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[822]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "251" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Does your employer encourage healthier eating?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, there's a canteen with a good choice and signs to show what's most healthy]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[There's a canteen but the food isn't very healthy and choice is limited]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1056]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[There's no canteen but my employer does try to encourage healthier eating]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[There's no canteen and my employer doesn't encourage healthier eating]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1057]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "252" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Which of the following has your employer done to encourage physical activity? (Pick one or more)]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Provided gym access or subsidised membership]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Promoted active travel to work]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Set up exercise classes or sports teams]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Any initiative similar to those listed above]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Put up posters encouraging stair use]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[None of these things]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1058]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Which of the following does your employer offer? (Pick one or more)]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Arranges health-related events]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Arranges individual health checks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[An Occupational Health Service, access to an Employee Advisory Service, or similar]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Promotes NHS health checks and screening programmes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Promotes mental wellbeing at work]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Provides access to counselling]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Smoking cessation services]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[None of these]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1059]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "points triggered result" p1 = "0" p2 = "26" p3 = ""><![CDATA[<div>Based on your responses today your workplace scored poorly and you are not satisfied with your working environment. Employers have a legal responsibility to look after health and safety at work. They are also increasingly encouraged to consider the wider health and wellbeing of their staff.</div><div><br></div><div>Here are a few things you may want to raise with your employer:</div>]]></ri>
+		<ri type = "points triggered result" p1 = "26" p2 = "40" p3 = ""><![CDATA[<div>Based on your responses today it sounds like your workplace could be improved.&nbsp;</div><div><br></div><div>Both employers and employees should be aware of issues that affect their health and safety at work. Workers who contribute to health and safety at work are safer and healthier than those who don't. What's more, employers are increasingly encouraged to consider the wider health and wellbeing of their staff.</div><div><br></div><div>Here are a few things you may want to raise with your employer:</div>]]></ri>
+		<ri type = "points triggered result" p1 = "40" p2 = "59" p3 = ""><![CDATA[<div>Based on your responses today it appears that you work in a healthy environment. A safe and comfortable working environment that also promotes the general health and wellbeing of its staff, helps improve employee satisfaction and boost productivity.</div><div><br></div><div>Here are a few things you may want to raise with your employer:</div>]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[<div>Here are some links to further information on healthy, safety and wellbeing at work:</div>]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[457]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[456]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[564]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[458]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[828019605001]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[460]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[565]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[566]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[567]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[568]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[569]]></li>
+	</links>
+	<result_items>
+		<ri id = "814" priority = "0"><![CDATA[Your work area could be improved]]></ri>
+		<ri id = "815" priority = "0"><![CDATA[The temperature needs addressing]]></ri>
+		<ri id = "816" priority = "0"><![CDATA[The lighting needs adjustment]]></ri>
+		<ri id = "817" priority = "0"><![CDATA[Request a health and safety assessment]]></ri>
+		<ri id = "818" priority = "0"><![CDATA[Cleaning and waste collection could be better]]></ri>
+		<ri id = "819" priority = "0"><![CDATA[Drinking water needs to be provided]]></ri>
+		<ri id = "820" priority = "0"><![CDATA[The toilets could be cleaned more regularly]]></ri>
+		<ri id = "821" priority = "0"><![CDATA[A rest area for breaks is needed]]></ri>
+		<ri id = "822" priority = "0"><![CDATA[There is a need for a first aid kit and a first aider]]></ri>
+		<ri id = "1056" priority = "0"><![CDATA[The canteen food could be healthier]]></ri>
+		<ri id = "1057" priority = "0"><![CDATA[More could be done to encourage healthier eating]]></ri>
+		<ri id = "1058" priority = "0"><![CDATA[More could be done to encourage physical activity]]></ri>
+		<ri id = "1059" priority = "0"><![CDATA[More could be done to promote general health and wellbeing]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "457" url = "http://www.hse.gov.uk/workers/index.htm"><![CDATA[Guidance for workers from the Health and Safety Executive (HSE)]]></ri>		<ri id = "456" url = "http://www.hse.gov.uk/firstaid/"><![CDATA[HSE: First aid at work]]></ri>		<ri id = "564" url = "https://responsibilitydeal.dh.gov.uk/"><![CDATA[The Responsibility Deal]]></ri>		<ri id = "458" url = "http://www.nhs.uk/Livewell/workplacehealth/Pages/workplaceoverview.aspx"><![CDATA[Read about boosting your health at work]]></ri>		<ri id = "460" url = "http://www.nhs.uk/Livewell/workplacehealth/Pages/backpainatwork.aspx"><![CDATA[Prevent back pain at work]]></ri>		<ri id = "565" url = "http://www.bhf.org.uk/ThinkFit/eating_well_at_work.aspx"><![CDATA[British Heart Foundation: Eat well at work]]></ri>		<ri id = "566" url = "http://www.bhf.org.uk/ThinkFit/getting_active_at_work.aspx"><![CDATA[British Heart Foundation: Being active at work]]></ri>		<ri id = "567" url = "http://www.bhf.org.uk/ThinkFit/wellbeing-at-work.aspx"><![CDATA[British Heart Foundation: Wellbeing at work]]></ri>		<ri id = "568" url = "http://www.mind.org.uk/mental_health_a-z/8035_how_to_be_mentally_healthy_at_work"><![CDATA[Mind: Mental health at work]]></ri>		<ri id = "569" url = "http://www.hse.gov.uk/stress/"><![CDATA[HSE: All about work-related stress]]></ri>	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "206">
+			<title><![CDATA[More on working space]]></title>
+			<body><![CDATA[<div>The Workplace (Health, Safety and Welfare) Regulations 1992 state that employees need adequate working space to carry out the tasks they are responsible for. This means you need sufficient space to move about the work area and to access your work station safely.&nbsp;</div><div><br></div><div>You also need sufficient space to store work equipment including files and documents that you need to use for your work. For more detailed information, see Useful links at the end of this tool.&nbsp;</div>]]></body>
+			<name><![CDATA[More on working space]]></name>
+		</ib>
+		<ib  id = "207">
+			<title><![CDATA[More on workplace temperature]]></title>
+			<body><![CDATA[<div>The Workplace (Health, Safety and Welfare) Regulations 1992 state that: "During working hours, the temperature in all workplaces inside buildings shall be reasonable."</div><div>&nbsp;</div><div>However, this depends on the type of workplace and whether it is a bakery, a cold store, an office or a warehouse.&nbsp;</div><div><br></div><div>For more detailed information relevant to the health of your workplace, see useful links at the end of this tool.</div>]]></body>
+			<name><![CDATA[More on workplace temperature]]></name>
+		</ib>
+		<ib  id = "208">
+			<title><![CDATA[More on lighting]]></title>
+			<body><![CDATA[<div>The Workplace (Health, Safety and Welfare) Regulations 1992 recognises that different levels of lighting are required for different types of work – close, accurate work such as soldering a control panel will require higher light levels than working on a till. However, a number of different factors need to be considered, such as colour, contrast, glare and so on.&nbsp;For more detailed information on what is appropriate for your workplace, see useful links at the end of this tool.</div>]]></body>
+			<name><![CDATA[More on lighting]]></name>
+		</ib>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "209">
+			<title><![CDATA[More on cleanliness]]></title>
+			<body><![CDATA[<div>The Workplace (Health, Safety and Welfare) Regulations 1992 state that every workplace and the furniture, furnishings and fittings should be kept clean, as well as the surfaces of floors, walls and ceilings.&nbsp;</div><div><br></div><div>Cleaning and the removal of waste should be carried out as necessary and waste should be stored in suitable containers.</div>]]></body>
+			<name><![CDATA[More on cleanliness]]></name>
+		</ib>
+		<ib  id = "210">
+			<title><![CDATA[More on drinking water]]></title>
+			<body><![CDATA[<div>The Workplace (Health, Safety and Welfare) Regulations 1992 state that an adequate supply of high-quality drinking water, with an upward drinking jet or suitable cups, should be provided. If water cannot be obtained from a tap, water should only be provided in refillable enclosed containers. The containers should be refilled at least daily (unless they are chilled water dispensers where the containers are returned to the supplier for refilling).</div>]]></body>
+			<name><![CDATA[More on drinking water]]></name>
+		</ib>
+		<ib  id = "211">
+			<title><![CDATA[More on toilets]]></title>
+			<body><![CDATA[<div>The Workplace (Health, Safety and Welfare) Regulations 1992 state that sanitary conveniences and washing facilities should be kept clean and be adequately ventilated and lit. Washing facilities should have running hot and cold or warm water, soap and clean towels or other means of cleaning or drying. If required by the type of work, showers should also be provided.</div>]]></body>
+			<name><![CDATA[More on toilets]]></name>
+		</ib>
+		<ib  id = "212">
+			<title><![CDATA[More on rest areas]]></title>
+			<body><![CDATA[<div>The Workplace (Health, Safety and Welfare) Regulations 1992 state that suitable and sufficient, readily accessible rest facilities should be provided. Seats should be provided for workers to use during breaks and should be in a place where personal protective equipment need not be worn. Rest areas or rooms should be large enough and have sufficient seats with backrests and tables for the number of workers likely to use them at any one time, including suitable access and seating that is adequate for the number of disabled people at work.</div>]]></body>
+			<name><![CDATA[More on rest areas]]></name>
+		</ib>
+		<ib  id = "214">
+			<title><![CDATA[What is adequate?]]></title>
+			<body><![CDATA[<div>The Health and Safety (First Aid) Regulations 1981 require employers to provide adequate and appropriate first aid equipment, facilities and people so that employees can be given immediate help if they are injured or taken ill whilst at work.</div><div><br></div><div>The minimum first aid provision in any workplace is:</div><div><ul><li>a suitably stocked first aid box</li><li>an appointed person to take charge of first aid arrangements</li><li>information for employees about first aid arrangements</li></ul></div>]]></body>
+			<name><![CDATA[What is adequate?]]></name>
+		</ib>
+		<ib  id = "251">
+			<title><![CDATA[Encouraging healthier eating]]></title>
+			<body><![CDATA[<div>There are many ways an employer can encourage healthier eating - whatever a company's size.&nbsp;</div><div><br></div><div>For example, vending machines could be stocked with healthier snacks, ingredients for healthier breakfasts could be provided or even just fruit to encourage healthier snacking. Very simple measures, like ensuring there is adequate food storage provision and an area to prepare food, can also really help to make it easier for people to eat better.</div><div><br></div><div>The British Heart Foundation has some great resources to help you kick start healthier eating in your workplace. See useful links at the end of the assessment.&nbsp;</div>]]></body>
+			<name><![CDATA[Encouraging healthier eating]]></name>
+		</ib>
+		<ib  id = "252">
+			<title><![CDATA[Encouraging physical activity]]></title>
+			<body><![CDATA[<div>Whatever a company's size, there are many ways an employer can encourage physical activity. From simple measures - such as encouraging stair use and providing secure bike lock-up points, to organising activity challenges and competitions - there are many things that can really help a workforce become more physically active.</div><div><br></div><div>The British Heart Foundation has some great resources to help kick start some physical activity initiatives in the workplace. See useful links at the end of the assessment.&nbsp;</div><div><br></div>]]></body>
+			<name><![CDATA[Encouraging physical activity]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>828019605001</v>	</videos>
+</root>

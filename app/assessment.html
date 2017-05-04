@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Self Assessment</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/tinycolor-min.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script type="text/javascript" src="package.php"></script>
+
+</head>
+
+<body>
+<div id="assessment">
+  <div id = "bg_fill"></div>
+  <div id = "inner_fill"></div>
+  <div id = "container">
+    <div id = "container_inner">
+      <div class = "page" id="splash"></div>
+      <div class = "page" id="results"></div>
+      <div class = "page" id="links"></div>
+    </div>
+    <div id="results_preloader">
+      <div><img src="images/preloader.gif" id = "pgif1" width="64" height="64" /><br />
+        <br />
+        Preparing your results </div>
+    </div>
+  </div>
+  <div id = "fade_left"><img src="images/fade_left.png" /></div>
+  <div id = "fade_right"><img src="images/fade_right.png" /></div>
+ 
+  <div id = "header">
+    <div id = "header_inner"></div>
+  </div>
+  <div id = "nav">
+    <div class = "nav_row" id="nav_row_1">
+     <div style="float:left;" class="nav_button" id="nav_back_inactive"><a href="javascript:;" tabindex="-1" >Back</a></div>
+     <div style="float:right;" class="nav_button" id="nav_next_inactive"><a href="javascript:;" tabindex="-1" >Next</a></div>
+    </div>
+    <div class = "nav_row">
+     <div style="float:left;" class="nav_button" id="nav_back"><a href="javascript:;">Back</a></div>
+     <div style="float:right;" class="nav_button" id="nav_next"><a href="javascript:;">Next</a></div>
+    </div>
+    <div class = "nav_row" style="width:50%">
+    <div style="float:right;" class="nav_button" id="nav_links"><a href="javascript:;">Useful&nbsp;links</a></div>
+    </div>
+    <div class = "nav_row" style="width:50%">
+      <div style="float:right;" class="nav_button" id="nav_finish"><a href="javascript:;">Finish</a></div>
+    </div>
+    <div id="progress_wrap">
+      <div class="progress_bg" id="nav_progress_bg"></div>
+      <div class="progress_fg" id="nav_progress_fg"></div>
+    </div>
+    <div id="check_wrap">
+      <div class="nav_button" id="nav_check_inactive"><a href="javascript:;" tabindex="-1">Check answer</a></div>
+      <div class="nav_button" id="nav_check"><a href="javascript:;">Check answer</a></div>
+    </div>
+  </div>
+</div>
+<div id = "mob_launch">
+  <div>Tap for mobile version
+    <hr>
+    <a href = "javascript:;">cancel</a></div>
+</div>
+<div id = "preloader"> <img src="images/preloader.gif" id = "pgif2" width="64" height="64" /> </div>
+<div id = "imgcache">
+	<img src="images/female_mask.png"/>
+   	<img src="images/male_mask.png"/>
+    <img src="images/tick.png"/>
+    <img src="images/cross.png"/>
+    <img src="images/bullet_mask.png"/>
+    <img src="images/vid_mask.png"/>
+    <img src="images/radio_fg_100.png"/>
+    <img src="images/radio_fg_80.png"/>
+    <img src="images/radio_fg_60.png"/>
+    <img src="images/radio_fg_40.png"/>
+    <img src="images/radio_fg_30.png"/>
+    <img src="images/radio_bg_100.png"/>
+    <img src="images/radio_bg_80.png"/>
+    <img src="images/radio_bg_60.png"/>
+    <img src="images/radio_bg_40.png"/>
+    <img src="images/radio_bg_30.png"/>
+</div>
+<script language="javascript">
+var __vc
+var __data = null
+var __img_path = ''
+var __IE = 10;
+var __vendor = '';
+$(window).load(function(){	
+	if ($.browser.msie) {
+		loadjscssfile('css/ie'+parseInt($.browser.version)+'.css','css');
+		__vendor= "IE";
+		__IE = parseInt($.browser.version);
+	}
+	if(window.devicePixelRatio > 1){
+		$('#pgif1').attr('src','images/preloader.retina.gif')
+		$('#pgif2').attr('src','images/preloader.retina.gif')
+	}
+	$("#imgcache").remove()
+	var __url_params = {};
+	(function () {
+		var match,
+			pl     = /\+/g,  // Regex for replacing addition symbol with a space
+			search = /([^&=]+)=?([^&]*)/g,
+			decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+			query  = window.location.search.substring(1);
+	
+		while (match = search.exec(query))
+		   __url_params[decode(match[1])] = decode(match[2]);
+	})();
+	__img_path = "../NHS-Self_assessments_CMS/archive/as_"+__url_params['ASid']+"/";
+	//$.get('../NHS-Self_assessments_CMS/xml_output.php?as_id='+__url_params['ASid'], function(xml){
+	$.get('../NHS-Self_assessment_CMS/xml_output.php?as_id='+__url_params['ASid'], function(xml){
+	//__img_path = "packages/as_"+__url_params['ASid']+"/images/";
+	//$.get('packages/as_'+__url_params['ASid']+'/data.xml', function(xml){
+		__data = $.xml2json(xml);
+		console.log(__data)
+		__data['config']['colour_1'] = __data['config']['colour_1'].split("|");
+		__data['config']['colour_2'] = __data['config']['colour_2'].split("|");
+		__data['config']['colour_3'] = __data['config']['colour_3'].split("|");
+		
+		for(var a = 0;a < __data.questions.q.length;a++){
+			__data.questions.q[a].id = a
+		}
+		if(typeof(__data.videos.v)=="string"){
+			__data.videos.v = Array(__data.videos.v)
+		}
+		var qvars = {}
+		if(__data.qvars == ""){
+			__data.qvars = {}
+		}else{
+			if(  __data.qvars.v.val == undefined){
+				for(var a  in  __data.qvars.v){
+					var obj = __data.qvars.v[a];
+					qvars[obj.name] = obj.val
+				}
+				__data.qvars = qvars
+			}else{
+				qvars[__data.qvars.v.name] =  __data.qvars.v.val
+				__data.qvars = qvars
+			}
+		}
+		var mobile = false;
+		if(__url_params['mobile']){
+			mobile = true;	
+		}
+		var preview = null
+		if(__url_params['preview']){
+			preview = __url_params['preview']
+		}
+		var syndicate = false
+		if(__url_params['syndicate']){
+			syndicate = eval(__url_params['syndicate'])
+		}
+		console.log(__data)
+		__vc = new view_controller(__url_params['ASid'],mobile, preview, syndicate,__url_params['nosplash'])		
+	});
+	if(isMobile.any()){
+		loadjscssfile("css/mobile.css", "css")
+	}
+	
+})
+
+var ScrollFix = function(elem) {
+	if(isMobile.any()){
+		var startY, startTopScroll;
+		elem = elem || document.querySelector(elem);
+		if(!elem)
+			return;
+		elem.addEventListener('touchstart', function(event){
+			startY = event.touches[0].pageY;
+			startTopScroll = elem.scrollTop;
+	
+			if(startTopScroll <= 0)
+				elem.scrollTop = 1;
+	
+			if(startTopScroll + elem.offsetHeight >= elem.scrollHeight)
+				elem.scrollTop = elem.scrollHeight - elem.offsetHeight - 1;
+		}, false);
+	}
+};
+</script>
+</body>
+</html>

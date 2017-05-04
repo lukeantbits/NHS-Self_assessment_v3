@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>71</id>		
+		<title>VTE assessment</title>		
+		<colour_1>FF6600|FF9800</colour_1>
+		<colour_2>669900|9BC363</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[Are you at risk of blood clots?]]></intro_title>		
+		<intro_copy><![CDATA[Venous thromboembolism (VTE) is a condition where a blood clot forms in a vein. This is most common in a leg vein, where it's known as deep vein thrombosis (DVT). A blood clot in the lungs is called pulmonary embolism (PE).<br><br>Clots are unusual. Your chance of developing them increases if you're immobile and unwell or need surgery.<br><br>Use this tool to check if you're at risk of VTE and find out the simple things you can do to reduce your risk.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[<br>]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[vte1.png]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[vte1.png]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[vte.retina.png]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<dimensions_f>362x466</dimensions_f>		
+		<dimensions_j>362x466</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt></img_alt>		
+	</config>
+	<questions>
+		<q type = "gender" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[male]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[gender]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[male]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[female]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[gender]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[female]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>How old are you?</div><div><br></div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Under 40]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Between 40 and 60]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1144]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[video]]></type>
+							<value><![CDATA[747074326001]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Over 60 years old]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1144]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[video]]></type>
+							<value><![CDATA[747074326001]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "269" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>What does your waist measure?</div><div><br></div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>gender</property>
+				<operator><![CDATA[=]]></operator>
+				<value>female</value>
+			</action>
+			<answers>
+				<a>
+					<body><![CDATA[Less than 88cm (35in)]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than 88 cms (35in)]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1145]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[622]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Unsure]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[622]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "269" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[What does your waist measure?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>gender</property>
+				<operator><![CDATA[=]]></operator>
+				<value>male</value>
+			</action>
+			<answers>
+				<a>
+					<body><![CDATA[Less than 102cm (40in) (0 points)]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[More than 102 cms (40in)]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1145]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[622]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Unsure]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[622]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you on any of the following medication?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>gender</property>
+				<operator><![CDATA[=]]></operator>
+				<value>female</value>
+			</action>
+			<answers>
+				<a>
+					<body><![CDATA[Oral contraceptive pill (birth control pill)
+
+]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1146]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[623]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Hormone replacement therapy (HRT) ]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1146]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[624]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm not on any medication]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you been diagnosed with any of the following? (You can pick more than one)]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Deep vein thrombosis (leg vein clot)]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1147]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[625]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Pulmonary embolism (lung clot)]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1148]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[626]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have not been diagnosed with any of these conditions]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Has any of your close family (child, mother, father, brother or sister) been diagnosed with the following? (You can pick more than one)]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Deep vein thrombosis (leg vein clot)]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1149]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[625]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Pulmonary embolism (lung clot) ]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1150]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[626]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[None of my close family members have been diagnosed with these conditions]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you been diagnosed with any of the following conditions? (You can pick more than one)]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Lung disease]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1151]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[631]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Inflammatory disease such as ulcerative colitis
+]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1152]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[632]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Acute infectious disease such as pneumonia]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1153]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[633]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Sticky blood conditions such as thrombophilia]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1154]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[634]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Lower limb paralysis
+]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1155]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[644]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Varicose veins
+]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1156]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[635]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have heart disease or have you had a heart attack or stroke in the last six months?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1157]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[636]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Are you undergoing treatment for cancer?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1158]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[637]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Have you had any of the following operations or procedures in the last 12 weeks? (You can pick more than one)</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Abdominal or stomach surgery]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1159]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Pelvic or hip fracture or any major trauma]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1160]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Major orthopaedic surgery including hip or knee replacement]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1161]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Surgical procedure requiring an overnight stay in hospital]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1162]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Plaster cast on lower leg]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1163]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have had none of these]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you due to be admitted to hospital for surgery or other treatment?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1164]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[638]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you pregnant or did you give birth up to 12 weeks ago?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>gender</property>
+				<operator><![CDATA[=]]></operator>
+				<value>female</value>
+			</action>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1165]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[639]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you smoke?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1166]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[640]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "points triggered result" p1 = "0" p2 = "5" p3 = ""><![CDATA[<div>Based on your responses today you're probably at low risk of developing VTE.</div><div>You can reduce the risk of developing VTE by maintaining good general health, through:</div><div>•<span class="Apple-tab-span" style="white-space:pre">	</span>maintaining a healthy weight,</div><div>•<span class="Apple-tab-span" style="white-space:pre">	</span>keeping active,</div><div>•<span class="Apple-tab-span" style="white-space:pre">	</span>not&nbsp;smoking, and</div><div>•<span class="Apple-tab-span" style="white-space:pre">	</span>drinking sufficient non-alcoholic fluids (around eight glasses a day for women, 10 for men)</div><div>If you want to know more about VTE risks, follow the links at the end of this self-assessment to videos, features and real-life stories.</div>]]></ri>
+		<ri type = "points triggered result" p1 = "5" p2 = "100" p3 = ""><![CDATA[<div>Based on your responses today, you are at increased risk of developing VTE. If you're likely to be immobile for more than three days, talk to your doctor about taking measures to prevent VTE.</div><div>Maintaining good general health by staying a healthy weight, not smoking, keeping active and drinking plenty of non-alcoholic fluids&nbsp;(around eight glasses a day for women, 10 for men)&nbsp;will help reduce the risk of VTE. Your assessment highlighted the following as possible risk&nbsp;factors:</div>]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+		<ri type = "text" p1 = "" p2 = "" p3 = ""><![CDATA[This tool highlights common risk factors for VTE or blood clots. However, some people may have more unusual or complex health problems that make them more at risk of developing clots. The tool is not a substitute for a consultation with a health professional.]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[Here are some links to articles, videos and real stories that may be of interest:]]></li>
+		<li type = "accumulated links" p1 = "" p2 = ""><![CDATA[]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[641]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[643]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[644]]></li>
+	</links>
+	<result_items>
+		<ri id = "1144" priority = "0"><![CDATA[Your age]]></ri>
+		<ri id = "1145" priority = "0"><![CDATA[Being overweight]]></ri>
+		<ri id = "1146" priority = "0"><![CDATA[Current medication]]></ri>
+		<ri id = "1147" priority = "0"><![CDATA[Having a history of leg vein clots]]></ri>
+		<ri id = "1148" priority = "0"><![CDATA[Having a history of lung clots]]></ri>
+		<ri id = "1149" priority = "0"><![CDATA[Family history of leg vein clots]]></ri>
+		<ri id = "1150" priority = "0"><![CDATA[Family history of lung clots]]></ri>
+		<ri id = "1151" priority = "0"><![CDATA[Having chronic lung disease]]></ri>
+		<ri id = "1152" priority = "0"><![CDATA[Having an inflammatory disease]]></ri>
+		<ri id = "1153" priority = "0"><![CDATA[Having an infectious disease]]></ri>
+		<ri id = "1154" priority = "0"><![CDATA[Having a sticky blood condition]]></ri>
+		<ri id = "1155" priority = "0"><![CDATA[Having lower limb paralysis]]></ri>
+		<ri id = "1156" priority = "0"><![CDATA[Having varicose veins]]></ri>
+		<ri id = "1157" priority = "0"><![CDATA[Having had a heart attack or stroke]]></ri>
+		<ri id = "1158" priority = "0"><![CDATA[Undergoing cancer treatment]]></ri>
+		<ri id = "1159" priority = "0"><![CDATA[Recent abdominal surgery]]></ri>
+		<ri id = "1160" priority = "0"><![CDATA[Recent pelvic fracture]]></ri>
+		<ri id = "1161" priority = "0"><![CDATA[Recent orthopaedic surgery]]></ri>
+		<ri id = "1162" priority = "0"><![CDATA[Recent surgical procedure]]></ri>
+		<ri id = "1163" priority = "0"><![CDATA[Recent immobilisation of leg]]></ri>
+		<ri id = "1164" priority = "0"><![CDATA[Scheduled hospital stay: during your stay, keep active and drink plenty of fluids. If confined to your bed, exercise your leg muscles every 30 minutes]]></ri>
+		<ri id = "1165" priority = "0"><![CDATA[Being pregnant or recent childbirth]]></ri>
+		<ri id = "1166" priority = "0"><![CDATA[Smoking]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "622" url = "http://www.nhs.uk/Tools/Pages/Healthyweightcalculator.aspx">
+Check if you’re a healthy weight		</ri>
+		<ri id = "623" url = "http://www.nhs.uk/Livewell/Sexualhealth/Pages/Combinedpill.aspx">
+Information on the Pill		</ri>
+		<ri id = "624" url = "http://www.nhs.uk/conditions/Hormone-replacement-therapy/Pages/Introduction.aspx">
+Information on HRT		</ri>
+		<ri id = "625" url = "http://www.nhs.uk/conditions/deep-vein-thrombosis/Pages/Introduction.aspx">
+More on a history of leg vein clots		</ri>
+		<ri id = "626" url = "http://www.nhs.uk/conditions/pulmonary-embolism/pages/introduction.aspx">
+More on a history of lung clots		</ri>
+		<ri id = "631" url = "http://www.nhs.uk/conditions/Chronic-obstructive-pulmonary-disease/Pages/Introduction.aspx">
+More on lung disease		</ri>
+		<ri id = "632" url = "http://www.nhs.uk/conditions/ulcerative-colitis/Pages/Introduction.aspx">
+More on ulcerative colitis		</ri>
+		<ri id = "633" url = "http://www.nhs.uk/conditions/pneumonia/Pages/Introduction.aspx">
+More on infectious diseases		</ri>
+		<ri id = "634" url = "http://www.nhs.uk/conditions/hughes-syndrome/Pages/Introduction.aspx">
+More on sticky blood conditions		</ri>
+		<ri id = "644" url = "http://www.thrombosis-charity.org.uk/stories/archive.php?cat=hat">
+Patient stories of VTE		</ri>
+		<ri id = "635" url = "http://www.nhs.uk/conditions/Varicose-veins/Pages/Whatarevaricoseveins.aspx">
+More on varicose veins		</ri>
+		<ri id = "636" url = "http://www.nhs.uk/conditions/heart-attack/Pages/Introduction.aspx">
+More on heart attacks		</ri>
+		<ri id = "637" url = "http://www.nhs.uk/livewell/cancer/Pages/Cancerhome.aspx">
+Living with cancer		</ri>
+		<ri id = "638" url = "http://www.nhs.uk/Video/Pages/Preparingforhospital.aspx">
+A video about preparing for hospital		</ri>
+		<ri id = "639" url = "http://www.nhs.uk/conditions/pregnancy-and-baby/pages/common-pregnancy-problems.aspx">
+Common health problems when pregnant		</ri>
+		<ri id = "640" url = "https://itunes.apple.com/gb/app/nhs-stop-smoking/id359088809?mt=8">
+Download the NHS Stop Smoking app for iPhone		</ri>
+		<ri id = "641" url = "http://www.nhs.uk/Conditions/Deep-vein-thrombosis/Pages/Prevention.aspx">
+Tips to prevent VTE		</ri>
+		<ri id = "643" url = "http://www.nhs.uk/Conditions/Deep-vein-thrombosis/Pages/Symptoms.aspx">
+More on symptoms and causes of VTE		</ri>
+	</link_items>
+	<qvars>
+		<v  name = "gender">
+<val>male</val><val>female</val>		</v>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "269">
+			<title><![CDATA[How to measure your waist]]></title>
+			<body><![CDATA[<div>When measuring your waist, place the tape snugly against you and keep it horizontal all the way round you.</div><div>Place the tape measure midway between the top of your hip bone and lowest rib. Take the measurement when you're breathing out.</div>]]></body>
+			<name><![CDATA[How to measure your waist]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>747074326001</v>	</videos>
+</root>

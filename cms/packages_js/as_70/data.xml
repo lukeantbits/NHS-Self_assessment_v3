@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>70</id>		
+		<title>NHS Health Check</title>		
+		<colour_1>990066|BE618B</colour_1>
+		<colour_2>FF6600|FF9800</colour_2>
+		<colour_3>990066|BE618B</colour_3>
+		<intro_title><![CDATA[Get your risk score today]]></intro_title>		
+		<intro_copy><![CDATA[Everyone is at risk of developing heart disease, stroke, diabetes, kidney disease and some forms of dementia.&nbsp;<br>NHS Health Check can help you by assessing your risk of developing these health problems and giving you advice on how to reduce it.<br><br>Before you go to your GP for the NHS Health Check, you can take this short test which will help you to know what to expect.&nbsp;<br>]]></intro_copy>		
+		<intro_copy_alt><![CDATA[<br>]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[6]]></intro_graphic_position_m>		
+		<dimensions_f>362x466</dimensions_f>		
+		<dimensions_j>362x466</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>1</reporting>		
+		<syndication_footer>1</syndication_footer>		
+		<img_alt></img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+		<quiz>0</quiz>		
+	</config>
+	<questions>
+		<q type = "true/false" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you?]]></body>
+			<quiz_summary><![CDATA[]]></quiz_summary>
+			<quiz_answer><![CDATA[]]></quiz_answer>
+			<quiz_check><![CDATA[]]></quiz_check>
+			<quiz_active>0</quiz_active>
+			<answers>
+				<a>
+					<body><![CDATA[True]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[False]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "image" p1 = "" p2 = "" p3 = "Points"><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[Opening paragraph]]></li>
+	</links>
+	<result_items>
+	</result_items>
+	<link_items>
+	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+	</videos>
+</root>

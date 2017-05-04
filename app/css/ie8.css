@@ -1,0 +1,21 @@
+#cboxClose{
+	background-image:url(../images/close_icon_mini.png);
+}
+.nav_button_inactive,.nav_button,.gradient_button,.progress_bg{
+	border-radius:0px;
+}
+
+.info_link a{
+	margin-right:1em;
+}
+#nav{
+ border-top:1px solid #999;
+}
+#shadow_bottom{
+	visibility:hidden;
+
+}
+#modal_container{
+	outline:1px solid #CCC;
+	
+}

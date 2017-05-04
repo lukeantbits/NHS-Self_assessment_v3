@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>69</id>		
+		<title>Workplace stress self-assessment</title>		
+		<colour_1>333399|6061CA</colour_1>
+		<colour_2>669900|9BC363</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[Are you stressed by your job?]]></intro_title>		
+		<intro_copy><![CDATA[There's a difference between stress and pressure. We all experience pressure daily and need it to motivate us. But too much can lead to damaging stress and statistics show that stress accounts for 40% of cases of workplace sickness in the UK.&nbsp;<br><br>Take this test to find out if you're experiencing too much pressure at work. &nbsp;]]></intro_copy>		
+		<intro_copy_alt><![CDATA[<br>]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Workplace_stress_self-assessment_.jpg]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<dimensions_f>362x466</dimensions_f>		
+		<dimensions_j>362x466</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "262" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How do you manage your time at work?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[My time is fairly flexible and I can have a say in deciding how I work and when to take a break]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have some say over the way I work but would like more]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't have very much control over how I work]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1110]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "263" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[When something is going to change at work, what happens?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[I have plenty of opportunity to speak to my boss about any changes at work]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[We're always asked about possible changes at work before they happen but don't have much involvement in how decisions are made]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[We aren't told about changes and I'd find it hard to speak to my boss]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1111]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[599]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "264" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How do you get on with your boss or supervisor?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[I can rely on them to help me out, encourage me and provide support]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I can talk to them about something that has upset or annoyed me at work but that's about it]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1112]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't get on with them very well and don't feel very supported]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1112]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "265" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How do you get on with the people you work with?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[My colleagues will help me and are always willing to listen to any work-related problems]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't think my colleagues offer me much support]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1113]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[600]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I get on with them ok but wouldn't discuss any problems with them]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1113]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[600]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "266" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are any of the following causing you problems?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[People harassing you with unkind words or behaviour at work]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1114]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Friction or arguments with your work colleagues]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1115]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Bullying from one or more work colleagues]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1116]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Difficulties or strained relationships with someone at work]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1117]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[None of these]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "267" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Which of the following best describes how you feel about your role at work?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[I am clear about what is expected of me at work and know how to go about getting my job done]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am clear what my duties and responsibilities are but sometimes don't manage to get everything finished]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1117]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[600]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am unclear what my role is]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "268" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you worry about any of the following? You can pick more than one.]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Different people at work demand things from me that are hard to combine]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1120]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have unachievable deadlines and I have to neglect some tasks because I have too much to do]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1121]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[601]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I have to work very intensively and find it difficult to take sufficient breaks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1122]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I am pressured to work long hours]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1123]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[None of these]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "points triggered result" p1 = "0" p2 = "4" p3 = ""><![CDATA[<div>We all experience pressure on a daily basis and your responses today suggest that with the help of your employer you're managing that pressure well.&nbsp;</div><div>Any issues that may need addressing will appear below. &nbsp;</div><div>Remember, if you do start to face stressful problems at work, it’s always good to speak to your boss or supervisor to stop them becoming a bigger problem and improve the workplace for everyone.</div>]]></ri>
+		<ri type = "points triggered result" p1 = "4" p2 = "10" p3 = ""><![CDATA[<div>We all experience pressure on a daily basis but your responses today suggest that some areas of your work could be improved to avoid any unnecessary stress.</div><div>See useful links for more advice on all aspects of workplace stress and try to talk to your boss, supervisor, trade union or HR department about the following:&nbsp;</div>]]></ri>
+		<ri type = "points triggered result" p1 = "10" p2 = "14" p3 = ""><![CDATA[We all experience pressure on a daily basis but your responses today suggest you may be experiencing more than healthy pressure at work. To improve the situation before it gets worse, it's important to speak to your boss, supervisor, trade union or HR department about the issues below. See useful links for more advice on all aspects of workplace stress:&nbsp;]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[The following links may be of interest:]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[603]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[604]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[605]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[606]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[607]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[608]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[609]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[602]]></li>
+		<li type = "accumulated links" p1 = "" p2 = ""><![CDATA[]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[746756318001]]></li>
+	</links>
+	<result_items>
+		<ri id = "1110" priority = "0"><![CDATA[Any issues that are particularly bothering you in your day-to-day work.]]></ri>
+		<ri id = "1111" priority = "0"><![CDATA[How and when your boss speaks to you about changes at work.]]></ri>
+		<ri id = "1112" priority = "0"><![CDATA[How much support you are given on a day-to-day basis.]]></ri>
+		<ri id = "1113" priority = "0"><![CDATA[Ways to encourage a positive workplace where people are supported by each other as well as line managers.]]></ri>
+		<ri id = "1114" priority = "0"><![CDATA[Any harassment you're experiencing at work - it's unacceptable.]]></ri>
+		<ri id = "1115" priority = "0"><![CDATA[Any friction at work that might lead to problems.]]></ri>
+		<ri id = "1116" priority = "0"><![CDATA[Any bullying at work you're experiencing.]]></ri>
+		<ri id = "1117" priority = "0"><![CDATA[Any relationships at work that are difficult.]]></ri>
+		<ri id = "1120" priority = "0"><![CDATA[Increasing demands on your time from more than one person.]]></ri>
+		<ri id = "1121" priority = "0"><![CDATA[Unachievable deadlines that are causing problems.]]></ri>
+		<ri id = "1122" priority = "0"><![CDATA[Finding it hard to take vital breaks.]]></ri>
+		<ri id = "1123" priority = "0"><![CDATA[Improving your long working hours.]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "599" url = "http://www.hse.gov.uk/stress/standards/index.htm">
+The HSE’s management standards for work-related change		</ri>
+		<ri id = "600" url = "http://www.hse.gov.uk/stress/standards/relationships.htm">
+HSE’s management standards for relationships		</ri>
+		<ri id = "601" url = "http://www.hse.gov.uk/stress/standards/role.htm">
+HSE’s Management Standards for roles		</ri>
+		<ri id = "603" url = "http://www.nhs.uk/Livewell/workplacehealth/Pages/Beatingworkstress.aspx">
+Understanding workplace stress		</ri>
+		<ri id = "604" url = "http://www.nhs.uk/Livewell/workplacehealth/Pages/workplaceoverview.aspx">
+Helping you keep healthy at work		</ri>
+		<ri id = "605" url = "http://www.nhs.uk/Livewell/workplacehealth/Pages/Bullyingatwork.aspx">
+Bullying in the workplace		</ri>
+		<ri id = "606" url = "http://www.hse.gov.uk/stress/">
+Visit the Health and Safety Executive		</ri>
+		<ri id = "607" url = "http://www.nhs.uk/livewell/stressmanagement/pages/timemanagement.aspx">
+Time management tips		</ri>
+		<ri id = "608" url = "http://www.nhs.uk/livewell/stressmanagement/Pages/Stressmanagementhome.aspx">
+Advice on stress management		</ri>
+		<ri id = "609" url = "http://www.hse.gov.uk/stress/roles/individuals.htm">
+HSE’s guide to tackling stress		</ri>
+		<ri id = "602" url = "http://www.hse.gov.uk/stress/standards/demands.htm">
+HSE’s management standards for demands		</ri>
+	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "262">
+			<title><![CDATA[More on control]]></title>
+			<body><![CDATA[<div>Having a say over the way you do your work is important. From being able to use your initiative and skills to do your job and developing new skills, to having a say about work patterns and breaks. Having control can help minimise stress.</div>]]></body>
+			<name><![CDATA[More on control]]></name>
+		</ib>
+		<ib  id = "263">
+			<title><![CDATA[More about change]]></title>
+			<body><![CDATA[<div>Managing change well can help an employer to reduce or avoid stress within a workforce. The best ways to do this are to ensure:&nbsp;</div><div>•<span class="Apple-tab-span" style="white-space:pre">	</span>employees understand the reasons for change&nbsp;</div><div>•<span class="Apple-tab-span" style="white-space:pre">	</span>there is adequate consultation on changes</div><div>•<span class="Apple-tab-span" style="white-space:pre">	</span>employees are aware of any changes to their jobs</div><div>•<span class="Apple-tab-span" style="white-space:pre">	</span>employees are aware of the timetables for change</div><div>•<span class="Apple-tab-span" style="white-space:pre">	</span>support is provided for employees during change</div><div><br></div><div>Empowering individuals at work, giving them the right skills, and getting them involved in making decisions shows that their health, safety and wellbeing are being taken seriously. People who feel valued and involved in decision-making play a big part in a high-performing workplace. People will also raise concerns and offer solutions more often.</div>]]></body>
+			<name><![CDATA[More about change]]></name>
+		</ib>
+		<ib  id = "264">
+			<title><![CDATA[Talking to your boss]]></title>
+			<body><![CDATA[<div>Open communication develops a positive culture and reduces accidents and ill health. It also improves overall efficiency and productivity. The law states that employers must consult employees regularly.&nbsp;</div><div>If you find it difficult to talk to your boss, talk to your trade union representative or employee representative who can provide advice on a range of work-related topics. Alternatively, you can speak to your HR department.</div>]]></body>
+			<name><![CDATA[Talking to your boss]]></name>
+		</ib>
+		<ib  id = "265">
+			<title><![CDATA[More on relationships]]></title>
+			<body><![CDATA[<div>Most of our waking hours are spent at work so it's important we have a good relationship with our colleagues.</div><div>Employers are encouraged to promote positive working relationships in order to avoid conflict and ensure fairness. Employers are also expected to deal with unacceptable behaviour such as bullying.</div>]]></body>
+			<name><![CDATA[More on relationships]]></name>
+		</ib>
+		<ib  id = "266">
+			<title><![CDATA[More about bullying]]></title>
+			<body><![CDATA[<div>Bullying can make working life miserable. You can lose all faith in yourself, start to feel ill and depressed, and find it hard to motivate yourself to work. It's not always due to people's tribal instincts, or someone picking on the weak. Sometimes a person's strengths in the workplace can make the bully feel threatened, and that kicks off their behaviour.</div><div>Never ignore it. Talk to your colleagues, talk to your boss, talk to your family and, above all, talk to the experts. If you belong to a trade union, talk to them. They have well-established tactics for helping you bring the joy back into your working day.</div>]]></body>
+			<name><![CDATA[More about bullying]]></name>
+		</ib>
+		<ib  id = "267">
+			<title><![CDATA[More about roles]]></title>
+			<body><![CDATA[<div>Employees should have a clearly defined role and be encouraged to talk to their line manager or boss if they are not clear about priorities or the nature of their job.&nbsp;</div><div>This means you should be clear about what your job entails, what is expected of you and what you can expect from your employer.&nbsp;</div><div>Team meetings can help to clarify your role and discuss any possible role conflict. &nbsp;</div>]]></body>
+			<name><![CDATA[More about roles]]></name>
+		</ib>
+		<ib  id = "268">
+			<title><![CDATA[More about demands]]></title>
+			<body><![CDATA[<div>It's important that your line manager monitors workloads to ensure people are not overloaded and there are sufficient resources to do the work allocated.&nbsp;</div><div>People should be encouraged to have a healthy work-life balance and take their annual leave and meal breaks.&nbsp;</div><div>There should also be good communication about unplanned tight deadlines or any exceptional need to work long hours.&nbsp;</div>]]></body>
+			<name><![CDATA[More about demands]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>746756318001</v>	</videos>
+</root>

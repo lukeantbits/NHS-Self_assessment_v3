@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>61</id>		
+		<title>Childhood health assessment</title>		
+		<colour_1>FF6600|FF9800</colour_1>
+		<colour_2>669900|9BC363</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[How much do you know?]]></intro_title>		
+		<intro_copy><![CDATA[Childhood is an important time to instil healthy habits and learn crucial life skills. From eating healthily and keeping active, to sleeping well and being potty trained, establishing these habits early on will help to improve your child's quality of life in the future.<br><br>Find out how much you know about raising a 1-5 year old with this short assessment.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[Childhood is an important time to instil healthy habits and learn crucial life skills. From eating healthily and keeping active, to sleeping well and being potty trained, establishing these habits early on will help to improve your child's quality of life in the future.<br><br>Find out how much you know about raising a 1-5 year old with this short assessment.]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Childhood_health_assessment.jpg]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[img_Childhood_health_assessment.jpg]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[6]]></intro_graphic_position_m>		
+		<dimensions_f>362x475</dimensions_f>		
+		<dimensions_j>362x475</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt>childhoodhealth</img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "229" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[What is a healthy breakfast for an under-5?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Wholemeal toast]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[919]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[White toast]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[920]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Sugar-coated or chocolate-flavoured breakfast cereal with fat free or 1% milk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[918]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Porridge, muesli or wholegrain cereal with whole milk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[916]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Porridge, muesli or wholegrain cereal with fat free or 1% milk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[917]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Breakfast isn't essential at this age]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[921]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "230" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How often should 1-5 year olds have milk or milk-based products?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Once a day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[923]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Twice a day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[923]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Three times a day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[923]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[What would be a suitable snack for a toddler?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[A packet of crisps]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[925]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Low-fat chocolate or low-fat biscuits]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[926]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[A piece of fresh fruit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[927]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Crackers, rice cakes or breadsticks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[928]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Dried fruit or unsalted nuts]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[929]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "231" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How many portions of fruit and veg do toddlers need?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[1 or 2]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[930]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[2 or 3]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[931]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[3 or 4]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[932]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[At least 5]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[933]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Which are suitable drinks for a 1-5 year old? (you can pick more than one)]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Bottled smoothies]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[934]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Fruit juice]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[935]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Water]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[936]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Whole milk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[937]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Low-sugar fizzy drinks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[938]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How much sleep does a child aged 1-5 need at night?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[7-8 hours]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[939]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[8-9.5 hours]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[939]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[9.5-11 hours]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[939]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[11-12 hours]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[939]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How much exercise should a toddler get each day?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[1-1.5 hours]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[940]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[2 hours]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[940]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[3 hours]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[940]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[3 hours or more]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[940]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[At what age should potty training begin?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[1 year]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[941]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[12-18 months]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[941]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[18-24 months]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[941]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Between 2 and 3 years]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[941]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[When should you start brushing your child’s teeth?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[When they have all come through]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[942]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[When they can do it for themselves]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[942]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[As soon as teeth begin to appear]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[942]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[When do children first need to be vaccinated?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[At birth]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[943]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Aged 8 weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[943]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Aged 1 year old]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[943]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Before they start school or nursery]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[943]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How much interaction (playing, talking and reading together) does a 1-5 year old need?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Every day for an hour]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[944]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[It's not essential until a child can talk]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[944]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[As much as possible]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[944]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How much TV should a 1-5 year old watch each day?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[3 hours spread out over a day is fine]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[945]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[As much as they want to – it helps them learn]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[945]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Under 2 years - none. For over 2s – no more than 2 hours a day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[946]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Which of the following symptoms is the sign of a serious illness?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[A high temperature, but cold feet and hands]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[947]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Turning blue, very pale, mottled or ashen]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[947]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Inability to stay awake even when woken]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[947]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Repeated vomiting or bile-stained (green) vomiting]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[947]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Neck stiffness]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[947]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the above]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[948]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "points triggered result" p1 = "30" p2 = "39" p3 = ""><![CDATA[Based on your responses today, you know a lot about raising a healthy 1-5 year old. Explore useful links for articles and videos relevant to the questions on this assessment. Here’s a recap of some important points:]]></ri>
+		<ri type = "points triggered result" p1 = "25" p2 = "30" p3 = ""><![CDATA[Based on your responses today, you know a reasonable amount about raising a healthy 1-5 year old. Explore useful links for articles and videos relevant to the questions on this assessment. Below is a recap of some important points:]]></ri>
+		<ri type = "points triggered result" p1 = "15" p2 = "25" p3 = ""><![CDATA[Based on your responses today, your knowledge of raising a healthy 1-5 year old is a bit lacking. Explore useful links for articles and videos relevant to the questions on this assessment. Below is a recap of some important points:]]></ri>
+		<ri type = "points triggered result" p1 = "0" p2 = "15" p3 = ""><![CDATA[Based on your responses today, you don’t know much at all about raising a healthy 1-5 year old. Explore useful links for articles and videos relevant to the questions on this assessment. Below is a recap of some important points:]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[504]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[505]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[506]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[507]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[508]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[509]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[510]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[511]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[512]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[513]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[514]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[515]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[516]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[518]]></li>
+	</links>
+	<result_items>
+		<ri id = "919" priority = "0"><![CDATA[Wholemeal toast is a good option for breakfast. Just ensure its topped with something that contains sufficient calories. Mashed banana or avocado is ideal.]]></ri>
+		<ri id = "920" priority = "0"><![CDATA[Wholemeal toast is better than white toast at breakfast, as it will provide more energy and nutrients. Just ensure it's topped with something that contains sufficient calories. Mashed banana or avocado is ideal.]]></ri>
+		<ri id = "918" priority = "0"><![CDATA[Wholegrain cereal with whole milk is a better option at breakfast. It will provide more energy and nutrients than sugary or chocolate-flavoured cereals and will be less damaging to their teeth.]]></ri>
+		<ri id = "916" priority = "0"><![CDATA[Porridge, muesli or wholegrain cereal gives a child a good start to the day and whole milk is always best.]]></ri>
+		<ri id = "917" priority = "0"><![CDATA[Wholegrain cereal is great, but under-5s should only have whole or semi-skimmed milk. Fat-free or 1% milk doesn't contain enough fat so isn't recommended.]]></ri>
+		<ri id = "921" priority = "0"><![CDATA[It's important that children eat breakfast. See useful links for meal ideas and plan ahead to give yourself time to make breakfast.]]></ri>
+		<ri id = "923" priority = "0"><![CDATA[1-5 year olds need to have about three servings of milk a day, either on its own or in food made from milk, such as cheese, yoghurt or fromage frais.]]></ri>
+		<ri id = "925" priority = "0"><![CDATA[Crisps can be high in fat and salt so swap for things like fruit, rice cakes or plain popcorn.]]></ri>
+		<ri id = "926" priority = "0"><![CDATA[Swap processed snacks for things like fresh and dried fruit, rice cakes or plain popcorn.]]></ri>
+		<ri id = "927" priority = "0"><![CDATA[Great snacks for toddlers include fresh or dried fruit, rice cakes or plain popcorn.]]></ri>
+		<ri id = "928" priority = "0"><![CDATA[Great snacks for toddlers include fresh or dried fruit, rice cakes or plain popcorn.]]></ri>
+		<ri id = "929" priority = "0"><![CDATA[Great snacks for toddlers include fresh or dried fruit, rice cakes or plain popcorn.]]></ri>
+		<ri id = "930" priority = "0"><![CDATA[Just like adults, children need 5 A DAY. Fruit and veg are vital sources of vitamins, so try to get at least a portion into each meal and make snacks fruit or veg-based.]]></ri>
+		<ri id = "931" priority = "0"><![CDATA[Just like adults, children need 5 A DAY. Fruit and veg are vital sources of vitamins, so try to get at least a portion into each meal and make snacks fruit or veg-based.]]></ri>
+		<ri id = "932" priority = "0"><![CDATA[Just like adults, children need 5 A DAY. Fruit and veg are vital sources of vitamins, so try to get at least a portion into each meal and make snacks fruit or veg-based.]]></ri>
+		<ri id = "933" priority = "0"><![CDATA[Just like adults, children need 5 A DAY. Fruit and veg are vital sources of vitamins, so try to get at least a portion into each meal and make snacks fruit or veg-based.]]></ri>
+		<ri id = "934" priority = "0"><![CDATA[Shop-bought smoothies are not always as healthy as they look. However, homemade smoothies can be a good way of giving your child fresh fruit and whole milk.]]></ri>
+		<ri id = "935" priority = "0"><![CDATA[Fruit juice, even if it's without added sugar, can be too sugary and acidic for children's teeth. Water or whole milk is best.]]></ri>
+		<ri id = "936" priority = "0"><![CDATA[Water is a great drink for 1-5s.]]></ri>
+		<ri id = "937" priority = "0"><![CDATA[Whole milk is a great drink for 1-5s. Semi-skimmed milk is OK from age 2.]]></ri>
+		<ri id = "938" priority = "0"><![CDATA[Even if they are low in sugar, children should not be having fizzy drinks. They cause tooth decay and can lead to a poor appetite. Whole milk or water is best.]]></ri>
+		<ri id = "939" priority = "0"><![CDATA[1-5 year olds need between 11 and 12 hours sleep a night. 1-3 year olds may also need to sleep during the day.]]></ri>
+		<ri id = "940" priority = "0"><![CDATA[Children who can walk on their own should be physically active for at least 3 hours a day. Active play such as climbing a climbing frame, riding a bike or ball games are best.]]></ri>
+		<ri id = "941" priority = "0"><![CDATA[Most parents start potty training around 18-24 months but it may take until 4 years before a child is reliably dry.]]></ri>
+		<ri id = "942" priority = "0"><![CDATA[As soon as your child's teeth appear, you should brush them. You should use a baby toothbrush and a tiny smear of fluoride toothpaste, twice a day.]]></ri>
+		<ri id = "943" priority = "0"><![CDATA[A child should first be routinely vaccinated at 8 weeks old. From then on, your child will need to be regularly vaccinated. If vaccinations have been missed, it's not too late to have them. A GP can advise further.]]></ri>
+		<ri id = "944" priority = "0"><![CDATA[Spending as much time as possible with a 1-5 year old is important. Playing, talking and reading helps them learn and develop. This should start from birth.]]></ri>
+		<ri id = "945" priority = "0"><![CDATA[Children under 2 shouldn't watch any TV. For those over 2, it should be no more than 2 hours a day. Playing with your toddler is much better for them.]]></ri>
+		<ri id = "946" priority = "0"><![CDATA[Correct. Children under 2 shouldn't watch any TV. For those over 2, it should be no more than 2 hours a day. Playing with your toddler is much better for them.]]></ri>
+		<ri id = "947" priority = "0"><![CDATA[All of the symptoms listed are signs of a potentially serious illness. There are others too, so make sure you're familiar with them all.]]></ri>
+		<ri id = "948" priority = "0"><![CDATA[You were right. All of the symptoms listed are signs of a potentially serious illness. There are others too, so make sure you're familiar with them all.]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "504" url = "http://www.nhs.uk/Conditions/pregnancy-and-baby/pages/childrens-meal-ideas.aspx"><![CDATA[Children's meal ideas]]></ri>		<ri id = "505" url = "http://www.nhs.uk/Conditions/pregnancy-and-baby/pages/understanding-food-groups.aspx"><![CDATA[Understanding food groups]]></ri>		<ri id = "506" url = "http://www.nhs.uk/Livewell/loseweight/Pages/Healthyfoodswaps.aspx"><![CDATA[Read about healthy food swaps]]></ri>		<ri id = "507" url = "http://www.nhs.uk/Livewell/5ADAY/Pages/Family.aspx"><![CDATA[5 A DAY and your family]]></ri>		<ri id = "508" url = "http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/drinks-and-cups-children.aspx"><![CDATA[Drinks and cups for children]]></ri>		<ri id = "509" url = "http://www.nhs.uk/livewell/childrenssleep/Pages/Childrenssleephome.aspx"><![CDATA[How much sleep do kids need?]]></ri>		<ri id = "510" url = "http://www.nhs.uk/Livewell/fitness/Pages/physical-activity-guidelines-for-children.aspx"><![CDATA[Physical activity guidelines for children under 5]]></ri>		<ri id = "511" url = "http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/potty-training-tips.aspx"><![CDATA[Potty training tips]]></ri>		<ri id = "512" url = "http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/teething-and-tooth-care.aspx"><![CDATA[Teething and tooth care]]></ri>		<ri id = "513" url = "http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/routine-checks-vaccinations.aspx"><![CDATA[Your baby’s routine checks and vaccinations]]></ri>		<ri id = "514" url = "http://www.nhs.uk/Tools/Pages/NHSvaccinationplanner.aspx"><![CDATA[Vaccination wall planner]]></ri>		<ri id = "515" url = "http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/why-play-is-important.aspx"><![CDATA[Why play is important]]></ri>		<ri id = "516" url = "http://www.nhs.uk/Conditions/pregnancy-and-baby/pages/play-ideas-and-reading.aspx"><![CDATA[Play ideas and reading]]></ri>		<ri id = "518" url = "http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/spotting-signs-serious-illness.aspx"><![CDATA[Spotting signs of serious illness]]></ri>	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "229">
+			<title><![CDATA[What's wholegrain or wholemeal?]]></title>
+			<body><![CDATA[<div>Most cereals and breads have a wholegrain or wholemeal variety, which contain more insoluble fibre (also called "roughage"), and usually more vitamins and minerals than white flour or white rice.</div><div><br></div><div>Insoluble fibre helps to keep bowels healthy and stop constipation and this means we are less likely to get some common disorders of the gut. Foods rich in this sort of fibre are more bulky and so help make us feel full. With children, it's important to ensure they don't fill up on wholegrains only, as it can be to the exclusion of other food groups.</div>]]></body>
+			<name><![CDATA[What's wholegrain or wholemeal?]]></name>
+		</ib>
+		<ib  id = "230">
+			<title><![CDATA[About milk]]></title>
+			<body><![CDATA[<div>You can give a child cows' milk from 12 months. Whole milk should be given to children until they are 2 years old, as they need the extra energy and vitamins it contains. Semi-skimmed milk can be introduced once your child is 2 years old, as long as they're a good eater and they have a varied diet.&nbsp;</div><div><br></div><div>Skimmed and 1% milk are not suitable for children under 5, as they don't contain enough calories.</div>]]></body>
+			<name><![CDATA[About milk and milk-based products]]></name>
+		</ib>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "231">
+			<title><![CDATA[What is a portion?]]></title>
+			<body><![CDATA[<div>The amount of food a child needs varies with age, body size and physical activity. As a rough guide, one portion is the amount they can fit in the palm of their hand.</div><div><br></div><div>Fruit and vegetables contain lots of vitamins, minerals and fibre and it is good to introduce a variety from a young age.</div><div><br></div>]]></body>
+			<name><![CDATA[What is a portion?]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+	</videos>
+</root>

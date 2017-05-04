@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>56</id>		
+		<title>Bladder self-assessment</title>		
+		<colour_1>048E8C|52B7BA</colour_1>
+		<colour_2>006699|0799C6</colour_2>
+		<colour_3>990000|DD645F</colour_3>
+		<intro_title><![CDATA[Have you got a healthy bladder?]]></intro_title>		
+		<intro_copy><![CDATA[A healthy bladder is important to all of us, yet many people suffer with bladder problems in silence even though a lot can be done to improve things.<br><br>Take this short assessment to find out if you should seek further advice.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[A healthy bladder is important to all of us, yet many people suffer with bladder problems in silence even though a lot can be done to improve things.<br><br>Take this short assessment to find out if you should seek further advice.]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Bladder_self-assessment.swf]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[bladder_v3.png]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[bladder_v3.png]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[7]]></intro_graphic_position_m>		
+		<dimensions_f>362x410</dimensions_f>		
+		<dimensions_j>362x410</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt>healthybladder</img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+	</config>
+	<questions>
+		<q type = "gender" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[male]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[gender]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[male]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[female]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[gender]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[female]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Is it difficult for you to hold urine when you get the urge to go?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, and it bothers me a great deal
+
+
+
+
+
+]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, and it bothers me moderately]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, and it bothers me a little bit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, not at all]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Do you have any problems needing to go to the loo often during the day?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, and it bothers me a great deal]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, and it bothers me moderately]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, and it bothers me a little bit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, not at all]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Do you need to get up during the night to go to the loo?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, and it bothers me a great deal]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, and it bothers me moderately]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, and it bothers me a little bit]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, not at all]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Do you have blood in your urine?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[10]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "progress bar" p1 = "0" p2 = "19" p3 = "Points"><![CDATA[How you scored]]></ri>
+		<ri type = "points triggered result" p1 = "0" p2 = "3" p3 = ""><![CDATA[<div>Based on your responses today you don't have any symptoms. Your answers suggest you don't have any urinary problems.</div><div><br></div><div>If your symptoms do change or you have any concerns about your health, please call NHS 111 or arrange to see your GP.</div><div><br></div><div>You can help to keep your bladder healthy by:</div><div><ul><li>drinking the right amount and the right types of fluid such as water, fruit juice, fruit or herbal tea, and cordials (about 1.2 litres of fluid per day)</li><li>avoiding getting constipated by eating a healthy, well-balanced diet</li><li>practising pelvic floor muscle exercises every day (see useful links for a guide)&nbsp;</li><li>maintaining a healthy weight</li></ul></div>]]></ri>
+		<ri type = "points triggered result" p1 = "3" p2 = "6" p3 = ""><![CDATA[<div>Based on your responses today you have some urinary problems but they are mild and are not bothering you.</div><div><br></div><div>If your symptoms do change or get worse, please call NHS 111 or arrange to see your GP.</div><div><br></div><div>You can prevent these problems from getting worse by trying the following:</div><div><ul><li>drinking the right amount and the right types of fluid such as water, fruit juice, fruit or herbal tea and cordials (about 1.2 litres of fluid per day)</li><li>avoiding getting constipated by eating a healthy, well-balanced diet</li><li>practising pelvic floor muscle exercises every day (see useful links for a guide)</li><li>maintaining a healthy weight</li></ul></div>]]></ri>
+		<ri type = "points triggered result" p1 = "6" p2 = "11" p3 = ""><![CDATA[<div>Based on your responses today you do have some urinary problems that are bothering you. The good news is that a lot can be done to manage, improve and sometimes cure bladder conditions.</div><div><br></div><div>You should seek advice from your GP, who may be able to help to improve your symptoms and situation.</div><div><br></div><div>The doctor or nurse may ask:</div><div><ul><li>How often do you go to the loo?</li><li>How often do you leak or have an accident?</li><li>When do you leak or have accidents?</li><li>What medicines do you take?</li><li>What do you normally eat and drink?</li><li>Is it painful or uncomfortable when you go to the loo?</li><li>How often do you get up at night?</li></ul></div>]]></ri>
+		<ri type = "points triggered result" p1 = "11" p2 = "20" p3 = ""><![CDATA[<div>Based on your responses today you do have some urinary problems that are bothering you a lot. The good news is that plenty can be done to manage, improve and sometimes cure bladder conditions.</div><div><br></div><div>You should seek advice from your GP immediately to help improve your symptoms and situation.</div><div><br></div><div>The doctor or nurse may ask:&nbsp;</div><div><ul><li>How often do you go to the loo?</li><li>How often do you leak or have an accident?</li><li>When do you leak or have accidents?</li><li>What medicines do you take?</li><li>What do you normally eat and drink?</li><li>Is it painful or uncomfortable when you go to the loo?</li><li>How often do you get up at night?</li></ul></div>]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[The following links may be useful:]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[461]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[462]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[463]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[464]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[465]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[466]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[467]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[492]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[493]]></li>
+	</links>
+	<result_items>
+	</result_items>
+	<link_items>
+		<ri id = "461" url = "http://www.nhs.uk/conditions/Incontinence-urinary/Pages/Introduction.aspx"><![CDATA[Health A-Z: incontinence]]></ri>		<ri id = "462" url = "http://www.nhs.uk/chq/pages/1063.aspx?categoryid="><![CDATA[A guide to pelvic floor exercises]]></ri>		<ri id = "463" url = "http://www.nhs.uk/Livewell/incontinence/Pages/Livingwithincontinence.aspx"><![CDATA[Living with incontinence]]></ri>		<ri id = "464" url = "http://www.nhs.uk/Livewell/incontinence/Pages/Incontinenceproducts.aspx"><![CDATA[Products that can help]]></ri>		<ri id = "465" url = "http://www.nhs.uk/Livewell/incontinence/Pages/Urgeincontinencerealstory.aspx"><![CDATA[Real-life story of living with incontinence]]></ri>		<ri id = "466" url = "http://www.bladderandbowelfoundation.org/"><![CDATA[The Bladder and Bowel Foundation]]></ri>		<ri id = "467" url = "http://www.nhs.uk/Livewell/incontinence/Pages/Gettinghelp.aspx"><![CDATA[Getting help and support]]></ri>		<ri id = "492" url = "http://www.nhs.uk/conditions/Urinary-tract-infection-adults/Pages/Introduction.aspx"><![CDATA[Health A-Z: Urinary tract infection]]></ri>		<ri id = "493" url = "http://www.nhs.uk/conditions/Cystitis/Pages/Introduction.aspx"><![CDATA[Health A-Z: Cystitis]]></ri>	</link_items>
+	<qvars>
+		<v  name = "gender">
+<val>male</val><val>female</val>		</v>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+	</videos>
+</root>

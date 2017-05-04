@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>52</id>		
+		<title>Asthma self-assessment</title>		
+		<colour_1>333399|6061CA</colour_1>
+		<colour_2>669900|9BC363</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[Could you have asthma?]]></intro_title>		
+		<intro_copy><![CDATA[One in five families has someone living with asthma.<br><br>There are several different signs that you may have asthma and this test will allow you to find out whether or not you are showing these signs.<br><br>This tool will provide&nbsp;lots of&nbsp;useful advice&nbsp;and&nbsp;information&nbsp;<br>based&nbsp;on your&nbsp;results.&nbsp;<br>It does&nbsp;not replace&nbsp;a full&nbsp;<br>consultation or&nbsp;diagnosis&nbsp;<br>from a GP.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[One in five families has someone living with asthma.<br><br>There are several different signs that you may have asthma and this test will allow you to find out whether or not you are showing these signs.<br><br>This tool will provide lots of useful advice and information based on your results. It does not replace a full consultation or diagnosis from a GP.]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[Asthma.swf]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[asthma_1.png]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[asthma.png]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[7]]></intro_graphic_position_m>		
+		<dimensions_f>362x420</dimensions_f>		
+		<dimensions_j>362x430</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt>asthma</img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have a long-lasting cough that you have had for more than three weeks?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, I've had it for months]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Yes, more than 3 weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I've had a cough for less than 3 weeks]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, I don't have a cough]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "189" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you ever cough at night?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "190" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you ever feel out of breath or short of breath?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[All the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[A couple of times a day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[A couple of times a week]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Never]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "193" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How often do you wheeze, or make an audible sound, when you breathe out?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Several times a day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Once or twice a day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Less than once a day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Never]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "191" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Do you ever get a feeling of tightness round the chest?</div><div><br></div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes, every day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Once or twice a week]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No, never]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "192" info_box_position = "1">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do your symptoms get worse if you are exposed to any of the following 'triggers'. You can select more than one.&nbsp;]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Cold air or changes in temperature]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Smoke or traffic fumes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Food additives]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Intense emotions]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Animal hair or cat saliva]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Pollens and mould spores]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Perfumes, household cleaners and sprays]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Exercise]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Do you seem to have chest infections more often than other people?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Is there a history of any of the following conditions in your immediate family? You can select more than one.&nbsp;</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Asthma]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Eczema]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Allergies]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Hay fever]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "points triggered result" p1 = "0" p2 = "6" p3 = ""><![CDATA[<div>Based on your responses today it is unlikely you have asthma.</div><div><br></div><div>If your symptoms do change or seem to get worse, you should arrange an appointment with your GP or contact NHS 111.</div><div><br></div><div>This tool is not intended to replace a consultation with a health professional. If you are concerned about symptoms please seek medical advice.</div>]]></ri>
+		<ri type = "points triggered result" p1 = "6" p2 = "11" p3 = ""><![CDATA[<div>Based on your responses today it is possible you may have asthma or another respiratory condition.</div><div><br></div><div>You should arrange an appointment with your GP so that he or she can provide a proper diagnosis of your symptoms.</div><div><br></div><div>There's no simple test for asthma. It's diagnosed by your doctor after examination, and taking into account how and when symptoms occur.</div><div><br></div><div>Tests and investigations that measure the volume and speed of air that you breathe in and out can be useful to confirm that you have asthma. You may also be given a medicine used to open up the airways (a bronchodilator), to see if this improves how well your lungs work.</div>]]></ri>
+		<ri type = "points triggered result" p1 = "11" p2 = "999" p3 = ""><![CDATA[<div>Based on your responses today you may well have asthma or another respiratory condition.</div><div><br></div><div>Make an appointment with your GP so that he or she can give you a proper diagnosis.</div><div><br></div><div>There's no simple test for asthma. It's diagnosed by your doctor after examination, and taking into account how and when symptoms occur.</div><div><br></div><div>Tests and investigations that measure the volume and speed of air that you breathe in and out can be useful to confirm whether you have asthma. You may also be given a medicine used to open up the airways (a bronchodilator), to see if this improves how well your lungs work.</div><div><br></div><div>If your symptoms worsen, or you are having difficulties breathing, go to an accident and emergency (A&amp;E) department as you may be having an asthma attack and need urgent attention.</div>]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[You can find out more about asthma or other respiratory conditions by visiting the links below: &nbsp;]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[417]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[418]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[419]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[420]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[421]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[422]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[808574500001]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[808578907001]]></li>
+	</links>
+	<result_items>
+	</result_items>
+	<link_items>
+		<ri id = "417" url = "http://www.nhs.uk/Livewell/asthma/Pages/Allaboutasthma.aspx"><![CDATA[All about asthma]]></ri>		<ri id = "418" url = "http://www.nhs.uk/Livewell/asthma/Pages/Asthmatriggers.aspx"><![CDATA[Asthma triggers]]></ri>		<ri id = "419" url = "http://www.nhs.uk/Livewell/asthma/Pages/Jordansstory.aspx"><![CDATA[Real life story: asthma in children]]></ri>		<ri id = "420" url = "http://www.nhs.uk/Conditions/Asthma/Pages/Introduction.aspx"><![CDATA[Understanding asthma]]></ri>		<ri id = "421" url = "http://www.asthma.org.uk/"><![CDATA[Visit Asthma UK for help and advice]]></ri>		<ri id = "422" url = "http://www.lunguk.org/"><![CDATA[The British Lung Foundation]]></ri>	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "189">
+			<title><![CDATA[More on night coughs]]></title>
+			<body><![CDATA[<div>Coughing is an important reflex that keeps your throat and airways clear. Coughing due to asthma is usually chronic (long-lasting) and dry. It tends to be worse at night.</div><div><br></div><div>A number of conditions other than asthma can cause coughing. These include lung infections - such as acute bronchitis or pneumonia - or lung disease, such as chronic obstructive pulmonary disease.</div><div><br></div><div>The key difference for asthma-related coughs is that symptoms get better with a "reliever" or bronchodilator drug treatments, while symptoms due to other conditions generally do not.&nbsp;</div>]]></body>
+			<name><![CDATA[More on night coughs]]></name>
+		</ib>
+		<ib  id = "190">
+			<title><![CDATA[More on shortness of breath]]></title>
+			<body><![CDATA[<div>Asthma may make you feel short of breath. Breathing difficulties can be described in several different ways. You may be short of breath, unable to take a deep breath, gasping for air or feel like you're not getting enough air.</div><div><br></div><div>Shortness of breath can have many different causes, including other lung conditions such as chronic obstructive pulmonary disease, pneumonia and coronary heart disease.</div><div><br></div><div>If you feel breathless all the time, this may not be asthma but you should seek further advice from your GP.</div>]]></body>
+			<name><![CDATA[More on shortness of breath]]></name>
+		</ib>
+		<ib  id = "193">
+			<title><![CDATA[More on asthmatic wheezing]]></title>
+			<body><![CDATA[<div>Wheezing is probably the most well-known symptom of asthma. It occurs due to generalised narrowing of all the medium- and small-sized airways, or it can equally be due to a local obstruction of a larger airway.</div><div><br></div><div>The sound of asthmatic wheezing, which can seem almost musical, is most obvious when you breathe out.</div><div><br></div><div>Wheezing in asthma usually begins suddenly; occurs in episodes; may be worse at night or in the early morning; is worse with cold air, exercise, and heartburn; may go away on its own, and is relieved with a "reliever" or bronchodilators.</div>]]></body>
+			<name><![CDATA[More on asthmatic wheezing]]></name>
+		</ib>
+		<ib  id = "191">
+			<title><![CDATA[More on chest tightness]]></title>
+			<body><![CDATA[<div>Chest tightness is a squeezing feeling in your chest when you breathe in or out. The dominant symptom may be a pressing feeling on the chest, but if you are experiencing this for the first time it might be due to a heart condition rather than asthma so shouldn't be ignored.</div><div><br></div><div>A range of conditions can cause chest tightness. The key difference is that symptoms due to asthma get better with "reliever" or bronchodilator drug treatments, while symptoms due to other conditions generally do not. Chest tightness or discomfort could also be due to coronary heart disease, pneumonia, strain or inflammation of the muscles and tendons between the ribs, or anxiety.</div><div><br></div>]]></body>
+			<name><![CDATA[More on chest tightness]]></name>
+		</ib>
+		<ib  id = "192">
+			<title><![CDATA[What's a trigger?]]></title>
+			<body><![CDATA[<div>Certain triggers, such as pollens, household cleaners or pets, can cause an allergic response.</div><div><br></div><div>When a person with asthma comes into contact with a trigger their airways become irritated. The muscles tighten, the airways narrow and the lining of the airways gets inflamed and swollen.</div><div><br></div><div>It can be useful to keep a list of your triggers when you discover them, and discuss them with your GP or asthma nurse.</div>]]></body>
+			<name><![CDATA[What's a trigger?]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>808574500001</v>			<v>808578907001</v>	</videos>
+</root>

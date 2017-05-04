@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>57</id>		
+		<title>Fertility self-assessment</title>		
+		<colour_1>990066|BE618B</colour_1>
+		<colour_2>669900|9BC363</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[Should you seek advice?]]></intro_title>		
+		<intro_copy><![CDATA[For most, achieving pregnancy causes no problems, but some couples do experience difficulties.<br><br>If you’re a woman trying for a child and are worried you might be having problems, take this test. It will assess your situation and let you know if you&nbsp;should seek further medical advice. &nbsp;<br>]]></intro_copy>		
+		<intro_copy_alt><![CDATA[For most, achieving pregnancy causes no problems, but some couples do experience difficulties.<br><br>If you’re a woman trying for a child and are worried you might be having problems, take this test. It will assess your situation and let you know if you&nbsp;should seek further medical advice.&nbsp;]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Fertility_self-assessment.jpg]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[img_Fertility_self-assessment.jpg]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[7]]></intro_graphic_position_m>		
+		<dimensions_f>362x410</dimensions_f>		
+		<dimensions_j>362x410</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt>fertility</img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>How long have you been trying to get pregnant?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Less than six months]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[846]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Between six months and one year]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[847]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Over one year]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[848]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Over 18 months]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[849]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "221" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Are you aged 35 or older?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[849]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "222" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have regular periods?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[851]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Don't know]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[852]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "223" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you been diagnosed with polycystic ovary syndrome (PCOS)?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[853]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[482]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "224" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you ever had an ectopic pregnancy?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[483]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Have you ever had surgery that may have affected your reproductive organs?&nbsp;]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "225" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How often do you have unprotected sex during the fertile time of your monthly cycle?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[At least every other day]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[854]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Every few days]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[855]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Once or twice]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[856]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I don't know when I am fertile]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[857]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "226" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have or have you ever had chlamydia, gonorrhoea, or any other sexually transmitted infection (STI)?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[858]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[485]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[No]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Don't know]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[859]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[485]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Is there a history of fertility problems in your close family for example with your parents, brothers, sisters or uncles?&nbsp;]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[486]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "points triggered result" p1 = "0" p2 = "2" p3 = ""><![CDATA[Based on your responses today it's too early to tell whether there are any problems. Here's some more information about your results:]]></ri>
+		<ri type = "points triggered result" p1 = "2" p2 = "3" p3 = ""><![CDATA[Based on your responses today&nbsp;it's still early days so it's not possible to tell whether they are any problems. Here's some more information about your results:]]></ri>
+		<ri type = "points triggered result" p1 = "3" p2 = "4" p3 = ""><![CDATA[Based on your responses today&nbsp;you should go for a check-up with your GP. Here's some more information about your results:]]></ri>
+		<ri type = "points triggered result" p1 = "4" p2 = "39" p3 = ""><![CDATA[Based on your responses today&nbsp;you should arrange to see your GP. &nbsp;Here's some more information about your results:]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[<div>The following links may be of interest:</div>]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[486]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[487]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[488]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[489]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[490]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[491]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[828019604001]]></li>
+	</links>
+	<result_items>
+		<ri id = "846" priority = "0"><![CDATA[It's common for it to take longer than six months to get pregnant and in the majority of cases this does not indicate any problem.]]></ri>
+		<ri id = "847" priority = "0"><![CDATA[It's common for it to take up to 12 months to achieve pregnancy, and in the majority of cases this does not indicate a problem.]]></ri>
+		<ri id = "848" priority = "0"><![CDATA[You've been trying to get pregnant for more than a year so it is worth seeing your GP.]]></ri>
+		<ri id = "849" priority = "0"><![CDATA[You've been trying to get pregnant for more than 18 months so it is worth seeing your GP.]]></ri>
+		<ri id = "851" priority = "0"><![CDATA[You have regular periods, which is good and makes it easier for you to keep track of your most fertile time of the month.]]></ri>
+		<ri id = "852" priority = "0"><![CDATA[Try to keep track of your periods so you can tell when you are most fertile.]]></ri>
+		<ri id = "853" priority = "0"><![CDATA[PCOS can cause ovulation problems, which may make it difficult to get pregnant so do seek advice.]]></ri>
+		<ri id = "854" priority = "0"><![CDATA[Keep having sex at least every other day during the most fertile part of your monthly cycle.]]></ri>
+		<ri id = "855" priority = "0"><![CDATA[It can help if you have sex more often during the most fertile  part of your monthly cycle. At least every other day is recommended.]]></ri>
+		<ri id = "856" priority = "0"><![CDATA[It can help if you have sex more often during the most fertile part of your monthly cycle. At least every other day is recommended.]]></ri>
+		<ri id = "857" priority = "0"><![CDATA[Having sex when you are most fertile will increase the chance of getting pregnant. You are most fertile about 10-16 days after the first day of your period.]]></ri>
+		<ri id = "858" priority = "0"><![CDATA[Speak to your GP about STIs such as chlamydia and gonorrhoea, as these can damage a woman's fallopian tubes, making it difficult to become pregnant.]]></ri>
+		<ri id = "859" priority = "0"><![CDATA[Some STIs can affect fertility so if you're unsure whether you might have contracted an STI, seek help from your GP or a sexual health clinic.]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "482" url = "http://www.nhs.uk/conditions/Polycystic-ovarian-syndrome/Pages/Introduction.aspx"><![CDATA[Having polycystic ovary syndrome]]></ri>		<ri id = "483" url = "http://www.nhs.uk/conditions/Ectopic-pregnancy/Pages/Introduction.aspx"><![CDATA[More about miscarriage or ectopic pregnancy]]></ri>		<ri id = "485" url = "http://www.nhs.uk/Conditions/Sexually-transmitted-infections/Pages/Introduction.aspx"><![CDATA[STIs]]></ri>		<ri id = "486" url = "http://www.nhs.uk/Livewell/Fertility/Pages/Fertilityhome.aspx"><![CDATA[Fertility and trying to conceive]]></ri>		<ri id = "487" url = "http://www.nhs.uk/conditions/infertility/Pages/Introduction.aspx?url=Pages/What-is-it.aspx"><![CDATA[Infertility and what it means]]></ri>		<ri id = "488" url = "http://www.nhs.uk/Livewell/Fertility/Pages/Protectyourfertility.aspx"><![CDATA[Protecting your fertility]]></ri>		<ri id = "489" url = "http://www.nhs.uk/Livewell/Fertility/Pages/Getpregnant.aspx"><![CDATA[Trying to get pregnant]]></ri>		<ri id = "490" url = "http://www.nhs.uk/conditions/pregnancy-and-baby/pages/fertility-tests.aspx"><![CDATA[Fertility tests]]></ri>		<ri id = "491" url = "http://www.nhs.uk/conditions/pregnancy-and-baby/pages/help-infertility.aspx"><![CDATA[Problems getting pregnant]]></ri>	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "221">
+			<title><![CDATA[Why age matters]]></title>
+			<body><![CDATA[<div>Both women and men are at their most fertile (that is, most likely to conceive a child through unprotected sex) in their early twenties.</div><div><br></div><div>In women, fertility declines more quickly with age. This decline becomes rapid after 35 years of age. A range of factors causes this, especially the decline in the quality of the eggs being released by the ovaries.</div><div><br></div><div>Around one-third of couples in which the woman is over 35 years old &nbsp;have fertility problems. This rises to two-thirds when the woman is over 40.</div>]]></body>
+			<name><![CDATA[Why age matters]]></name>
+		</ib>
+		<ib  id = "222">
+			<title><![CDATA[More on periods]]></title>
+			<body><![CDATA[<div>A period is a bleed from the uterus (womb) that is released through the vagina. It happens approximately every 28 days, though anywhere between 21 and 35 days is normal.</div><div><br></div><div>Periods are part of the female reproductive cycle.&nbsp;Every month the lining of the womb thickens in preparation for receiving a fertilised egg. But if the egg is not fertilised, hormonal changes signal to this lining to break down. A period bleed is made up of this lining, and a small amount of blood.</div><div><br></div><div>If your periods are irregular or absent, this may indicate a problem with your fertility cycle.</div>]]></body>
+			<name><![CDATA[More on periods]]></name>
+		</ib>
+		<ib  id = "223">
+			<title><![CDATA[More about PCOS]]></title>
+			<body><![CDATA[<div>The most common cause of ovulation problems, leading to failure to become pregnant, is polycystic ovary syndrome (PCOS). This is a condition associated with multiple cysts in the ovaries.</div><div><br></div><div>As well as problems getting pregnant, symptoms can also include light, irregular or absent periods; weight gain; acne; and excessive hair growth on the face and body.</div><div><br></div><div>The symptoms of this condition can be improved by losing excess weight through a healthy diet and exercise.&nbsp;Medicines or surgery can also help women with PCOS to ovulate, and achieve a pregnancy.</div><div><br></div>]]></body>
+			<name><![CDATA[More about PCOS]]></name>
+		</ib>
+		<ib  id = "224">
+			<title><![CDATA[More on ectopic pregnancy]]></title>
+			<body><![CDATA[<div>Ectopic pregnancy is where a fertilised egg implants, and starts to develop, outside the womb. These pregnancies cannot continue to birth. Around 1% of pregnancies are ectopic pregnancies.</div><div><br></div><div>Left untreated, an ectopic pregnancy can be fatal for the mother. But the number of ectopic pregnancies that result in death is extremely small. Ectopic pregnancy can be treated with surgery to remove the developing egg, or sometimes with medicines.</div><div><br></div><div>If you have had a previous ectopic pregnancy, your chance of having another one increases from around 1% to 8%.</div><div><br></div>]]></body>
+			<name><![CDATA[More on ectopic pregnancy]]></name>
+		</ib>
+		<ib  id = "225">
+			<title><![CDATA[Most fertile time of the month?]]></title>
+			<body><![CDATA[<div>When a woman ovulates, an egg is released from her ovaries into the fallopian tubes. This is where conception will occur if the egg is fertilised by sperm.</div><div><br></div><div>If you're a woman who has regular periods, call the first day of your period "day one". Typically, you will ovulate between day 10 and day 16. If you have unprotected sex across these days, you give yourself the best chance of conception.</div><div><br></div><div>Don't let the timing of ovulation become a source of stress. You only need to know the exact day of ovulation if you want to time intercourse to the day. If you simply have sex every day across the days you may be ovulating, you have the best chance of becoming pregnant.</div>]]></body>
+			<name><![CDATA[Most fertile time of the month?]]></name>
+		</ib>
+		<ib  id = "226">
+			<title><![CDATA[STI check-ups]]></title>
+			<body><![CDATA[<div>Sexually transmitted infections such as chlamydia and gonorrhoea can damage a woman's fallopian tubes, which can result in difficulty becoming pregnant.</div><div><br></div><div>You can go along to your GP or local genitourinary medicine (GUM) clinic if you are concerned about having an STI, or would like a check up. Go to the "Find services" section to find your nearest clinic.</div>]]></body>
+			<name><![CDATA[STI check-ups]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>828019604001</v>	</videos>
+</root>

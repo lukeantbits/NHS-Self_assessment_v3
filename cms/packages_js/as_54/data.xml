@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>54</id>		
+		<title>Heavy periods self-assessment</title>		
+		<colour_1>048E8C|52B7BA</colour_1>
+		<colour_2>669900|9BC363</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[Heavy periods self-assessment]]></intro_title>		
+		<intro_copy><![CDATA[Heavy periods are not necessarily a sign there is anything wrong, but they can affect you physically and emotionally and can cause disruption to your everyday life.<br><br>Some women will put off getting help because they're not sure what is considered to be heavy. Others will avoid seeking treatment because they mistakenly worry a hysterectomy is the only option.<br><br>Take this short test to understand how heavy your periods are and to learn more about the treatment options.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[Heavy periods are not necessarily a sign there is anything wrong, but they can affect you physically and emotionally and can cause disruption to your everyday life.<br><br>Some women will put off getting help because they're not sure what is considered to be heavy. Others will avoid seeking treatment because they mistakenly worry a hysterectomy is the only option.<br><br>Take this short test to understand how heavy your periods are and to learn more about the treatment options.]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Heavy_periods_self-assessment.png]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[img_Heavy_periods_self-assessment.png]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[7]]></intro_graphic_position_m>		
+		<dimensions_f>362x490</dimensions_f>		
+		<dimensions_j>362x490</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt>heavyperiods</img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+	</config>
+	<questions>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you need to use double protection, such as a pad and a tampon or two pads, to prevent leaks?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[804]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Do you often have to get up at night to change your tampon or pad?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[805]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Does your clothing or bedding often become stained during your period?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[806]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have to change the way you dress or avoid wearing light clothes during your period?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[807]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you have to change your pad or tampon at least every two hours to prevent leakage?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[808]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "204" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you usually pass large blood clots?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[809]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Do you regularly take time off work or studying because of your heavy periods?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[810]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you frequently stop exercising during your period because you're worried about potential leaking?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[811]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "205" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Do you feel excessively tired or short of breath?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[812]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "yes/no" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>Do you plan holidays or special occasions to fit around your period?</div>]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[yes]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[813]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[no]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "progress bar" p1 = "0" p2 = "18" p3 = "Points"><![CDATA[Your heaviness rating]]></ri>
+		<ri type = "points triggered result" p1 = "0" p2 = "0" p3 = ""><![CDATA[<div>Based on your results today, you do not have any symptoms that need further investigation or treatment. However, if this changes you might want to consider seeking advice from your GP.</div>]]></ri>
+		<ri type = "points triggered result" p1 = "0" p2 = "4" p3 = ""><![CDATA[<div>Based on your results today, you are experiencing a couple of symptoms but probably not enough to require further investigation or treatment. However, if you feel your periods are disrupting your everyday life, you might want to consider talking to your GP about them. Also seek further advice from your GP if your symptoms worsen.</div><div><br></div><div>Below is a list of the symptoms you experience during your period. You might want to print this out if you decide to go to your GP:</div>]]></ri>
+		<ri type = "points triggered result" p1 = "4" p2 = "13" p3 = ""><![CDATA[<div>Based on your results today&nbsp;your periods are heavy and you may want to seek further advice. Tranexamic acid is available over the counter and can help to lessen the effects. You could also ask your GP about intrauterine systems (IUSs) or endometrial ablation (see Useful links).</div><div><br></div><div>Below is a list of the symptoms you experience. You might want to print this out for your GP:</div>]]></ri>
+		<ri type = "points triggered result" p1 = "13" p2 = "20" p3 = ""><![CDATA[<div>Based on your results today, your periods are very heavy and are probably affecting your general health. Tiredness, caused by iron deficiency anaemia, is a common symptom. You really should seek advice soon to check whether there is an obvious cause for the problem. This could include fibroids (non-cancerous tumours that grow in or around the womb) or endometriosis, a common condition in which small pieces of the womb lining are found outside the womb.</div><div><br></div><div>Below is a list of your symptoms. You might want to print this out for your GP:</div>]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[<div>Here are links to relevant articles and videos that may be helpful in understanding more about heavy periods and what causes them:</div>]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[247]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[246]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[245]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[244]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[243]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[242]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[241]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[828019604001]]></li>
+	</links>
+	<result_items>
+		<ri id = "804" priority = "0"><![CDATA[You need to use double protection to prevent leaks]]></ri>
+		<ri id = "805" priority = "0"><![CDATA[You often have to get up at night to change your tampon or pad]]></ri>
+		<ri id = "806" priority = "0"><![CDATA[Your clothing and bedding often become stained]]></ri>
+		<ri id = "807" priority = "0"><![CDATA[You often change the way you dress]]></ri>
+		<ri id = "808" priority = "0"><![CDATA[You have to change your pad or tampon at least every two hours]]></ri>
+		<ri id = "809" priority = "0"><![CDATA[You usually pass large blood clots]]></ri>
+		<ri id = "810" priority = "0"><![CDATA[You regularly take time off work or studying]]></ri>
+		<ri id = "811" priority = "0"><![CDATA[You frequently stop exercising to avoid leaking]]></ri>
+		<ri id = "812" priority = "0"><![CDATA[You often feel excessively tired or short of breath]]></ri>
+		<ri id = "813" priority = "0"><![CDATA[You plan holidays or special occasions to fit around your period]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "247" url = "http://www.nhs.uk/conditions/Periods-heavy/Pages/Introduction.aspx"><![CDATA[Health A-Z: heavy periods]]></ri>		<ri id = "246" url = "http://www.nhs.uk/conditions/Periods/Pages/Introduction.aspx"><![CDATA[Health A-Z: periods]]></ri>		<ri id = "245" url = "http://www.nhs.uk/Conditions/Periods-painful/Pages/Introduction.aspx?url=Pages/what-is-it.aspx"><![CDATA[Health A-Z: painful periods]]></ri>		<ri id = "244" url = "http://www.nhs.uk/Conditions/Anaemia-iron-deficiency-/Pages/Introduction.aspx"><![CDATA[Health A-Z: anaemia]]></ri>		<ri id = "243" url = "http://www.nhs.uk/Conditions/Fibroids/Pages/Introduction.aspx"><![CDATA[Health A-Z: fibroids]]></ri>		<ri id = "242" url = "http://www.nhs.uk/conditions/endometriosis/Pages/Introduction.aspx"><![CDATA[Health A-Z: endometriosis]]></ri>		<ri id = "241" url = "http://www.nhs.uk/Livewell/Contraception/Pages/IUS.aspx"><![CDATA[More on intrauterine systems (IUS)]]></ri>	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "204">
+			<title><![CDATA[What is a large blood clot?]]></title>
+			<body><![CDATA[<div>A blood clot is described as large if it is bigger than a 50p coin.</div>]]></body>
+			<name><![CDATA[What is a large blood clot?]]></name>
+		</ib>
+		<ib  id = "205">
+			<title><![CDATA[Why is this being asked?]]></title>
+			<body><![CDATA[<div>Feeling rundown and tired could be a sign of iron deficiency anaemia. This occurs when there are a reduced number of red blood cells because the body does not have enough iron to produce them.</div><div><br></div><div>Iron deficiency anaemia can occur in women who experience heavy periods.</div>]]></body>
+			<name><![CDATA[Why is this being asked?]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>828019604001</v>	</videos>
+</root>

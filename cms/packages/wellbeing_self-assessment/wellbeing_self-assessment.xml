@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>43</id>		
+		<title>Wellbeing self-assessment</title>		
+		<colour_1>FF6600|FF9800</colour_1>
+		<colour_2>3900AC|744CC5</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[How happy are you?]]></intro_title>		
+		<intro_copy><![CDATA[Good mental wellbeing - some people call it happiness - is about more than avoiding mental health problems. It means feeling good and functioning well.<br>This tool uses WEMWBS, a scale often&nbsp;<br>used by psychologists to&nbsp;<br>measure wellbeing.<br>Choose the&nbsp;statements<br>that best describe your<br>thoughts and feelings over<br>the last two weeks and&nbsp;<br>you'll get a helpful snapshot&nbsp;<br>of how you're finding life.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[Good mental wellbeing - some people call it happiness - is about more than avoiding mental health problems. It means feeling good and functioning well.<br><br>This tool uses WEMWBS, a scale which is often used by scientists and psychologists to measure wellbeing.<br><br>To get your wellbeing score,&nbsp;go&nbsp;through the followingstatements and tick the boxthat best describes your&nbsp;thoughts and feelings over&nbsp;the last two weeks.]]></intro_copy_alt>		
+		<intro_foot><![CDATA[Copyright 2006 NHS Health Scotland, University of Warwick and University of Edinburgh.]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Wellbeing_self-assessment.png]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[img_Wellbeing_self-assessment_small.png]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[img_Wellbeing_self-assessment.png]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<dimensions_f>362x430</dimensions_f>		
+		<dimensions_j>362x580</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>1</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt></img_alt>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I’ve been feeling optimistic about the future]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I’ve been feeling useful]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[ None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I've been feeling relaxed]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I’ve been feeling interested in other people]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I've had energy to spare]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I’ve been dealing with problems well]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I've been thinking clearly]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I’ve been feeling good about myself]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I’ve been feeling close to other people]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I've been feeling confident]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I’ve been able to make up my own mind about things]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I’ve been feeling loved]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I’ve been interested in new things]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[I've been feeling cheerful]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[None of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Rarely]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Some of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Often]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[4]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[All of the time]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[5]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "progress bar" p1 = "0" p2 = "70" p3 = "Points"><![CDATA[Your mental wellbeing score]]></ri>
+		<ri type = "points triggered result" p1 = "0" p2 = "32" p3 = ""><![CDATA[<div>Your wellbeing score is much lower than most people typically score.</div><div><br></div><div>Most people have a score between 41 and 59. You may want to begin by talking to a friend or health professional about how you can start to address this.&nbsp;</div><div><br></div><div>There are five evidence-based steps we can all take to improve our mental wellbeing. They are:</div><div><ul><li>Get active</li><li>Connect with others</li><li>Keep learning</li><li>Be aware of yourself and the world</li><li>Give to others</li></ul></div><div>Go to useful links for more on the five steps.</div><div><br></div><div>If you are struggling because of how you feel, then your GP is a good place to find out about ways of boosting how you feel emotionally or physically.</div>]]></ri>
+		<ri type = "points triggered result" p1 = "32" p2 = "40" p3 = ""><![CDATA[<div>Your wellbeing score is lower than most people typically score.</div><div><br></div><div>Most people have a score between 41 and 59. Why not take action to improve your mental wellbeing?</div><div><br></div><div>There are five evidence-based steps we can all take to improve our mental wellbeing. They are:</div><div><ul><li>Get active</li><li>Connect with others</li><li>Keep learning</li><li>Be aware of yourself and the world</li><li>Give to others</li></ul></div><div>Go to useful links for more on the five steps.</div><div><br></div><div>If you are struggling because of how you feel, then your GP is a good place to find out about ways of boosting how you feel emotionally or physically.</div>]]></ri>
+		<ri type = "points triggered result" p1 = "40" p2 = "59" p3 = ""><![CDATA[<div>Your wellbeing score is in the range that most people typically score.</div><div><br></div><div>You can still improve your mental wellbeing by taking action.</div><div><br></div><div>There are five evidence-based steps we can all take to improve our mental wellbeing. They are:</div><div><ul><li>Get active</li><li>Connect with others</li><li>Keep learning</li><li>Be aware of yourself and the world</li><li>Give to others</li></ul></div><div>Go to useful links for more on the five steps.</div>]]></ri>
+		<ri type = "points triggered result" p1 = "59" p2 = "70" p3 = ""><![CDATA[<div>Good news, your wellbeing score is higher than most people typically score.</div><div><br></div><div>Most people have a score between 41 and 59. Continue doing the things that are keeping you happy.</div><div><br></div><div>There are five evidence-based steps we can all take to improve and maintain our mental wellbeing. They are:</div><div><ul><li>Get active</li><li>Connect with others</li><li>Keep learning</li><li>Be aware of yourself and the world</li><li>Give to others</li></ul></div><div>Go to useful links for more on the five steps.</div>]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[Here are some links to articles that you might find useful:]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[363]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[364]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[365]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[366]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[367]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[368]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[165]]></li>
+	</links>
+	<result_items>
+	</result_items>
+	<link_items>
+		<ri id = "363" url = "http://www.nhs.uk/Conditions/stress-anxiety-depression/Pages/improve-mental-wellbeing.aspx">
+Five ways to mental wellbeing		</ri>
+		<ri id = "364" url = "http://www.nhs.uk/Conditions/stress-anxiety-depression/Pages/Exercise-for-depression.aspx">
+Get active		</ri>
+		<ri id = "365" url = "http://www.nhs.uk/Conditions/stress-anxiety-depression/Pages/Connect-for-mental-wellbeing.aspx">
+Connect with others		</ri>
+		<ri id = "366" url = "http://www.nhs.uk/Conditions/stress-anxiety-depression/Pages/learn-for-mental-wellbeing.aspx">
+Keep learning		</ri>
+		<ri id = "367" url = "http://www.nhs.uk/Conditions/stress-anxiety-depression/Pages/mindfulness.aspx">
+Be aware of yourself and the world		</ri>
+		<ri id = "368" url = "http://www.nhs.uk/Conditions/stress-anxiety-depression/Pages/Give-for-mental-wellbeing.aspx">
+Give to others		</ri>
+		<ri id = "165" url = "http://www.llttf.com">
+Living Life to the Full		</ri>
+	</link_items>
+	<qvars>
+	</qvars>
+	<info_boxes>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+	</videos>
+</root>

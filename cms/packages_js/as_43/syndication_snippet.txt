@@ -1,0 +1,13 @@
+<script language="javascript">
+$(window).on('message', function(e) {
+	var tmp = (eval('(' +e.originalEvent.data+')'));
+	window.hasOwnProperty = window.hasOwnProperty || Object.prototype.hasOwnProperty;
+	if(tmp.hasOwnProperty('nhs_redirect')){
+		window.location.href = tmp.nhs_redirect;
+	}
+});    
+</script>
+<div id="assessment_webpart_wrapper" style="width:362px;">
+  <iframe style="width:100%;height:435px;" title="self assessments" src="http://media.nhschoices.nhs.uk/tools/documents/self_assessments_js/assessment.html?ASid=43&syndicate=true" frameborder="no" scrolling="no"></iframe>
+  <div id="assessment_webpart_branding" style="float:right;"><a href="http://nhs.uk/tools/" alt="content provided by NHS Choices"><img src="http://media.nhschoices.nhs.uk/tools/documents/self_assessments_js/images/syndication.png" width="264" height="38" border="0" alt="content provided by NHS Choices" /></a></div>
+</div>

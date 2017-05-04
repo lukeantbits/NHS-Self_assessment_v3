@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<config>
+		<id>48</id>		
+		<title>Fitness self-assessment</title>		
+		<colour_1>669900|9BC363</colour_1>
+		<colour_2>990000|DD645F</colour_2>
+		<colour_3>669900|9BC363</colour_3>
+		<intro_title><![CDATA[How fit are you?]]></intro_title>		
+		<intro_copy><![CDATA[By meeting recommended levels of physical activity, your risk of heart disease, stroke and type 2 diabetes is reduced by up to 50%.<br><br>The Department of Health recommends that adults should do 150 minutes of physical activity a week. Those aged 18 and under should be doing an hour each day. Are you doing enough?<br><br>Use this assessment to find out.]]></intro_copy>		
+		<intro_copy_alt><![CDATA[By meeting recommended levels of physical activity, your risk of heart disease, stroke and type 2 diabetes is reduced by up to 50%.<br><br>The Department of Health recommends that adults should do 150 minutes of physical activity a week. Those aged 18 and under should be doing an hour each day. Are you doing enough?<br><br>Use this assessment to find out.]]></intro_copy_alt>		
+		<intro_foot><![CDATA[<br>]]></intro_foot>		
+		<intro_graphic><![CDATA[img_Fitness_self-assessment_test.png]]></intro_graphic>		
+		<intro_graphic_alt><![CDATA[img_Fitness_self-assessment_test.png]]></intro_graphic_alt>		
+		<hr_intro_graphic_alt><![CDATA[]]></hr_intro_graphic_alt>		
+		<intro_graphic_position><![CDATA[6]]></intro_graphic_position>		
+		<intro_graphic_position_m><![CDATA[7]]></intro_graphic_position_m>		
+		<dimensions_f>362x410</dimensions_f>		
+		<dimensions_j>362x410</dimensions_j>		
+		<print_title>Your checklist</print_title>		
+		<reporting>0</reporting>		
+		<syndication_footer>0</syndication_footer>		
+		<img_alt>fitness</img_alt>		
+		<js_body_w>100%</js_body_w>		
+		<js_body_top>1em</js_body_top>		
+		<js_body_left>0em</js_body_left>		
+	</config>
+	<questions>
+		<q type = "single select" info_box = "184" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[How old are you?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Between 5 and 18]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[511]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[611]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[fitness_age]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[5-18]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1142]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[19 to 30]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[731]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[413]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[fitness_age]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[19-30]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1142]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[31 to 45]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[731]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[413]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[fitness_age]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[31-45]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1142]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[46 to 64]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[731]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[413]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[fitness_age]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[46-54]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1142]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[65 or over]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[732]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[612]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[set variable]]></type>
+							<sub_type><![CDATA[fitness_age]]></sub_type>
+							<operator><![CDATA[=]]></operator>
+							<value><![CDATA[65+]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[1142]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "187" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[The Department of Health recommends adults are moderately active for 150 minutes or vigorously active for 75 minutes each week. In an average week, how close are you to achieving this?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>fitness_age</property>
+				<operator><![CDATA[>]]></operator>
+				<value>5-18</value>
+			</action>
+			<answers>
+				<a>
+					<body><![CDATA[I achieve this every week]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[733]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[6]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm almost there, but not quite]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[734]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I do around half of what's recommended]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[734]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm a long way off]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[735]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Those aged between 5 and 18 should be active for 60 minutes every day. On an average day, how close are you to achieving this?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>fitness_age</property>
+				<operator><![CDATA[=]]></operator>
+				<value>5-18</value>
+			</action>
+			<answers>
+				<a>
+					<body><![CDATA[I achieve this every week]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[736]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[6]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm almost there, but not quite]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[737]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I do around half of what's recommended]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[737]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[I'm a long way off]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[738]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "185" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[On average, how many days a week do you do activities that strengthen your muscles?]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>fitness_age</property>
+				<operator><![CDATA[>]]></operator>
+				<value>5-18</value>
+			</action>
+			<answers>
+				<a>
+					<body><![CDATA[At least two days each week]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[739]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[414]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[6]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[One day each week]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[740]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[414]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Hardly ever]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[741]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[414]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "186" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[<div>On average, how many days a week do you do activities that strengthen your muscles?</div>]]></body>
+			<action>
+				<condition>show if</condition>
+				<property>fitness_age</property>
+				<operator><![CDATA[=]]></operator>
+				<value>5-18</value>
+			</action>
+			<answers>
+				<a>
+					<body><![CDATA[At least three days each week]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[739]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[6]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[One or two days each week]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[750]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Hardly ever]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[741]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "multiple select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[If you're not doing enough physical activity, which of the following best describes why? (You can pick more than one)]]></body>
+			<answers>
+				<a>
+					<body><![CDATA['I don't have time']]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[742]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[412]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA['I'm too tired']]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[743]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[412]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA['I don't have the willpower']]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[744]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[412]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA['I don't like to exercise']]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[745]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[412]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA['It's hard work']]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[746]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[412]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[None of these]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+		<q type = "single select" info_box = "0" info_box_position = "0">
+			<title><![CDATA[New question]]></title>
+			<body><![CDATA[Using the list below, which of the following &nbsp;best describes the way you feel after climbing a flight of stairs?]]></body>
+			<answers>
+				<a>
+					<body><![CDATA[Great]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[3]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[OK]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[2]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Breathless]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[1]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[747]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[415]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Exhausted]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[748]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[415]]></value>
+						</ac>
+					</actions>
+				</a>
+				<a>
+					<body><![CDATA[Can't do it]]></body>
+					<actions>
+						<ac>
+							<type><![CDATA[points]]></type>
+							<operator><![CDATA[+]]></operator>
+							<value><![CDATA[0]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[result]]></type>
+							<value><![CDATA[749]]></value>
+						</ac>
+						<ac>
+							<type><![CDATA[link]]></type>
+							<value><![CDATA[415]]></value>
+						</ac>
+					</actions>
+				</a>
+			</answers>
+		</q>
+	</questions>
+	<results>
+		<ri type = "progress bar" p1 = "0" p2 = "15" p3 = "Points"><![CDATA[Your fitness score<br>]]></ri>
+		<ri type = "points triggered result" p1 = "0" p2 = "7" p3 = ""><![CDATA[<div>Based on your responses today you're not very active and struggling with motivation. Start small and build up. You’ll soon gain in confidence and feel better.</div><div><br></div><div>Here’s a list of things to consider:</div>]]></ri>
+		<ri type = "points triggered result" p1 = "7" p2 = "12" p3 = ""><![CDATA[<div>Based on your responses today you're physically active but not quite meeting recommended levels.</div><div><br></div><div>Here’s a list of things to consider:</div>]]></ri>
+		<ri type = "points triggered result" p1 = "12" p2 = "28" p3 = ""><![CDATA[<div>Based on your responses today you are meeting or exceeding the recommended levels of physical activity. This is great for your health. Keep up the good work.</div><div><br></div><div>Here’s a list of things to consider:</div>]]></ri>
+		<ri type = "accumulated results" p1 = "" p2 = "" p3 = ""><![CDATA[]]></ri>
+	</results>
+	<links>
+		<li type = "text" p1 = "" p2 = ""><![CDATA[Here are some links to articles, videos, podcasts and exercise guides that you might find useful:]]></li>
+		<li type = "accumulated links" p1 = "" p2 = ""><![CDATA[]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[435]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[436]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[437]]></li>
+		<li type = "obligatory link" p1 = "" p2 = ""><![CDATA[438]]></li>
+		<li type = "obligatory video" p1 = "" p2 = ""><![CDATA[701162573001]]></li>
+	</links>
+	<result_items>
+		<ri id = "511" priority = "0"><![CDATA[As you are under 18 you should be active for at least one hour a day.]]></ri>
+		<ri id = "1142" priority = "0"><![CDATA[Evidence shows that even shorter sessions of moderate to vigorous physical activity can be good for your health. Ten minutes or more – whatever your age – is a great starting point if you're struggling with time or motivation.]]></ri>
+		<ri id = "731" priority = "0"><![CDATA[Adults should do at least 150 minutes moderate or 75 minutes vigorous physical activity a week.]]></ri>
+		<ri id = "732" priority = "0"><![CDATA[Over 65s should take particular care to keep moving and retain their mobility through daily activity. Aim for at least 150 minutes moderate or 75 minutes vigorous physical activity a week.]]></ri>
+		<ri id = "733" priority = "0"><![CDATA[By meeting the recommended levels of physical activity, risk of heart disease, stroke and type 2 diabetes is reduced by up to 50%.]]></ri>
+		<ri id = "734" priority = "0"><![CDATA[Upping your physical activity levels to 150 minutes a week will lower your risk of heart disease, stroke and type 2 diabetes- by up to 50%.]]></ri>
+		<ri id = "735" priority = "0"><![CDATA[It's very important that you start being more active to reduce your risk of heart disease, stroke and type 2 diabetes.]]></ri>
+		<ri id = "736" priority = "0"><![CDATA[Being active when you're young helps to build strong muscles and healthy bones.]]></ri>
+		<ri id = "737" priority = "0"><![CDATA[You need to up your levels to an hour a day. Being active when you're young helps build strong muscles and healthy bones.]]></ri>
+		<ri id = "738" priority = "0"><![CDATA[It's very important that you start being more active. Being active when you're young helps to build strong muscles and healthy bones, can help improve self confidence and will help maintain a healthy weight.]]></ri>
+		<ri id = "739" priority = "0"><![CDATA[You're already working on strengthening your muscles which is great for your health.]]></ri>
+		<ri id = "740" priority = "0"><![CDATA[You're already working on your muscle strength which is great for your health. By increasing it to two days a week you'll gain maximum health benefits.]]></ri>
+		<ri id = "741" priority = "0"><![CDATA[You need to work on your muscle strength. Try doing exercises that use your body weight for resistance.]]></ri>
+		<ri id = "750" priority = "0"><![CDATA[You're already working on your muscle strength which is great for your health. By increasing it to three days a week you'll gain maximum health benefits.]]></ri>
+		<ri id = "742" priority = "0"><![CDATA[Consider building activities into your daily routine, like walking more or cycling to get around.]]></ri>
+		<ri id = "743" priority = "0"><![CDATA[Exercise can boost energy levels and even improve your sleep. Try to do a little each day.]]></ri>
+		<ri id = "744" priority = "0"><![CDATA[Setting a goal can really help strengthen your willpower and achieving it will have great mental as well as physical health benefits.]]></ri>
+		<ri id = "745" priority = "0"><![CDATA[Try out lots of different activities to find something you can enjoy on a regular basis.]]></ri>
+		<ri id = "746" priority = "0"><![CDATA[As well having physical health benefits, keeping active can boost mental wellbeing so try to do a little rather than avoiding it.]]></ri>
+		<ri id = "747" priority = "0"><![CDATA[Avoid taking the lift or escalator every time and start using the stairs. It's an easy way to build activity into your day.]]></ri>
+		<ri id = "748" priority = "0"><![CDATA[Try to make small changes in your day to increase your activity levels. Over time you'll be able to climb stairs without feeling exhausted.]]></ri>
+		<ri id = "749" priority = "0"><![CDATA[Not being able to climb stairs may suggest you need to see your GP for a health check.]]></ri>
+	</result_items>
+	<link_items>
+		<ri id = "611" url = "http://www.nhs.uk/Livewell/fitness/Pages/physical-activity-guidelines-for-children.aspx"><![CDATA[Physical activity guidelines for children]]></ri>		<ri id = "413" url = "http://www.nhs.uk/Livewell/fitness/Pages/physical-activity-guidelines-for-adults.aspx"><![CDATA[Physical activity guidelines for adults]]></ri>		<ri id = "612" url = "http://www.nhs.uk/Livewell/fitness/Pages/physical-activity-guidelines-for-older-adults.aspx"><![CDATA[Physical activity guidelines for older adults]]></ri>		<ri id = "414" url = "http://www.nhs.uk/Livewell/strength-and-flexibility/Pages/Get-fit-with-strength-and-flexibility.aspx"><![CDATA[Get fit with strength and flex]]></ri>		<ri id = "412" url = "http://www.nhs.uk/Livewell/c25k/Pages/overcoming-the-barriers-to-exercise.aspx"><![CDATA[Overcoming mental barriers]]></ri>		<ri id = "415" url = "http://www.nhs.uk/Livewell/fitness/Pages/Lowimpact.aspx"><![CDATA[Low impact exercise]]></ri>		<ri id = "435" url = "http://www.nhs.uk/Tools/Pages/Strength-and-flexibility.aspx"><![CDATA[Strength & flexibility podcasts]]></ri>		<ri id = "436" url = "http://www.nhs.uk/Tools/Pages/Couch-to-5k-plus.aspx"><![CDATA[Couch to 5k+ podcasts]]></ri>		<ri id = "437" url = "http://www.nhs.uk/Livewell/fitness/Pages/home-cardio-workout.aspx"><![CDATA[10 minute home cardio workout]]></ri>		<ri id = "438" url = "http://www.nhs.uk/Livewell/fitness/Pages/home-toning-workout.aspx"><![CDATA[10 minute home toning workout]]></ri>	</link_items>
+	<qvars>
+		<v  name = "fitness_age">
+<val>5-18</val><val>19-30</val><val>31-45</val><val>46-54</val><val>65+</val>		</v>
+	</qvars>
+	<info_boxes>
+		<ib  id = "184">
+			<title><![CDATA[Physical activity for the under 5s ]]></title>
+			<body><![CDATA[<div>For those under five, being active is important for growth and development.</div><div><br></div><div>For babies it's important to make sure they can move as much as possible, for example letting them lie on their stomach so they can kick their legs and stretch their arms.</div><div><br></div><div>For children who can walk, they should be active for at least three hours every day. The good news is they get a lot of this by just playing at the playground or park, climbing and jumping, running and chasing.</div>]]></body>
+			<name><![CDATA[Physical activity for the under 5s ]]></name>
+		</ib>
+		<ib  id = "187">
+			<title><![CDATA[What 'moderate and vigorous' mean]]></title>
+			<body><![CDATA[<div>Moderate: physical activity that increases your heart rate, makes you warm and slightly out of breath but allows you to maintain a conversation.</div><div><br></div><div>Vigorous: physical activity that increases your heart rate, causes you to breathe rapidly and makes a conversation difficult.</div><div><br></div><div>Adults should do a minimum of 150 minutes of moderate or 75 minutes of vigorous physical activity a week. Bouts of activity should last for at least 10 minutes, could be a combination of both and can be spread out over the week.</div>]]></body>
+			<name><![CDATA[What 'moderate and vigorous' mean]]></name>
+		</ib>
+		<ib  id = "0">
+			<title><![CDATA[]]></title>
+			<body><![CDATA[]]></body>
+			<name><![CDATA[]]></name>
+		</ib>
+		<ib  id = "185">
+			<title><![CDATA[What are muscle-strengthening activities?]]></title>
+			<body><![CDATA[<div>Besides aerobic activity, you need to do things to strengthen your muscles on two or more days a week. These activities should work all the major muscle groups of your body (legs, hips, back, chest, abdomen, shoulders, and arms).</div><div><br></div><div>Examples include lifting weights, doing exercises that use your body weight for resistance (eg sit-ups, push-ups), heavy gardening or manual work and yoga.</div><div><br></div><div>To gain health benefits, muscle-strengthening activities need to be done to the point where it's hard for you to do another repetition without help.</div>]]></body>
+			<name><![CDATA[What are muscle-strengthening activities?]]></name>
+		</ib>
+		<ib  id = "186">
+			<title><![CDATA[What are muscle-strengthening activities?]]></title>
+			<body><![CDATA[<div>Besides aerobic activity, you need to do things to strengthen your muscles and bones on two or more days a week. These activities should work all the major muscle groups of your body (legs, hips, back, chest, abdomen, shoulders, and arms).</div><div><br></div><div>This could include resistance exercises using body weight or resistance bands,rope or tree climbing and sports such as gymnastics, basketball, volleyball and tennis.</div><div><br></div><div>Younger children might also try games such as tug-of-war, swinging on playground equipment/bars and hopping, skipping and jumping.</div>]]></body>
+			<name><![CDATA[What are muscle-strengthening activities?]]></name>
+		</ib>
+	</info_boxes>
+	<videos>
+			<v>701162573001</v>	</videos>
+</root>
