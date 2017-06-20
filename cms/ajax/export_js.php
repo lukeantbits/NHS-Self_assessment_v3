@@ -27,8 +27,8 @@ if (curl_errno($ch)) {
     curl_close($ch);
 	$files = array();
 	$sql = "SELECT title , dimensions_j, review_key FROM assessments WHERE id = ".$as_id;
-	$result = mysql_query($sql);
-	$row = mysql_fetch_assoc($result);
+	$result = mysqli_query($connection,$sql);
+	$row = mysqli_fetch_assoc($result);
 	
 	if($row['dimensions_j'] == 'elastic'){
 		$w = 364;

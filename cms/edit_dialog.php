@@ -20,25 +20,25 @@ $type_arr['video'] = array('table' => 'video','values' => array('name','vals'));
 if(isset($_REQUEST['submit'])){
 	if($_REQUEST['add_row'] == 1){
 		$sql = "INSERT INTO ".$type_arr[$type]['table']." (as_id) VALUES (".$as_id.")";
-		mysql_query($sql);
+		mysqli_query($connection,$sql);
 	}
 	foreach($_REQUEST as $key){
 		if(strpos("_".key($_REQUEST),$type_arr[$type]['values'][0])>0){
 			$id = array_pop(explode("_",key($_REQUEST)));
 			if(isset($_REQUEST['delete_'.$id])){
 				$sql = "DELETE FROM ".$type_arr[$type]['table']." WHERE id = ".$id;
-				mysql_query($sql);
+				mysqli_query($connection,$sql);
 			}else{
 				$sql = "UPDATE ".$type_arr[$type]['table']." SET ";
 				foreach($type_arr[$type]['values'] as $subkey){
 					if($type == "set variable"){
-						$val = sanitizeVar(mysql_real_escape_string(trim($_REQUEST[$subkey."_".$id])));
+						$val = sanitizeVar(mysqli_real_escape_string($connection,trim($_REQUEST[$subkey."_".$id])));
 						if(varChanged($val,$id)){
 							$sql.= " ".$subkey." = '".$val."' , ";
 						}
 						
 					}else{
-						$sql.= " ".$subkey." = '".mysql_real_escape_string(trim($_REQUEST[$subkey."_".$id]))."' , ";
+						$sql.= " ".$subkey." = '".mysqli_real_escape_string($connection,trim($_REQUEST[$subkey."_".$id]))."' , ";
 					}
 					
 				}
@@ -56,7 +56,7 @@ if(isset($_REQUEST['submit'])){
 				}
 				
 				$sql.= " WHERE id = ".$id;
-				mysql_query($sql);
+				mysqli_query($connection,$sql);
 			}
 			//echo $sql."<br>";
 		}
@@ -87,9 +87,9 @@ if(isset($_REQUEST['submit'])){
 switch($type){
 	case "link":
 		$sql = "SELECT * FROM links WHERE as_id = ".$as_id." OR as_id = 0 ORDER BY as_id DESC,id DESC";
-		$result = mysql_query($sql);
+		$result = mysqli_query($connection,$sql);
 		$i = 0;
-		while($row = mysql_fetch_assoc($result)){
+		while($row = mysqli_fetch_assoc($result)){
 			$i++;
 			?>
       <div class="answer_content">
@@ -116,9 +116,9 @@ switch($type){
 	break; 
 	case "result":
 		$sql = "SELECT * FROM results WHERE as_id = ".$as_id." OR as_id = 0 ORDER BY as_id DESC,id DESC";
-		$result = mysql_query($sql);
+		$result = mysqli_query($connection,$sql);
 		$i = 0;
-		while($row = mysql_fetch_assoc($result)){
+		while($row = mysqli_fetch_assoc($result)){
 			$i++;
 			?>
       <div class="answer_content">
@@ -145,9 +145,9 @@ switch($type){
       <div class="info">You may create new system variables here, you need to create a "|" seperated list of preset values.<br><br>You may also create a numeric variable which defaults to a value of 0, to do this name your variable with the suffix ":number" and leave the value blank.<br><br> Also be careful what you alter/delete as results may be unpredictable!</div>
       <?php
 		$sql = "SELECT * FROM vars WHERE as_id = ".$as_id." OR as_id = 0 ORDER BY as_id DESC,id DESC";
-		$result = mysql_query($sql);
+		$result = mysqli_query($connection,$sql);
 		$i = 0;
-		while($row = mysql_fetch_assoc($result)){
+		while($row = mysqli_fetch_assoc($result)){
 			$i++;
 			?>
       <div class="answer_content">
@@ -197,9 +197,9 @@ var bc_obj
 	$bc_id = 0;
 	if(sizeof($tmp)>2){
 		$sql = "SELECT value FROM actions WHERE id =  ".$tmp[2];
-		$result = mysql_query($sql);
-		if(mysql_num_rows($result)>0){
-			$row = mysql_fetch_assoc($result);
+		$result = mysqli_query($connection,$sql);
+		if(mysqli_num_rows($result)>0){
+			$row = mysqli_fetch_assoc($result);
 			$bc_id = $row['value'];
 		}
 	}

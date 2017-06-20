@@ -27,8 +27,8 @@ if (curl_errno($ch)) {
     curl_close($ch);
 	$files = array();
 	$sql = "SELECT title , dimensions_f FROM assessments WHERE id = ".$as_id;
-	$result = mysql_query($sql);
-	$row = mysql_fetch_assoc($result);
+	$result = mysqli_query($connection,$sql);
+	$row = mysqli_fetch_assoc($result);
 	if($row['dimensions_f'] == 'elastic'){
 		$w = 364;
 		$h= 466;
@@ -83,7 +83,7 @@ if (curl_errno($ch)) {
 
 
 function copy_directory( $source, $destination ) {
-	global $files;
+	global $files,$connection;
 	if ( is_dir( $source ) ) {
 		@mkdir( $destination );
 		$directory = dir( $source );

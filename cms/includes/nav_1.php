@@ -1,6 +1,6 @@
 <?php 
 $sql = "SELECT * FROM assessments";
-$result = mysql_query($sql);
+$result = mysqli_query($connection,$sql);
 $page_row = "";
 ?>
 <div id="nav1" class="nav_bar"><div class="nav_1_right">
@@ -12,7 +12,7 @@ $page_row = "";
     <li><select id="assessment_switcher">
   	<?php 
 	$i = 0;
-	while($row = mysql_fetch_assoc($result)){
+	while($row = mysqli_fetch_assoc($result)){
 		if($row['id'] == $as_id || $i == 0){
 			echo "<option selected=\"selected\" value=\"".$row['id']."\">".$row['title']."</option>";
 			$page_row = $row;

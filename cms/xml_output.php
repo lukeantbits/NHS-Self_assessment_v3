@@ -78,17 +78,17 @@ function list_answer_actions($id){
 			break;
 		}
 		foreach($row as $key){
-			if($i == 0){
+			/*if($i == 0){
 				prev($row);
 			}else{
 				next($row);
-			}
+			}*/
 			
 			if($key != ""){
 				$output.= "							<".key($row)."><![CDATA[".$key."]]></".key($row).">
 ";
 			}
-			
+			next($row);
 			$i++;
 			
 		}
@@ -243,14 +243,15 @@ if($as_id > 1){
 	echo "	<link_items>
 ";
 	$links = array_unique($links);
-	foreach($links as $subkey){
-		
-		$subsql = "SELECT id,link_copy,link_url FROM links WHERE id = ".$subkey;
-		$subresult = mysqli_query($connection,$subsql);
-		$subrow = mysqli_fetch_assoc($subresult);
-		echo "		<ri id = \"".$subkey."\" url = \"".$subrow['link_url']."\">";
-		echo "<![CDATA[".$subrow['link_copy'];
-		echo "]]></ri>";
+	if(sizeof($links) > 1){
+		foreach($links as $subkey){
+			$subsql = "SELECT id,link_copy,link_url FROM links WHERE id = ".$subkey;
+			$subresult = mysqli_query($connection,$subsql);
+			$subrow = mysqli_fetch_assoc($subresult);
+			echo "		<ri id = \"".$subkey."\" url = \"".$subrow['link_url']."\">";
+			echo "<![CDATA[".$subrow['link_copy'];
+			echo "]]></ri>";
+		}
 	}
 	echo "	</link_items>
 ";

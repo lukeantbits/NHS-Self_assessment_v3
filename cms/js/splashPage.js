@@ -1,5 +1,6 @@
 function splashPage(){
 	var self = this;
+	console.log(as_id)
 	var swf_path = null;
 	self.pg=2
 	this.saveAll = function(data,callback){
@@ -21,11 +22,13 @@ function splashPage(){
 		);
 	}
 	this.createUploader = function (target,fname,imgdiv){
+		
 		uploader = new qq.FileUploader({
 			element: document.getElementById(target),
 			action: 'uploads.php',
 			filename: fname,
 			onComplete: function(id, fileName, responseJSON){
+				console.log("archive/as_"+as_id+"/"+fileName)
 				$("#"+imgdiv).val(fileName);
 				$("#"+fname+"_img").css("visibility", "visible");
 				if(fileName.indexOf(".swf")>-1){
@@ -42,12 +45,7 @@ function splashPage(){
 		});
 	}
 	this.createUploader('file-uploader','splash','intro_graphic');
-	this.createUploader('file-uploader_alt','splash_alt','intro_graphic_alt');
-	this.createUploader('hr_file-uploader_alt','hr_splash_alt','hr_intro_graphic_alt');
+	
 	new nicEditor({buttonList : ['bold','italic','underline','ol','ul','subscript','superscript','link','fontFormat','removeformat','xhtml']}).panelInstance('intro_copy');
-	new nicEditor({buttonList : ['bold','italic','underline','ol','ul','subscript','superscript','link','fontFormat','removeformat','xhtml']}).panelInstance('intro_copy_alt');
 	new nicEditor({buttonList : ['bold','italic','underline','ol','ul','subscript','superscript','link','fontFormat','removeformat','xhtml']}).panelInstance('intro_foot');
-	if(swf_path != null){
-		self.setFlash(swf_path,"splash_flash")
-	}
 }

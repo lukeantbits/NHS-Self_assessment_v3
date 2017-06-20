@@ -12,10 +12,10 @@ if(isset($_REQUEST['info_id'])){
 if(isset($_REQUEST['submit'])){
 	if($_REQUEST['delete_box'] == 1){
 		$sql = "DELETE FROM infoboxes WHERE id = ".$info_id;
-		mysql_query($sql);
+		mysqli_query($connection,$sql);
 		$info_id = 0;
 	}else{
-		$sql = "UPDATE infoboxes SET title_text = '".mysql_real_escape_string($_REQUEST['title_text'])."' , sub_title_text = '".mysql_real_escape_string($_REQUEST['sub_title_text'])."' , body_text = '".mysql_real_escape_string($_REQUEST['body_text'])."' , ";
+		$sql = "UPDATE infoboxes SET title_text = '".mysqli_real_escape_string($connection,$_REQUEST['title_text'])."' , sub_title_text = '".mysqli_real_escape_string($connection,$_REQUEST['sub_title_text'])."' , body_text = '".mysqli_real_escape_string($connection,$_REQUEST['body_text'])."' , ";
 		
 		
 		if(isset($_REQUEST['shared'])){
@@ -26,16 +26,16 @@ if(isset($_REQUEST['submit'])){
 		
 		$sql.= " WHERE id = ".$info_id;
 		//echo $sql;
-		mysql_query($sql);
+		mysqli_query($connection,$sql);
 	}
 	if($_REQUEST['switch_id']>0){
 		$info_id = $_REQUEST['switch_id'];
 	}
 	if($_REQUEST['add_box'] == 1){
 		$sql = "INSERT INTO infoboxes (title_text,as_id) VALUES ('new info box',".$as_id.")";
-		mysql_query($sql);
+		mysqli_query($connection,$sql);
 		//echo $sql;
-		$info_id = mysql_insert_id();
+		$info_id = mysqli_insert_id($connection);
 	}
 }
 
@@ -62,9 +62,9 @@ if(isset($_REQUEST['submit'])){
       <select id="info_box_switch">
         <?php
     $sql = "SELECT * FROM infoboxes WHERE as_id = ".$as_id." OR as_id = 0 ORDER BY as_id DESC,id DESC";
-	$result = mysql_query($sql);
+	$result = mysqli_query($connection,$sql);
 	$i = 0;
-	while($row = mysql_fetch_assoc($result)){
+	while($row = mysqli_fetch_assoc($result)){
 		if($row['id'] == $info_id || ($i == 0 && $info_id == 0 )){
 			echo "<option selected = \"selected\" value=\"".$row['id']."\">".$row['title_text']."</option>";
 			$info_row = $row;

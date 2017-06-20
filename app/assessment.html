@@ -5,7 +5,7 @@
 <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Self Assessment</title>
-<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/desktop.css" rel="stylesheet" type="text/css" />
 <script src="js/jquery-1.8.1.min.js"></script>
 <script src="js/tinycolor-min.js"></script>
 <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
@@ -85,6 +85,7 @@
     <img src="images/radio_bg_30.png"/>
 </div>
 <script language="javascript">
+/*
 var __vc
 var __data = null
 var __img_path = ''
@@ -112,9 +113,9 @@ $(window).load(function(){
 		while (match = search.exec(query))
 		   __url_params[decode(match[1])] = decode(match[2]);
 	})();
-	__img_path = "../NHS-Self_assessments_CMS/archive/as_"+__url_params['ASid']+"/";
+	__img_path = "../cms/archive/as_"+__url_params['ASid']+"/";
 	//$.get('../NHS-Self_assessments_CMS/xml_output.php?as_id='+__url_params['ASid'], function(xml){
-	$.get('../NHS-Self_assessment_CMS/xml_output.php?as_id='+__url_params['ASid'], function(xml){
+	$.get('../cms/xml_output.php?as_id='+__url_params['ASid'], function(xml){
 	//__img_path = "packages/as_"+__url_params['ASid']+"/images/";
 	//$.get('packages/as_'+__url_params['ASid']+'/data.xml', function(xml){
 		__data = $.xml2json(xml);
@@ -182,7 +183,7 @@ var ScrollFix = function(elem) {
 				elem.scrollTop = elem.scrollHeight - elem.offsetHeight - 1;
 		}, false);
 	}
-};
+};*/
 </script>
 </body>
 </html>

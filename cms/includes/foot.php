@@ -1,6 +1,7 @@
 <script>
 <?php
-echo "quiz = ".$page_row['quiz']."
+
+echo "quiz = ".$page_row['quiz'].";
 ";
 ?>
 var app 

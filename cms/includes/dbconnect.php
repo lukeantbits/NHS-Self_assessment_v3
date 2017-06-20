@@ -1,16 +1,7 @@
 <?php
-/*function openDb(){
-	$host = "localhost"; 
-	$user = "root"; 
-	$pass = "Dinosaur202"; 
-	$db = "self_assessments"; 
-	// open connection 
-	global $connection;
-	$connection = mysqli_connect($host, $user, $pass) or die ("Unable to connect!");
-	mysqli_select_db($db) or die ("Unable to select database!"); 
-	mysqli_query('SET CHARACTER SET utf8');
-}*/
-/*function openDb(){
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+function openDb(){
 	$host = "localhost"; 
 	$user = "root"; 
 	$pass = "member"; 
@@ -18,9 +9,10 @@
 	// open connection 
 	global $connection;
 	$connection = mysqli_connect($host, $user, $pass) or die ("Unable to connect!");
-	mysqli_select_db($db) or die ("Unable to select database!"); 
-	mysqli_query('SET CHARACTER SET utf8');
-}*/
+	mysqli_select_db($connection,$db) or die ("Unable to select database!"); 
+	//echo "<h1>OPEN DB()</h1>";
+	mysqli_query($connection,'SET CHARACTER SET utf8');
+}/*
 function openDb(){
 	$host = "109.228.1.16"; 	
 	$user = "root"; 
@@ -32,7 +24,7 @@ function openDb(){
 	mysqli_select_db($connection,$db) or die ("Unable to select database!"); 
 	//echo "<h1>OPEN DB()</h1>";
 	mysqli_query($connection,'SET CHARACTER SET utf8');
-}
+}*/
 $key = "millionaire";
 function encrypt($string,$key){
     $returnString = array();

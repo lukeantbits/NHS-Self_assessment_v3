@@ -1,23 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
 <?php
+header('Content-Type: application/json');
+ini_set('display_errors',1);
 $pg = 0;
 $info_boxes = array();
 $results= array();
 $links= array();
 $qvars= array();
 $videos= array();
-
+//
 require_once("includes/dbconnect.php");
 require_once("includes/shared.php");
 require_once("includes/session_lite.php");
 function is_quiz_active($id){
+	global $connection;
 	$output = 0;
 	$sql = "SELECT answer,id FROM answers WHERE question = ".$id." ORDER BY ind";
-	$result = mysql_query($sql);
-	while($row = mysql_fetch_assoc($result)){
+	$result = mysqli_query($connection,$sql);
+	while($row = mysqli_fetch_assoc($result)){
 		$subsql = "SELECT id FROM actions WHERE answer_id = ".$row['id']." AND type = 'quiz'";
-		$subresult = mysql_query($subsql);
-		if(mysql_num_rows($subresult)>0){
+		$subresult = mysqli_query($connection,$subsql);
+		if(mysqli_num_rows($subresult)>0){
 			$output = 1;
 		}
 	}
@@ -34,33 +36,26 @@ function alt_tint($val){
 	return $output;
 }
 function list_answers($id){
+	global $connection;
 	$sql = "SELECT answer,id FROM answers WHERE question = ".$id." ORDER BY ind";
-	$result = mysql_query($sql);
-	$output= "
-";
-	while($row = mysql_fetch_assoc($result)){
-		$output.= "				<a>
-";
-		$output.= "					<body><![CDATA[".stripChars($row['answer'])."]]></body>
-";		
-		$output.= "					<actions>".list_answer_actions($row['id'])."					</actions>
-";
-		$output.= "				</a>
-";
-	
+	$result = mysqli_query($connection,$sql);
+	$output = array();
+	while($row = mysqli_fetch_assoc($result)){
+		$a = array();
+		$a['body'] = stripChars($row['answer']);
+		$a['actions'] = list_answer_actions($row['id']);
+		array_push($output,$a);
 	}
 	return $output;
 }
 function list_answer_actions($id){
+	global $connection;
 	global $results,$links,$qvars;
 	$sql = "SELECT type,sub_type,operator,value FROM actions WHERE answer_id = ".$id;
-	$result = mysql_query($sql);
-	$output= "
-";
-	while($row = mysql_fetch_assoc($result)){
-		$output.= "						<ac>
-";
-		;
+	$result = mysqli_query($connection,$sql);
+	$output = array();
+	while($row = mysqli_fetch_assoc($result)){
+		$ac = array();
 		$i = 0;
 		switch($row['type']){
 			case "result":
@@ -74,27 +69,19 @@ function list_answer_actions($id){
 			break;
 		}
 		foreach($row as $key){
-			if($i == 0){
-				prev($row);
-			}else{
-				next($row);
-			}
-			
 			if($key != ""){
-				$output.= "							<".key($row)."><![CDATA[".$key."]]></".key($row).">
-";
+				$ac[key($row)] = $key;
 			}
-			
+			next($row);
 			$i++;
 			
 		}
-		$output.= "						</ac>
-";
+		array_push($output,$ac);
 	}
 	return $output;
 }
 function format_question_action($arr){
-	$output = "";
+	$output = array();
 	$p = 0;
 	if($arr['q_select_1'] != "null"){
 		$i = 0;
@@ -102,30 +89,25 @@ function format_question_action($arr){
 			if($i >= 8 && $key != ""){
 				switch($i){
 					case 8:
-						$output .= "				<condition>".$key." if</condition>
-";
+						$output['condition'] = $key.' if';
 					break;
 					case 9:
-						$output .= "				<property>".$key."</property>
-";
+						$output['property'] = $key;
 						if($key == "points"){
 							$p = 1;
 						}
 					break;
 					case 10:
-						$output .= "				<operator><![CDATA[".stripChars($key)."]]></operator>
-";
+						$output['operator'] = stripChars($key);
 					break;
 					case 11:
 						if($p == 0){
-							$output .= "				<value>".$key."</value>
-";
+							$output['value'] = $key;
 						}
 					break;
 					case 12:
 						if($p == 1){
-							$output .= "				<value>".$key."</value>
-";
+							$output['value'] = $key;
 						}
 					break;
 				}
@@ -135,182 +117,130 @@ function format_question_action($arr){
 	}
 	return $output;
 }
-if($ex_mode == "normal"){
-	header ("content-type: text/xml");
-}
 if($as_id > 1){
+	$output = array();
+	// CONFIG
 	openDb();
-	$sql = "SELECT id,title,replace(colour_1,'#','')as colour_1,replace(colour_2,'#','')as colour_2,colour_3,intro_title,intro_copy,intro_copy_alt,intro_foot,intro_graphic,intro_graphic_alt,hr_intro_graphic_alt,intro_graphic_position,intro_graphic_position_m,dimensions_f,dimensions_j,print_title,reporting,syndication_footer,img_alt,js_body_w,js_body_top,js_body_left,quiz FROM assessments WHERE id = ".$as_id;
-	$result = mysql_query($sql);
-	$as_row = mysql_fetch_assoc($result);
-	echo "<root>
-";
-	echo "	<config>
-";
+	$sql = "SELECT id,title,replace(colour_1,'#','')as colour_1,replace(colour_2,'#','')as colour_2,colour_3,intro_title,intro_copy,intro_foot,intro_graphic,h_max,h_min,print_title,reporting,syndication_footer,quiz FROM assessments WHERE id = ".$as_id;
+	$result = mysqli_query($connection,$sql);
+	$as_row = mysqli_fetch_assoc($result);
 	for($i =0;$i < sizeof($as_row);$i++){
 		if(strpos(key($as_row),"colour")=== false){
-			if(strpos(key($as_row),"intro")=== false){
-				echo "		<".key($as_row).">".$as_row[key($as_row)]."</".key($as_row).">		
-";			
-			}else{
-				echo "		<".key($as_row)."><![CDATA[".tweakHTML($as_row[key($as_row)])."]]></".key($as_row).">		
-";			
+			if(strpos(key($as_row),"_copy")>=0){
+				$as_row[key($as_row)] = tweakHTML($as_row[key($as_row)]);	
 			}
 		}else{
-			echo "		<".key($as_row).">".$as_row[key($as_row)]."|".alt_tint($as_row[key($as_row)])."</".key($as_row).">
-";	
+			$as_row[key($as_row)] = array($as_row[key($as_row)],alt_tint($as_row[key($as_row)]));
 		}
 		next($as_row);
 	}
-	echo "	</config>
-";
-	echo "	<questions>
-";
+	$output['config'] = $as_row;
+	// QUESTIONS
+	$output['questions'] = array();
 	$sql = "SELECT * FROM questions WHERE ref = ".$as_id." ORDER BY ind";
-	$result = mysql_query($sql);
-	while($row = mysql_fetch_assoc($result)){
+	$result = mysqli_query($connection,$sql);
+	while($row = mysqli_fetch_assoc($result)){
 		array_push($info_boxes,$row['info_box']);
-		echo "		<q type = \"".$row['question_type']."\" info_box = \"".$row['info_box']."\" info_box_position = \"".$row['info_box_position']."\">
-";
-		echo "			<title><![CDATA[".$row['question_title']."]]></title>
-";
-		echo "			<body><![CDATA[".$row['question_body']."]]></body>
-";
-		if($row['q_select_1'] != 'null'){echo "			<action>
-".format_question_action($row)."			</action>
-";
+		$q = array();
+		$q['type'] = $row['question_type'];
+		$q['info_box'] = $row['info_box'];
+		$q['info_box_position'] = $row['info_box_position'];
+		$q['title'] = $row['question_title'];
+		$q['body'] = $row['question_body'];
+		$q['quiz_summary'] = $row['quiz_summary'];
+		$q['quiz_answer'] = $row['quiz_answer'];
+		$q['quiz_check'] = $row['quiz_check'];
+		$q['quiz_active'] = is_quiz_active($row['id']);
+		$q['answers'] = list_answers($row['id']);
+		if($row['q_select_1'] != 'null'){
+			$q['action'] = format_question_action($row);
 		}
-		echo "			<quiz_summary><![CDATA[".$row['quiz_summary']."]]></quiz_summary>
-";
-		echo "			<quiz_answer><![CDATA[".$row['quiz_answer']."]]></quiz_answer>
-";
-		echo "			<quiz_check><![CDATA[".$row['quiz_check']."]]></quiz_check>
-";
-		echo "			<quiz_active>".is_quiz_active($row['id'])."</quiz_active>
-";	
-		echo "			<answers>".list_answers($row['id'])."			</answers>
-";
-		echo "		</q>
-";
+		array_push($output['questions'],$q);
 	}
-	echo "	</questions>
-";
-	echo "	<results>
-";
-	$sql = "SELECT * FROM result_page_items WHERE as_id = ".$as_id." ORDER BY ind";
-	$result = mysql_query($sql);
-	while($row = mysql_fetch_assoc($result)){
-		echo "		<ri type = \"".$row['type']."\" p1 = \"".$row['p1']."\" p2 = \"".$row['p2']."\" p3 = \"".$row['p3']."\"><![CDATA[".$row['body']."]]></ri>
-";
+	// RESULTS
+	$output['results'] = array();
+	$sql = "SELECT type,p1,p2,p3,body as text FROM result_page_items WHERE as_id = ".$as_id." ORDER BY ind";
+	$result = mysqli_query($connection,$sql);
+	while($row = mysqli_fetch_assoc($result)){
+		array_push($output['results'],$row);
 	}
-	echo "	</results>
-";
-	echo "	<links>
-";
-	$sql = "SELECT * FROM link_page_items WHERE as_id = ".$as_id." ORDER BY ind";
-	$result = mysql_query($sql);
-	while($row = mysql_fetch_assoc($result)){
-		echo "		<li type = \"".$row['type']."\" p1 = \"".$row['p1']."\" p2 = \"".$row['p2']."\"><![CDATA[".$row['body']."]]></li>
-";
+	// LINKS
+	$output['links'] = array();
+	$sql = "SELECT type,p1,p2,body as text FROM link_page_items WHERE as_id = ".$as_id." ORDER BY ind";
+	$result = mysqli_query($connection,$sql);
+	while($row = mysqli_fetch_assoc($result)){
+		array_push($output['links'],$row);
 		if($row['type'] == "obligatory link"){
-			array_push($links,$row['body']);
+			array_push($links,$row['text']);
 		}
 		if($row['type'] == "obligatory video"){
-			array_push($videos,$row['body']);
+			array_push($videos,$row['text']);
 		}
 	}
-	echo "	</links>
-";
-	echo "	<result_items>
-";
+	// RESULT ITEMS
+	$output['result_items'] = array();
 	$results = array_unique($results);
 	foreach($results as $subkey){
-		
-		$subsql = "SELECT id,result_copy,priority FROM results WHERE id = ".$subkey;
-		$subresult = mysql_query($subsql);
-		$subrow = mysql_fetch_assoc($subresult);
-		echo "		<ri id = \"".$subkey."\" priority = \"".$subrow['priority']."\">";
-		echo "<![CDATA[".stripChars($subrow['result_copy'])."]]>";
-		echo "</ri>
-";
+		$subsql = "SELECT id,result_copy as text,priority FROM results WHERE id = ".$subkey;
+		$subresult = mysqli_query($connection,$subsql);
+		$subrow = mysqli_fetch_assoc($subresult);
+		array_push($output['result_items'],$subrow);
 	}
-	echo "	</result_items>
-";
-	echo "	<link_items>
-";
+	// LINK ITEMS
+	$output['link_items'] = array();
 	$links = array_unique($links);
-	foreach($links as $subkey){
-		
-		$subsql = "SELECT id,link_copy,link_url FROM links WHERE id = ".$subkey;
-		$subresult = mysql_query($subsql);
-		$subrow = mysql_fetch_assoc($subresult);
-		echo "		<ri id = \"".$subkey."\" url = \"".$subrow['link_url']."\">";
-		echo "<![CDATA[".$subrow['link_copy'];
-		echo "]]></ri>";
+	if(sizeof($links) > 1){
+		foreach($links as $subkey){
+			$subsql = "SELECT id,link_copy as text,link_url FROM links WHERE id = ".$subkey;
+			$subresult = mysqli_query($connection,$subsql);
+			$subrow = mysqli_fetch_assoc($subresult);
+			array_push($output['link_items'],$subrow);
+		}
 	}
-	echo "	</link_items>
-";
-	echo "	<qvars>
-";
+	// QVARS
+	$output['qvars'] = array();
 	$qvars = array_unique($qvars);
 	foreach($qvars as $subkey){
-		
 		$subsql = "SELECT vals FROM vars WHERE name = '".$subkey."'";
-		$subresult = mysql_query($subsql);
-		$subrow = mysql_fetch_assoc($subresult);
-		echo "		<v  name = \"".$subkey."\">
-";
-		//echo "".$subrow['vals'];
+		$subresult = mysqli_query($connection,$subsql);
+		$subrow = mysqli_fetch_assoc($subresult);
+		$output['qvars'][$subkey] = array();
+		
 		if($subrow['vals'] != "" && !strpos($subkey,":number")){
 			$tmp = explode("|",$subrow['vals']);
 			foreach($tmp as $v){
-				echo "<val>".$v."</val>";
+				array_push($output['qvars'][$subkey],$v);
 			}
 		}else{
-			echo "<val>0</val>";
+			array_push($output['qvars'][$subkey],0);
 		}
-		echo "		</v>
-";
+		
 	}
-	echo "	</qvars>
-";
-	echo "	<info_boxes>
-";
+	
+	// INFO BOXES
+	$output['info_boxes'] = array();
 	$info_boxes = array_unique($info_boxes);
 	foreach($info_boxes as $subkey){
-		$subsql = "SELECT sub_title_text,body_text,title_text FROM infoboxes WHERE id = ".$subkey;
-		$subresult = mysql_query($subsql);
-		$subrow = mysql_fetch_assoc($subresult);
-		echo "		<ib  id = \"".$subkey."\">
-";
-		echo "			<title><![CDATA[".stripChars($subrow['sub_title_text'])."]]></title>
-";
-		echo "			<body><![CDATA[".stripChars($subrow['body_text'])."]]></body>
-";
-		echo "			<name><![CDATA[".stripChars($subrow['title_text'])."]]></name>
-";		
-		echo "		</ib>
-";
+		$subsql = "SELECT id,sub_title_text as title,body_text as body,title_text as name FROM infoboxes WHERE id = ".$subkey;
+		$subresult = mysqli_query($connection,$subsql);
+		if($subresult->num_rows > 0){
+			$subrow = mysqli_fetch_assoc($subresult);
+			array_push($output['info_boxes'],$subrow);
+		}
 	}
-	echo "	</info_boxes>
-";
-	echo "	<videos>
-";
+	// VIDEOS
+	$output['videos'] = array();
 	$sql = "SELECT distinct(value)FROM self_assessments.actions INNER JOIN self_assessments.answers ON self_assessments.answers.id = self_assessments.actions.answer_id WHERE type = 'video' AND self_assessments.answers.ref = ".$as_id;
-	$result = mysql_query($sql);
-	
-	while($row = mysql_fetch_assoc($result)){
-		echo "			<v>".$row['value']."</v>";
+	$result = mysqli_query($connection,$sql);
+	while($row = mysqli_fetch_assoc($result)){
+		array_push($output['videos'],$row['value']);
 	}
 	$sql = "SELECT body FROM link_page_items  WHERE type = 'obligatory video' AND as_id = ".$as_id;
-	$result = mysql_query($sql);
-	
-	while($row = mysql_fetch_assoc($result)){
-		echo "			<v>".$row['body']."</v>";
+	$result = mysqli_query($connection,$sql);
+	while($row = mysqli_fetch_assoc($result)){
+		array_push($output['videos'],$row['body']);
+		
 	}
-	echo "	</videos>
-";
-	echo "</root>
-";
+	echo json_encode($output);
 }
 ?>

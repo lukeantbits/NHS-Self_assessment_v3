@@ -9,8 +9,8 @@ openDb();
 
 $files = array();
 $sql = "SELECT title FROM assessments";
-$result = mysql_query($sql);
-while($row = mysql_fetch_assoc($result)){
+$result = mysqli_query($connection,$sql);
+while($row = mysqli_fetch_assoc($result)){
 	$working_name = strtolower(str_replace(" ","_",$row['title']));
 	$flashMaster = fopen("../swf/sa.swf","r");
 	$binaryData = fread($flashMaster,10000000);
@@ -29,7 +29,7 @@ echo "[{\"path\": \"packages/assessment_swfs.zip\"}]";
 
 
 function copy_directory( $source, $destination ) {
-	global $files;
+	global $files,$connection;
 	if ( is_dir( $source ) ) {
 		@mkdir( $destination );
 		$directory = dir( $source );

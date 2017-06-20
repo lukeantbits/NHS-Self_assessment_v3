@@ -13,15 +13,7 @@ foreach($vars as $key){
 <?php require_once("includes/session.php");?>
 <?php 
 
-if(isset($_REQUEST['platform'])){
-		$_SESSION['platform'] = $_REQUEST['platform'];
-}
 
-if(isset($_SESSION['platform'])){
-	$platform = $_SESSION['platform'];
-}else{
-	$platform = 'JS';
-}
 
 openDb();
 ?>
@@ -43,8 +35,8 @@ openDb();
 
 <?php 
 $sql = "SELECT * FROM assessments WHERE id = ".$as_id;
-$result = mysql_query($sql);
-$page_row = mysql_fetch_assoc($result);
+$result = mysqli_query($connection,$sql);
+$page_row = mysqli_fetch_assoc($result);
 
 if($page_row['dimensions_f'] == 'elastic'){
 	$w_f = 364;
@@ -85,7 +77,7 @@ switch($pg){
 <select id="preview_mode">
 <?php 
 $sql = "SELECT id,ind FROM questions WHERE ref = ".$as_id." ORDER BY ind";
-$result = mysql_query($sql);
+$result = mysqli_query($connection,$sql);
 if($pg <3){
 	echo "	<option selected=\"selected\" value = \"splash\">Splash</option>
 	";
@@ -93,7 +85,7 @@ if($pg <3){
 	echo "	<option value = \"splash\">Splash</option>
 	";
 }
-while($row = mysql_fetch_assoc($result)){
+while($row = mysqli_fetch_assoc($result)){
 	if($pg == 3 && $q == $row['ind']){
 	echo "	<option selected=\"selected\" value = \"Q".$row['ind']."\">Q".($row['ind']+1)."</option>
 ";
@@ -119,59 +111,14 @@ if($pg == 5){
 
 ?>
 </select>
-<select id = "platform">
-	<?php if($platform == 'flash'){?>
-	<option value = "flash" selected = "selected">Flash</option>
-    <option value = "js">JS</option>
-    <?php }else{?>
-	<option value = "flash" >Flash</option>
-    <option value = "js" selected = "selected">JS</option>
-    <?php }?>
-</select>
-<?php if($platform != 'flash'){?>
+
 <input name="" id = "new_window" type="button" value="  Open in new tab ►  " />
-<?php }?>
+
 <br />
 <br />
 
 </div>
-<?php if($platform == 'flash'){?>
-			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="<?php echo $w_f;?>" height="<?php echo $h_f;?>"   align="middle">
-				<param name="movie" value="swf/sa.swf?preview=<?php echo $p;?>&XMLpath=&as_id=<?php echo $as_id;?>&nocache=<?php echo rand();?>" />
-				<param name="quality" value="high" />
-				<param name="bgcolor" value="#ffffff" />
-				<param name="play" value="true" />
-				<param name="loop" value="true" />
-				<param name="wmode" value="window" />
-                <param name="allowFullscreen" value="true" />
-				<param name="scale" value="showall" />
-				<param name="menu" value="true" />
-				<param name="devicefont" value="false" />
-				<param name="salign" value="" />
-				<param name="allowScriptAccess" value="sameDomain" />
-				<!--[if !IE]>-->
-				<object type="application/x-shockwave-flash" width="<?php echo $w_f;?>" height="<?php echo $h_f;?>" data="swf/sa.swf?preview=<?php echo $p;?>&XMLpath=&as_id=<?php echo $as_id;?>&nocache=<?php echo rand();?>" >
-					<param name="movie" value="swf/sa.swf?preview=<?php echo $p;?>&XMLpath=&as_id=<?php echo $as_id;?>&nocache=<?php echo rand();?>" />
-					<param name="quality" value="high" />
-					<param name="bgcolor" value="#ffffff" />
-					<param name="play" value="true" />
-					<param name="loop" value="true" />
-					<param name="wmode" value="window" />
-					<param name="scale" value="showall" />
-                    <param name="allowFullscreen" value="true" />
-					<param name="menu" value="true" />
-					<param name="devicefont" value="false" />
-					<param name="salign" value="" />
-					<param name="allowScriptAccess" value="sameDomain" />
-				<!--<![endif]-->
-					<a href="http://www.adobe.com/go/getflash">
-						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
-					</a>
-				<!--[if !IE]>-->
-				</object>
-				<!--<![endif]-->
-			</object>
-        <?php }else{?>
+
 <div id="assessment_webpart_wrapper">		
 <script type="text/javascript">
 $(document).ready(function() {
@@ -180,23 +127,22 @@ $(document).ready(function() {
 	__assessment.id = 'assessment_webpart';
 	__assessment.preview= '<?php echo $p;?>';  
 	__assessment.ASid = '<?php echo $as_id;?>'; 
-	__assessment.APPpath = '../NHS-Self_assessment/';
+	__assessment.APPpath = '../app/';
 	__assessment.dimensions = Array(<?php echo $w_j;?>,<?php echo $h_j;?>);
 	__assessment.XMLpath = 'data/';
 	__assessment.type = 'text/javascript';
 	__assessment.async = true;
 	__assessment.src = __assessment.APPpath+'js/assessment.js';
 	__assessment_obj.parentNode.insertBefore(__assessment, __assessment_obj); 
-	<?php if($platform != 'flash'){?>
+	
 	$("#new_window").click(function(){
 		//window.open('../self_assessment_js/assessment.html?preview=&XMLpath=data/&ASid=<?php echo $as_id;?>','_blank');
-		window.open('../NHS-Self_assessment/assessment.html?preview=&XMLpath=data/&ASid=<?php echo $as_id;?>','_blank');
+		window.open('../app/assessment.html?preview=&XMLpath=data/&ASid=<?php echo $as_id;?>','_blank');
 	})
-	<?php }?>
+	
 })
 </script>
 </div>		
-		<?php }?>
 		</div>
         <script>
  $(document).ready(function(){

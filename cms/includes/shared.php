@@ -21,11 +21,12 @@ $colours = array(
 	array("0064B7","0684EB")
 );
 function lookup_field($table,$field,$id){
+	global $connection;
 	 if(is_numeric($id) && $field <> "" && $table <> ""){
 		openDb();
 		$sql = "SELECT ".$field." FROM ".$table." WHERE ref = ".$id;
-		$result = mysql_query($sql);
-		$row = mysql_fetch_assoc($result);
+		$result = mysqli_query($connection,$sql);
+		$row = mysqli_fetch_assoc($result);
 		echo $row[$field];
 	} 
 }
@@ -44,9 +45,10 @@ function tweakHTML($str){
 
 }
 function varChanged($val,$id){
+	global $connection;
 	$sql = "SELECT id FROM vars WHERE name = '".$id."' AND vals = '".$val."'";
-	$result = mysql_query($sql);
-	if(mysql_num_rows($result)>0){
+	$result = mysqli_query($connection,$sql);
+	if(mysqli_num_rows($result)>0){
 		return false;
 	}else{
 		return true;

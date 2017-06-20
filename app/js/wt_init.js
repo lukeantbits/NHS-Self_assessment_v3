@@ -1,3 +1,9 @@
+/*
+This file forms part of the NHS Choices Heart Age Tool.
+It is ©2014 NHS Choices.
+It is released under version 3 of the GNU General Public License
+Source code, including a copy of the license is available at https://github.com/Antbits/heartage
+*/
 window.webtrendsAsyncInit=function(){
     var dcs=new Webtrends.dcs().init({
         dcsid: "dcss9yzisf9xjyg74mgbihg8p_8d2u",
@@ -14,15 +20,7 @@ window.webtrendsAsyncInit=function(){
         plugins:{
             hm:{src:"//s.webtrends.com/js/webtrends.hm.js"}
         }
-        }).track({
-			transform:function(dcsObject,multiTrackObject){
-				dcsObject.WT.si_n="Tool_"+__data.config.title;
-				dcsObject.WT.si_p="Start";
-				dcsObject.DCSext.tool_name=__data.config.title;
-				dcsObject.DCSext.tool_cat="Self assessments";
-				dcsObject.DCSext.tool_type="iframe";
-			}
-		})
+        }).track();
 };
 (function(){
     var s=document.createElement("script"); s.async=true; s.src="js/webtrends.min.js";    

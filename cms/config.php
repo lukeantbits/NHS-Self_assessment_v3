@@ -29,10 +29,10 @@
     <?php
 	if(strstr($page_row['dimensions_f'],"x")){
 		$dimensions_j = explode("x",$page_row['dimensions_j']);
-		$dimensions_f = explode("x",$page_row['dimensions_f']);
+		
 	}else{
 		$dimensions_j = array(364,466);
-		$dimensions_f = array(364,466);
+		
 	}
     foreach($colours as $key){
 		if($key[0] == $page_row['colour_1']){
@@ -74,14 +74,17 @@
     </select>
           &nbsp;(links button)</td>
         </tr>
+       
         <tr>
-          <td align="right"><strong>Dimensions (Flash)</strong></td>
-          <td><input name="width_f" style="width:50px;" type="text" id="width_f" value="<?php echo $dimensions_f[0];?>" /> x <input name="height_f" style="width:50px;" type="text" id="height_f" value="<?php echo $dimensions_f[1];?>" />
+          <td align="right"><strong>Min height</strong></td>
+          <td><input name="h_min" style="width:50px;" type="text" id="h_min" value="<?php echo $page_row['h_min'];?>" />            
+             (set to zero for no min height)
            </td>
         </tr>
         <tr>
-          <td align="right"><strong>Dimensions (Js)</strong></td>
-          <td><input name="width_j" style="width:50px;" type="text" id="width_j" value="<?php echo $dimensions_j[0];?>" /> x <input name="height_j" style="width:50px;" type="text" id="height_j" value="<?php echo $dimensions_j[1];?>" />
+          <td align="right"><strong>Max height</strong></td>
+          <td><input name="h_max" style="width:50px;" type="text" id="h_max" value="<?php echo $page_row['h_max'];?>" /> 
+          (set to zero for no max height)
            </td>
         </tr>
         <tr>
@@ -99,14 +102,10 @@
           <td><input name="syndication_footer" type="checkbox" id="syndication_footer" value="1" <?php if($page_row['syndication_footer'] == 1){?>checked="checked"<?php }?> />
            </td>
         </tr>
+       
         <tr>
           <td align="right">&nbsp;</td>
-          <td><input type="button" name="button" class="black_button" id="export_flash" value="Export to Flash" /> &nbsp;
-          </td>
-        </tr>
-        <tr>
-          <td align="right">&nbsp;</td>
-          <td><input type="button" name="button2" class="black_button" id="export_js" value="Export to JS" /></td>
+          <td><input type="button" name="button2" class="black_button" id="export_js" value="Export" /></td>
         </tr>
         <tr>
           <td align="right">&nbsp;</td>

@@ -9,8 +9,8 @@ if(!isset($_SESSION['ac_projects'])){
 if(!isset($_SESSION['ac_email'])){
 	$_SESSION['ac_email'] = 'guest';
 }
-$root = "http://downloads.antbits.com/preview/";
-//$root = "http://localhost/nhs/preview/";
+//$root = "http://downloads.antbits.com/preview/";
+$root = "http://localhost/git/NHS-Self_assessment_v3/";
 //session_cache_expire(30);
 if(isset($_SESSION['ac_loggedin'])){
 	if($_SESSION['ac_loggedin'] == "true"){
@@ -41,7 +41,7 @@ $head_str = "var pg = ".$pg."
 ";
 
 $vars = array("as_id","q","a","ex_mode","quiz");
-$vals = array(42,0,0,0,0);
+$vals = array(78,0,0,0,0);
 $i = 0;
 
 foreach($vars as $key){
