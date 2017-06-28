@@ -42,7 +42,7 @@ function list_answers($id){
 	$output = array();
 	while($row = mysqli_fetch_assoc($result)){
 		$a = array();
-		$a['body'] = stripChars($row['answer']);
+		$a['body'] = trim(stripChars($row['answer']));
 		$a['actions'] = list_answer_actions($row['id']);
 		array_push($output,$a);
 	}
@@ -148,7 +148,7 @@ if($as_id > 1){
 		$q['title'] = $row['question_title'];
 		$q['body'] = $row['question_body'];
 		$q['quiz_summary'] = $row['quiz_summary'];
-		$q['quiz_answer'] = $row['quiz_answer'];
+		$q['quiz_answer'] = trim($row['quiz_answer']);
 		$q['quiz_check'] = $row['quiz_check'];
 		$q['quiz_active'] = is_quiz_active($row['id']);
 		$q['answers'] = list_answers($row['id']);

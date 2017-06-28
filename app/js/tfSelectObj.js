@@ -56,15 +56,14 @@ function tfSelectObj(qobj,padding){
 		self.toggle(null);
 		parent_obj.data.selected = [];
 	}
-	this.resizeLayout = function(d_h){
+	this.focusFirst = function(){
 		
+	}
+	this.resizeLayout = function(d_h){
 		if(parent_obj.$pane.height()>0){
-			//console.log('TF resize d_h = '+d_h)
-			//console.log('$pane height = '+parent_obj.$pane.height())
-			//console.log('$btn 0 height = '+$($btns[0]).height())
 			d_h-=(padding.top+padding.bottom)
 			var h = d_h-(parent_obj.$q_header.height()-16)
-			var btn_size = d_h*0.42;
+			var btn_size = Math.min(d_h*0.42,parent_obj.$pane.innerWidth()*0.4);
 			$btns.width(btn_size)
 			var pad = (h-$($btns[0]).height())*0.5;
 			$btns.css('margin-top',pad)

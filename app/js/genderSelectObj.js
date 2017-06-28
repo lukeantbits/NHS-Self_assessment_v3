@@ -19,7 +19,7 @@ function genderSelectObj(qobj,padding){
 		e.preventDefault();
 	}).on('mouseout',function(e){
 		$(e.target).blur();
-	});
+	})
 	this.toggle = function(id){
 		parent_obj.data.selected = [id];
 		$bg_tints.each(function(index, element) {
@@ -30,6 +30,9 @@ function genderSelectObj(qobj,padding){
 			}
 		})
 	}
+	this.focusFirst = function(){
+		
+	}
 	this.resetState = function(){
 		self.toggle(null);
 		parent_obj.data.selected = [];
@@ -37,7 +40,7 @@ function genderSelectObj(qobj,padding){
 	this.resizeLayout = function(d_h){
 		d_h-=(padding.top+padding.bottom)
 		var h = d_h-(parent_obj.$q_header.height()-16)
-		var btn_size = h*0.9;
+		var btn_size = Math.min(h*0.9,parent_obj.$pane.width());
 		$btns.width(btn_size*0.5).height(btn_size);
 		$masks.width(btn_size*0.5).height(btn_size);
 		$bg_tints.width(btn_size*0.5).height(btn_size);

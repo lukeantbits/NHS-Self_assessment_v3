@@ -24,7 +24,6 @@ function quizObj(root){
 				break;
 			}
 		}
-
 		return self.root.data.questions[self.current_question];
 	}
 	this.getPrevious = function(){
@@ -38,6 +37,20 @@ function quizObj(root){
 	}
 	this.getIndex = function(){
 		return self.current_index;
+	}
+	this.isComplete = function(){
+		if(self.active_total==self.current_index){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	this.reset = function(){
+		for (var a = 0; a < self.root.data.questions.length; a++){
+			self.root.data.questions[a].obj.resetObj();
+		}
+		self.current_index = 0
+		self.current_question = 0
 	}
 	this.getTotal = function(){
 		return self.active_total;
@@ -177,8 +190,8 @@ function quizObj(root){
 				self.root.data.questions[a].obj.updateHeader(i,self.active_total);
 			}
 		}
-		console.log(self.root.data)
-		//console.log(self)
+		console.log('build complete')
+		console.log(self)
 		//console.log(self.quiz_vars)
 	}
 	this.checkQ = function(q){	
@@ -266,6 +279,56 @@ function quizObj(root){
 					}
 			}
 		}
+		return output;
+	}
+	this.checkCorrect = function(id){
+		var output = 1;
+		for(var a in self.root.data.questions[id].answers){
+			var anode = self.root.data.questions[id].answers[a]
+			for(var b in anode.actions){
+				if(anode.actions[b].type == 'quiz'){
+					if(self.root.data.questions[id].selected.indexOf(parseInt(a))==-1 && anode.actions[b].value == 1){
+						output = 0
+					}
+					if(self.root.data.questions[id].selected.indexOf(parseInt(a))>-1 && anode.actions[b].value == 0){
+						output = 0
+					}
+				}
+			}
+		}
+		return output;
+	}
+	this.quizScore = function(){
+		self.quiz_points = 0
+		self.quiz_summary = []
+		var q = 0;
+		for (var a = 0; a < self.root.data.questions.length; a++){
+			var correct = self.checkCorrect(self.root.data.questions[a].id)
+			if(correct==1){
+				q++
+				self.quiz_points+=1
+				self.quiz_summary.push({"title":"Q "+q,"sub_title":"Correct","body":self.root.data.questions[a].quiz_summary})
+			}else{
+				q++
+				self.quiz_summary.push({"title":"Q "+q,"sub_title":"Incorrect","body":self.root.data.questions[a].quiz_summary})
+			}
+		}
+	}
+	this.generateResults = function(){
+		var output = {};
+		if(self.root.quiz){
+			self.quizScore();
+			output['quiz_data'] = {"points":self.quiz_points,"summary":self.quiz_summary}
+		}
+		
+		output['vid_arr'] = self.root.sortUnique(self.vid_arr);
+		output['link_arr'] =  self.root.sortUnique(self.link_arr);
+		output['result_arr'] =  self.root.sortUnique(self.result_arr);
+		output['points'] = self.points
+		output['quiz_points'] = self.quiz_points
+		output['quiz_summary'] = self.quiz_summary
+		output['quiz_arr'] = self.quiz_arr
+		output['quiz_vars'] = self.quiz_vars
 		return output;
 	}
 }

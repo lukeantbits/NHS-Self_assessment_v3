@@ -71,7 +71,10 @@ function questionObj(root,qdata,$c,$r,index){
 		$(self.$node.find('h2')).html('Q '+a+' of '+b)
 	}
 	this.focusFirst = function(){
-		setTimeout(function(){self.$pane.find('a')[0].focus();},301)
+		setTimeout(function(){
+			self.$pane.find('a')[0].focus();
+			self.input_obj.focusFirst()
+		},301)
 	}
 	
 	this.restore = function(){
@@ -120,15 +123,10 @@ function questionObj(root,qdata,$c,$r,index){
 		
 	}
 	this.showAnswer = function(){
-		$answer_pane.fadeIn(300);
-		var correct = true;
-		for(var i in self.data.selected){
-			if(self.data.answers[self.data.selected[i]] != self.data.quiz_answer){
-				correct = false;
-				break;
-			}
-		}
-		if(correct){
+		$answer_pane.stop().fadeIn(300,function(){
+			self.$pane.find('a').hide();
+		});
+		if(self.root.quiz.checkCorrect(self.data.id) == 1){
 			$answer_pane_correct.show();
 			$answer_pane_incorrect.hide();
 		}else{
@@ -136,16 +134,13 @@ function questionObj(root,qdata,$c,$r,index){
 			$answer_pane_incorrect.show();
 		}
 	}
-	this.resizeLayout = function(w,h){ 
-		//console.log('Resizing '+self.data.id+' h = '+h)
+	this.resizeLayout = function(w,h){
 		self.h = h
 		self.$node.width(w).height(h);
 		
 		if(self.input_obj != null){
 			self.input_obj.resizeLayout(self.h);
-		}
-		//self.$pane.height((h+32)-self.$q_header.height());
-		
+		}		
 		if(!self.$node.is(':visible')){
 			self.$node.show();
 			q_header_h = self.$q_header.height()
@@ -153,7 +148,6 @@ function questionObj(root,qdata,$c,$r,index){
 		}else{
 			q_header_h = self.$q_header.height()
 		}
-		//self.$node.hide();
 		self.$pane.height((h+16)-(q_header_h+padding.top+padding.bottom));
 	}
 	

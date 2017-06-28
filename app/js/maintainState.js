@@ -1,10 +1,9 @@
-function maintain_state(r,i){
+function maintainState(r,i){
 	var self = this;
 	var init = false;
 	var id = i
 	var root = r;
 	self.visits = 0;
-	//self.vtvs = makeID(32);
 	self.co_f = makeID(32);
 	self.data = {}
 	this.storeState = function(){
@@ -20,13 +19,12 @@ function maintain_state(r,i){
 			self.data.co_f = self.co_f;
 			self.data.visits = self.visits;
 			$.cookie("nhs_SA-"+id,JSON.stringify(self.data));
-			console.log($.cookie("nhs_SA-"+id))
 		}
 	}
 	this.clearState = function (){
-		$.removeCookie("nhs_SA-"+id);
+		/*$.removeCookie("nhs_SA-"+id);
 		var obj = {'visits':self.visits,'co_f':self.co_f}
-		$.cookie("nhs_backpain",JSON.stringify(obj));
+		$.cookie("nhs_backpain",JSON.stringify(obj));*/
 		init = true
 	}
 	this.restoreState = function(){

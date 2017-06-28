@@ -1,0 +1,49 @@
+body,html{
+	margin:0px;
+	padding:0px;
+}
+.antbits-SA{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+	margin:0px;
+}
+#antbits-SA-inner_fill{
+	border-radius:0px;
+}
+#antbits-SA-bg_fill{
+	border-radius:0px;
+}
+#antbits-SA-nav{
+	border-top:2px solid #CCC;
+	border-radius:0px;
+}
+#antbits-SA-nav{
+	height:62px;
+}
+.antbits-SA-nav_row{
+	height:62px;
+}
+#antbits-SA-nav_check{
+
+}
+.antbits-SA-nav_back{
+	left:10px;
+}
+#antbits-SA-nav_next,#antbits-SA-nav_links,#antbits-SA-nav_finish{
+	right:10px;
+}
+.antbits-SA-quiz_answer>div{
+	bottom:10px;
+}
+.antbits-SA-answer_tf{
+	margin-left:5% !important;
+	margin-right:5% !important;
+}
+.antbits-SA-preloader{	
+	border-radius:0px;
+}

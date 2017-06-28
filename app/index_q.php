@@ -44,12 +44,12 @@ body{
 </head>
 <body>
 <div id = "col">
-<div id = "antbits-SA_<?php echo $_GET['asid']?>" class = "antbits-SA"></div> 
+<div id = "antbits-SA_76" class = "antbits-SA"></div> 
 <script type="text/javascript">
 	var antbits_sa_container = {};
 	(function(){
 		var antbits_sa = document.createElement('script');
-		antbits_sa.id = 'antbits-SA_<?php echo $_GET['asid']?>'; 
+		antbits_sa.id = 'antbits-SA_76'; 
 		antbits_sa.async = true; 
 		antbits_sa.src = 'js/sa_launcher.js'; 
 		var antbits_sa_obj = document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 1]; 

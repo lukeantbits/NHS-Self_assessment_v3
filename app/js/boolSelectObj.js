@@ -20,9 +20,15 @@ function boolSelectObj(qobj,padding){
 		parent_obj.root.quiz.build();
 		parent_obj.root.stateObj.storeState();
 		e.preventDefault();
+	}).on('focus',function(e){
+		if(parent_obj.root.keynav){
+			$($(e.target)[0].lastChild).css('text-decoration','underline')
+		}
+	}).on('focusout',function(e){
+		$($(e.target).find('.antbits-SA-answer_bool_caption')[0]).css('text-decoration','none')
 	}).on('mouseout',function(e){
 		$(e.target).blur();
-	});
+	})
 	this.toggle = function(id){
 		$(parent_obj.$pane.find('.antbits-SA-answer_bool_image>div')).each(function(index, element) {
 			parent_obj.data.selected = [id];
@@ -41,13 +47,16 @@ function boolSelectObj(qobj,padding){
 			}
 		});
 	}
+	this.focusFirst = function(){
+		$($btns[0].lastChild).css('text-decoration','underline')
+	}
 	this.resetState = function(){
 		self.toggle(null);
 		parent_obj.data.selected = [];
 	}
 	this.resizeLayout = function(d_h){
 		d_h-=(padding.top+padding.bottom)
-		var btn_size = d_h*0.42;
+		var btn_size = Math.min(d_h*0.42,parent_obj.$pane.innerWidth()*0.4);
 		$btn_images.width(btn_size).height(btn_size);
 		$btn_shadows.width(btn_size+4).height(btn_size+4).css('margin-top',(0-(btn_size+4)));
 		$btn_captions.width(btn_size);

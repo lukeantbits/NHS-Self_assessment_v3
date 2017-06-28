@@ -1,8 +1,10 @@
 
-function saIndex(path,id) {
+function saIndex(path,id,layout) {
 	var mode = 'cms'
 	var self = this
 	self.area = 'splash'
+	self.display = 'desktop'
+	self.layout = layout
 	self.asset_path = '';
 	self.postmessage = null
 	self.syn_id = 'nhs'
@@ -10,27 +12,35 @@ function saIndex(path,id) {
 	self.dialogObj = null;
 	self.qstr = getUrlVars();
 	self.keynav = false;
-	self.stateObj = new maintain_state(this,id);
+	self.stateObj = new maintainState(this,id);
 	self.questions = [];
+	self.nav_h = 66;
+	self.header_h = 48;
 	var locked = false;
-	this.path = path
+	this.path = path;
 	this.pages = null;
 	this.redirect_path = ''
 	this.url_vars = getUrlVars();
-	var $answers,$qpanes,$header,$splash,$results,$links,$bg_fill,$wrap,$preload,$preload_message,$container,$questions,$results,$links,outer_h,inner_h,$start_btn;
+	var $nav,$answers,$qpanes,$header,$splash,$results,$links,$bg_fill,$wrap,$preload,$preload_message,$container,$questions,$results,$links,outer_h,inner_h,$start_btn,$finish_btn;
 	switch(mode){
 		case 'cms':
 		self.asset_path = path+'../cms/archive/as_'+id
 		$.getJSON(path+'../cms/json_output.php?as_id='+id,function(data){
 			self.data = data
-			//console.log(self.data)
+			console.log(path+'templates/sa.html')
 			$('#antbits-SA_'+id).load(path+'templates/sa.html',function(){
 				self.init();
 			})
 		})
 		break;
 	}
-	
+	if(isMobile.any()){
+		if(isMobile.Tablet()){
+			self.display = 'tablet'
+		}else{
+			self.display = 'phone'
+		}
+	}
 	this.linkOut = function(url){
 		if(self.postmessage){
 			window.parent.postMessage('{"antbits_redirect": {"url":"'+url+'"}}', '*');
@@ -39,11 +49,11 @@ function saIndex(path,id) {
 		}
 	}
 	this.restoreState = function (rdata){
-		//console.log('restoring data')
-		//console.log(rdata)
 		if(rdata.area != 'splash'){
 			self.area = rdata.area
-			
+			self.pages.each(function(index,element){
+				$(element).hide();
+			})
 			for (var a = 0; a < self.data.questions.length; a++){
 				if(rdata.questions[a].length > 0){
 					self.data.questions[a].selected = rdata.questions[a]
@@ -54,11 +64,27 @@ function saIndex(path,id) {
 			self.quiz.current_question = rdata.current_question
 			self.quiz.build();	
 			$splash.hide();
-			self.resizeLayout()
 			
-			self.quiz.getCurrent().obj.slideIn(1);
-			self.nav.checkState()
-			self.nav.updateProgress(self.quiz)
+			switch(self.area){
+				case 'questions':
+					self.quiz.getCurrent().obj.slideIn(1);
+					self.nav.checkState()
+					self.nav.updateProgress(self.quiz)
+				break;
+				case 'results':
+					self.results.populate();
+					self.results.slideIn(0);
+					self.nav.checkState()
+					self.nav.setState(2)
+				break;
+				case 'links':
+					self.results.populate();
+					$links.show();
+					self.nav.checkState()
+					self.nav.setState(3)
+				break;
+			}
+			self.resizeLayout()
 		}
 		setTimeout(function(){
 			self.stateObj.clearState();
@@ -69,6 +95,8 @@ function saIndex(path,id) {
 	}
 	this.resizeLayout = function(){
 		//console.log('Resizing layout for '+self.area)
+		self.nav_h = $nav.outerHeight();
+		self.header_h = $header.outerHeight();
 		outer_h = 0;
 		inner_h = 0;
 		var p_max = 0;
@@ -82,15 +110,15 @@ function saIndex(path,id) {
 			$(element).height('auto').css('overflow-y',null);
 		})
 		for(var i =0;i<self.pages.length;i++){
-			$(self.pages[i]).width($container.outerWidth()-32).css('height',null);
+			$(self.pages[i]).width($container.outerWidth()-32).css('height',null).css('overflow-y',null);
 			var tmp_h = $(self.pages[i]).outerHeight();
 			
 			switch($(self.pages[i]).attr('id')){
 				case 'antbits-SA-splash':
-					$(self.pages[i]).outerHeight(Math.max(tmp_h,(self.data.config.h_min-56)))
+					$(self.pages[i]).outerHeight(Math.max(tmp_h,(self.data.config.h_min-(self.header_h+10))))
 				break;
 				case 'antbits-SA-results':
-					
+					//$(self.pages[i]).outerHeight(Math.max(tmp_h,(self.data.config.h_min-(self.header_h+10))))
 				break;
 				case 'antbits-SA-links':
 					
@@ -103,24 +131,51 @@ function saIndex(path,id) {
 				break;
 			}
 		}
-		switch(self.area){
-			case 'splash':
-				outer_h = Math.max(outer_h,$splash.outerHeight())+56
-				inner_h = Math.max(inner_h,$splash.outerHeight())
-				
-			break;
-			case 'questions':
-				//p_max+=92
-				outer_h = Math.min(self.data.config.h_max,Math.max(self.data.config.h_min,p_max+149))
-				inner_h =  Math.min((self.data.config.h_max-118),Math.max(self.data.config.h_min-118,p_max+32))
-				//console.log('p max '+p_max)
-				for(var q in self.questions){
-					self.questions[q].resizeLayout($container.outerWidth()-32,inner_h-32)
-				}
-			break;		
+		
+		if(self.display == 'phone' && self.layout == 'phone'){
+			switch(self.area){
+				case 'splash':
+					inner_h =  $(window).height()-$header.height()
+				break;
+				case 'questions':
+					inner_h =  $(window).height()-($header.height()+$nav.height())
+					for(var q in self.questions){
+						self.questions[q].resizeLayout($container.outerWidth()-32,inner_h-62)
+					}
+				break;
+				case 'results':
+					inner_h =  $(window).height()-$header.height()
+					$results.css('height',inner_h-(self.nav_h+28)).css('overflow-y','auto')
+				break;
+			}
+			$container.css('top',self.header_h).height(inner_h);
+		}else{
+			switch(self.area){
+				case 'splash':
+					outer_h = Math.max(outer_h,$splash.outerHeight())+56
+					inner_h = Math.max(inner_h,$splash.outerHeight())
+				break;
+				case 'questions':
+					outer_h = Math.min(self.data.config.h_max,Math.max(self.data.config.h_min,p_max+42+self.header_h+self.nav_h))
+					inner_h =  Math.min((self.data.config.h_max-(self.header_h+self.nav_h)),Math.max(self.data.config.h_min-(self.header_h+self.nav_h),p_max+32))
+					for(var q in self.questions){
+						self.questions[q].resizeLayout($container.outerWidth()-32,inner_h-32)
+					}
+				break;	
+				case 'results':
+					outer_h = Math.min(self.data.config.h_max,Math.max(outer_h,$results.outerHeight()+60)+56)
+					inner_h = Math.min(self.data.config.h_max-56,Math.max(inner_h,$results.outerHeight()+60))
+					$results.css('height',inner_h-self.nav_h).css('overflow-y','auto')
+				break;	
+				case 'links':
+					outer_h = Math.min(self.data.config.h_max,Math.max(outer_h,$results.outerHeight()+60)+56)
+					inner_h = Math.min(self.data.config.h_max-56,Math.max(inner_h,$results.outerHeight()+60))
+					$links.css('height',inner_h-self.nav_h).css('overflow-y','auto')
+				break;	
+			}
+			$wrap.stop().animate({height:outer_h},500);
+			$container.css('top',self.header_h).stop().animate({height:inner_h},500);
 		}
-		$wrap.stop().animate({height:outer_h},500);
-		$container.stop().animate({height:inner_h},500);
 	}
 	this.retinafy = function(str){
 		output = str;
@@ -138,9 +193,25 @@ function saIndex(path,id) {
 		}
 		
 	}
+	this.restart = function(){
+		self.stateObj.clearState();
+		$links.animate({'left':(0-$container.outerWidth())},300)
+		$splash.show().css('left',($container.outerWidth())).animate({'left':0},300)
+		self.area = 'splash'
+		self.quiz.reset()
+		self.resizeLayout()
+		self.nav.setState(4);
+	}
 	this.slideNext = function(){
 		if(!locked){
 			locked = true
+			if(self.quiz.isComplete() && self.area == 'results'){
+				self.area = 'links'
+			}
+			if(self.quiz.isComplete() && self.area == 'questions'){
+				self.area = 'results'
+			}
+			
 			switch(self.area){
 				case 'splash':
 					$splash.animate({'left':0-($container.outerWidth())},300,function(){
@@ -164,6 +235,22 @@ function saIndex(path,id) {
 						self.focusActiveQ()
 					}
 				break;
+				case 'results':
+					$preload_message.html('Generating results');
+					$preload.css('top',$header.outerHeight()).fadeIn(300,function(){
+						self.quiz.getCurrent().obj.slideOut(1);
+						self.nav.setState(2)
+						self.results.populate();
+						self.results.slideIn(1);
+						self.resizeLayout()
+						$preload.delay(1000).fadeOut(300)
+					});
+				break;
+				case 'links':
+					self.nav.setState(3)
+					self.results.slideOut(1);
+					$links.css('left',$container.outerWidth()).animate({'left':0},300)
+				break;
 			}
 			self.nav.checkState();
 			self.stateObj.storeState();
@@ -178,10 +265,14 @@ function saIndex(path,id) {
 			}
 			switch(self.area){
 				case 'splash':
-					self.quiz.getCurrent().obj.slideOut(-1);
-					$splash.stop().show().css('left',(0-$container.outerWidth())).animate({'left':0},300,function(){
-						self.resizeLayout()
-					})
+					if(self.display == 'phone'){
+						window.history.back();
+					}else{
+						self.quiz.getCurrent().obj.slideOut(-1);
+						$splash.stop().show().css('left',(0-$container.outerWidth())).animate({'left':0},300,function(){
+							self.resizeLayout()
+						})
+					}
 					
 				break;
 				case 'questions':
@@ -193,10 +284,26 @@ function saIndex(path,id) {
 						self.focusActiveQ()
 					}
 				break;
+				case 'results':
+					self.area = 'questions'
+					self.nav.setState(1)
+					self.quiz.getCurrent().obj.slideIn(-1);
+					self.results.slideOut(-1);
+					self.nav.updateProgress(self.quiz);
+					if(self.keynav){
+						self.focusActiveQ()
+					}
+					self.resizeLayout();
+				break;
+				case 'links':
+					self.area = 'results'
+					self.nav.setState(2)
+					self.results.slideIn(-1);
+					$links.animate({'left':$container.outerWidth()},300)
+				break;
 			}
 			self.nav.checkState();
 			self.stateObj.storeState();
-			
 			setTimeout(function(){locked = false},300)
 		}
 	}
@@ -233,8 +340,10 @@ function saIndex(path,id) {
 		// cache elements
 		self.nav = new navObj(this);
 		self.quiz = new quizObj(this);
+		
 		$wrap = $('#antbits-SA_'+self.id)
 		$header = $('#antbits-SA_'+self.id+' #antbits-SA-header')
+		$nav = $('#antbits-SA_'+self.id+' #antbits-SA-nav')
 		$bg_fill = $('#antbits-SA_'+self.id+' #antbits-SA-bg_fill')
 		$splash = $('#antbits-SA_'+self.id+' #antbits-SA-splash')
 		$results = $('#antbits-SA_'+self.id+' #antbits-SA-results').hide()
@@ -243,11 +352,16 @@ function saIndex(path,id) {
 		$preload_message = $('#antbits-SA_'+self.id+' .antbits-SA-preloader>div')
 		$container = $('#antbits-SA_'+self.id+' #antbits-SA-container')
 		$start_btn = $('#antbits-SA_'+self.id+' #antbits-SA-start_btn')
+		$links_btn = $('#antbits-SA_'+self.id+' #antbits-SA-nav_links')
+		$finish_btn = $('#antbits-SA_'+self.id+' #antbits-SA-nav_finish')
 		$header.css('background-color','#'+self.data.config.colour_1[0]).html(self.data.config.title)
 		$bg_fill.css('background-color','#'+self.data.config.colour_1[0])
 		// populate splash
 		$splash.append('<h2>'+self.data.config.intro_title+'</h2>');
 		$splash.append('<div>'+self.data.config.intro_copy+'</div>');
+		// prep result area
+		self.results = new resultsObj($results,this.quiz,this)
+		//
 		if(self.data.config.intro_graphic != ''){
 			$splash.css('background-image','url('+self.asset_path+'/'+self.data.config.intro_graphic+')')
 		}
@@ -267,7 +381,35 @@ function saIndex(path,id) {
 				}
 		}); 
 		$start_btn.on('click',function(){
+			if(self.display == 'phone'){
+				window.location = self.path+'index.mob.html?asid='+self.id
+			}else{
+				self.slideNext()
+			}
+		})
+		$links_btn.css('background-color','#'+self.data.config.colour_3[0])
+		$links_btn.bind("mouseenter focus focusout mouseleave", 
+			function(event) {
+				if(event.type == 'mouseenter' || event.type == 'focus'){
+					$(this).css('background-color','#'+self.data.config.colour_3[1])
+				}else{
+					$(this).css('background-color','#'+self.data.config.colour_3[0])
+				}
+		}); 
+		$links_btn.on('click',function(){
 			self.slideNext()
+		})
+		$finish_btn.css('background-color','#'+self.data.config.colour_2[0])
+		$finish_btn.bind("mouseenter focus focusout mouseleave", 
+			function(event) {
+				if(event.type == 'mouseenter' || event.type == 'focus'){
+					$(this).css('background-color','#'+self.data.config.colour_2[1])
+				}else{
+					$(this).css('background-color','#'+self.data.config.colour_2[0])
+				}
+		}); 
+		$finish_btn.on('click',function(){
+			self.restart();
 		})
 		self.dialog = new dialogObj(this,$wrap)
 		self.initQuestions();
@@ -278,9 +420,18 @@ function saIndex(path,id) {
 		$preload.delay(800).fadeOut(500);
 		// cache pages for resizing
 		self.pages = $('#antbits-SA_'+self.id+' #antbits-SA-container>.antbits-SA-page')
-		self.stateObj.restoreState();
-		//self.wtObj = new wt(self,{'title':'NHS Exercises for older people guide','si_n':'Tool_Older people guide','ti':'NHS Exercises for older people guide','DCSext.tool_name':'Exercises for older people guide','category':'Health and safety','vtvs':self.stateObj.vtvs,'co_f':self.stateObj.co_f,'dcsuri':'/tools/documents/olderpeople_v2/index.html'});
-		//self.wtObj.evt({'WT.dl':0,'WT.si_p':'Start'})
+		switch(self.display){
+			case 'phone':
+				if(self.layout == 'phone'){
+					$splash.hide();
+					self.slideNext();
+					self.stateObj.restoreState();
+				}
+			break;
+			default:
+				self.stateObj.restoreState();
+			break;
+		}
 		$wrap.on('keydown',function(evt){
 			if(evt.keyCode == 9 ||(evt.keyCode == 13 && $(':focus').length >0)){
 				self.keynav = true
@@ -293,13 +444,9 @@ function saIndex(path,id) {
 		$wrap.on('click',function(evt){
 			self.keynav = false
 		})
-		if(isMobile.any() && !isMobile.Tablet()){
-			window.location = 'index.mob.html'
-		}else{
-			$(window).on('resize', function(e) {
-				self.resizeLayout()
-			})	
-			self.resizeLayout();	
-		}
+		$(window).on('resize', function(e) {
+			self.resizeLayout()
+		})	
+		self.resizeLayout();	
 	}
 }

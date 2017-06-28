@@ -2,9 +2,13 @@
 div,a,span{
 	/*outline:1px solid #F00;*/
 }
+
 .antbits-SA-disabled{
     pointer-events: none;
 	outline:10px #000 solid;
+}
+.antbits-SA a{
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 .antbits-SA a:focus {
 	outline:none;
@@ -34,6 +38,7 @@ div,a,span{
 	border-radius:10px;
 	text-align:center;
 	background-color:#FFF;
+	z-index:100;
 }
 .antbits-SA-preloader>img{
 	width:32px;
@@ -45,11 +50,11 @@ div,a,span{
 	left:50%;
 }
 .antbits-SA-preloader div{
-	
 	position:absolute;
-	top:45%;
+	top:50%;
 	left:0px;
 	right:0px;
+	margin-top:20px;
 	text-align:center;
 }
 #antbits-SA-bg_fill{
@@ -75,23 +80,20 @@ div,a,span{
 	background-color:#000;
 	color:#FFF;
 	font-size:22px;
-	padding:8px 0px 0px 54px;
+	padding:8px 12px 12px 54px;
 	margin:0px;
-	height:48px;
 	position:absolute;
 	top:0px;
 	left:0px;
 	right:0px;
-	overflow:hidden;
 	background-image:url(../images/header_icon@2x.png);
 	background-size:48px 48px;
 	background-repeat:no-repeat;
 	background-position:top left;
-	white-space:nowrap;
 }
 #antbits-SA-nav{
 	width:100%;
-	height:60px;
+	height:66px;
 	position:absolute;
 	bottom:0px;
 	left:0px;
@@ -102,7 +104,7 @@ div,a,span{
 }
 .antbits-SA-nav_row{
 	width:100%;
-	height:60px;
+	height:66px;
 	position:absolute;
 	top:0px;
 	left:0px;
@@ -117,7 +119,7 @@ div,a,span{
 	background-color:#000;
 	color:#FFF;
 	text-align:center;
-	width:140px;
+	width:130px;
 	text-decoration:none;
 	overflow:hidden;
 	padding-top:10px;
@@ -147,11 +149,11 @@ div,a,span{
 	left:50%;
 	margin-left:-70px;
 }
-#antbits-SA-nav_back{
-	left:10px;
+.antbits-SA-nav_back{
+	left:16px;
 }
 #antbits-SA-nav_next,#antbits-SA-nav_links,#antbits-SA-nav_finish{
-	right:10px;
+	right:16px;
 }
 #antbits-SA-container{
 	width:100%;
@@ -215,10 +217,28 @@ div,a,span{
 	display:block;
 	overflow-y:hidden;
 }
+.antbits-SA-fade{
+	position:absolute;
+	left:0px;
+	right:0px;
+	height:15px;
+	z-index:2;
+	background-size: 100% 100%;
+}
+.antbits-SA-fade_top{
+	top:0px;
+	background-image:url(../images/fade_top.png);
+}
+.antbits-SA-fade_bottom{
+	bottom:0px;
+	background-image:url(../images/fade_bottom.png);
+}
 .antbits-SA-page hr{
 	width:100%;
-	background-color:#ccc;
+	background-color:#fff;
 	height:1px;
+	border:none;
+	border-top:2px solid #CCC;
 	margin:16px 0px 0px 0px;
 	padding:0px;
 }
@@ -269,9 +289,6 @@ div,a,span{
 	background-color:#000;
 	box-sizing: border-box;
 }
-.antbits-SA-answer:hover,.antbits-SA-answer:focus{
-	text-decoration:underline;
-}
 .antbits-SA-bullet_inner{
 	visibility:hidden;
 }
@@ -303,9 +320,6 @@ div,a,span{
 	height:100%;
 	opacity:0.4;
 
-}
-.antbits-SA-answer_bool:hover, .antbits-SA-answer_bool:focus{
-	text-decoration:underline !important;
 }
 .antbits-SA-answer_bool_image.cross>div{
 	background-image:url(../images/cross.png);
@@ -378,6 +392,7 @@ div,a,span{
 	margin-top:4px;
 	font-weight:bold;
 	text-decoration:none !important;
+	z-index:3;
 }
 .antbits-SA-info_box:hover , .antbits-SA-info_box:focus{
 	text-decoration:underline !important;
@@ -412,7 +427,7 @@ div,a,span{
 .antbits-SA-dialog_inner>div{
 	padding:12px 20px 20px 20px;
 	margin:0px;
-	line-height:18px;
+	line-height:1.5em;
 }
 .antbits-SA-dialog_close{
 	position:absolute;
@@ -436,7 +451,7 @@ div,a,span{
 }
 .antbits-SA-quiz_answer{
 	position:absolute;
-	top:0px;
+	top:10px;
 	left:0px;
 	bottom:0px;
 	right:0px;
@@ -450,8 +465,14 @@ div,a,span{
 	left:0px;
 	bottom:0px;
 	right:0px;
-	text-align:left;
-	
+	text-align:left;	
+}
+.antbits-SA-quiz_answer>div h3{
+	margin:0px;
+	padding:6px 0px 12px 30px;
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-size:30px 30px;
 }
 .antbits-SA-quiz_correct{
 	background-color:#d9f0dc;
@@ -461,13 +482,122 @@ div,a,span{
 }
 .antbits-SA-quiz_correct h3{
 	color:#3fb34f;
+	background-image:url(../images/tick_sml.png);
 }
 .antbits-SA-quiz_incorrect h3{
 	color:#ed403d;
+	background-image:url(../images/cross_sml.png);
 }
-@media (max-width: 400px) {
+.antbits-SA-results_text{
+	padding:0px;
+	margin:0px 0px 20px 0px;
+}
+.antbits-SA-results_text a:hover , .antbits-SA-results_text a:focus{
+	text-decoration:none;
+}
+.antbits-SA-results_text ul{
+	padding:0px;
+	margin:0px;
+}
+.antbits-SA-results_text li{
+	padding:0px;
+	margin:10px 0px 10px 22px;
+}
+.antbits-SA-results_image {
+	margin:10px 0px 10px 0px;
+    text-align: center;
+	zoom:0.5;
+}
+.antbits-SA-results_progress_bar{
+	position:relative;
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	height:90px;
+	margin:20px 0px 20px 0px !important;
+}
+.antbits-SA-results_progress_bar>div{
+}
+.antbits-SA-results_progress_bg{
+	background-color:#ccc;
+	height:20px;
+	width:100%;
+	position:absolute;
+	bottom:30px;
+	left:0px;
+}
+.antbits-SA-results_progress_fg{
+	height:20px;
+	position:absolute;
+	bottom:30px;
+	left:0px;
+}
+.antbits-SA-results_progress_captions{
+	height:20px;
+	width:100%;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+.antbits-SA-results_progress_captions>div{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+.antbits-SA-results_progress_captions>div:last-child{
+	right:0px;
+	text-align:right;
+}
+.antbits-SA-impact{
+	font-size:36px;
+	display:inline-block;
+}
+
+@media (max-width: 480px) {
 	#antbits-SA-header{
-		padding:8px 0px 0px 12px;
+		padding:8px 12px 12px 12px;
 		background-image:none;
+	}
+	#antbits-SA-nav_check{
+		width:140px;
+		margin-left:-70px;
+	}
+	.antbits-SA-nav_button , .antbits-SA-nav_button:link{
+		width:80px;
+	}
+	#antbits-SA-nav_links , #antbits-SA-nav_links:link{
+		width:110px;
+	}
+	#antbits-SA-progress{
+		left:110px;
+		right:110px;
+	}
+}
+@media (max-width: 370px) {
+	#antbits-SA-nav_check{
+		width:130px;
+		margin-left:-65px;
+	}
+	.antbits-SA-nav_button , .antbits-SA-nav_button:link{
+		width:70px;
+	}
+	#antbits-SA-nav_links , #antbits-SA-nav_links:link{
+		width:110px;
+	}
+	#antbits-SA-progress{
+		left:90px;
+		right:90px;
+	}
+}
+@media (max-width: 300px) {
+	.antbits-SA-nav_button , .antbits-SA-nav_button:link{
+		width:55px;
+	}
+	#antbits-SA-nav_links , #antbits-SA-nav_links:link{
+		width:110px;
+	}
+	#antbits-SA-progress{
+		left:75px;
+		right:75px;
 	}
 }

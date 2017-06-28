@@ -2,6 +2,7 @@ function qSelectObj(qobj,padding){
 	var self = this;
 	var parent_obj = qobj;
 	self.padding = padding
+	var $fade_top,$fade_bottom;
 	parent_obj.data.selected = [];
 	//console.log(parent_obj)
 	for(var a in parent_obj.data.answers){
@@ -17,6 +18,8 @@ function qSelectObj(qobj,padding){
 	}).on('mouseout',function(e){
 		$(e.target).blur();
 	});
+	$fade_top = $('<div class ="antbits-SA-fade antbits-SA-fade_top" ></div>').appendTo(parent_obj.$node)
+	$fade_bottom = $('<div class ="antbits-SA-fade antbits-SA-fade_bottom" ></div>').appendTo(parent_obj.$node)
 	this.toggle = function(id){
 		$(parent_obj.$pane.find('.antbits-SA-bullet_selected')).each(function(index, element) {
 			if(parent_obj.data.type == 'single select'){
@@ -45,22 +48,30 @@ function qSelectObj(qobj,padding){
 		self.toggle(null);
 		parent_obj.data.selected = [];
 	}
+	this.focusFirst = function(){
+		
+	}
 	this.resizeLayout = function(d_h){
+		
 		var pad = 0;
 		d_h-=(padding.top+padding.bottom)
 		var h = d_h-(parent_obj.$q_header.height()-16)
 		var a = parent_obj.data.answers.length
 		var a_h = 0;
-		
 		$(parent_obj.$pane.find('.antbits-SA-answer')).each(function(index, element) {
 			a_h+=$(element).outerHeight();
         });
 		if(a_h+((a+1)*10)>h){
 			pad = 10;
 			parent_obj.$pane.css('overflow-y','auto');
+			var pos =  parent_obj.$pane.position();
+			$fade_top.show().css('top',pos.top+parseInt(parent_obj.$pane.css('margin-top')));
+			$fade_bottom.show().css('bottom',pos.bottom);
 		}else{
 			pad = (h - a_h)/(a+1);
-		}
+			$fade_top.hide();
+			$fade_bottom.hide();
+		}	
 		$(parent_obj.$pane.find('.antbits-SA-answer')).css('margin',pad+'px 0px 0px 0px');	
 	}
 	this.restore = function(){
