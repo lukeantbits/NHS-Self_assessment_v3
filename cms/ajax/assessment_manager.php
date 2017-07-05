@@ -22,6 +22,7 @@ if(isset($_REQUEST['mode'])){
 			mysqli_query($connection,$sql);
 			mkdir("../archive/as_".$_SESSION['as_id']);
 			copy("../img/spacer.png","../archive/as_".$_SESSION['as_id']."/spacer.png");
+			copy("../img/spyglass_padded.png","../archive/as_".$_SESSION['as_id']."/spyglass_padded.png");
 			echo "as_id=".mysqli_insert_id($connection);
 			
 		break;

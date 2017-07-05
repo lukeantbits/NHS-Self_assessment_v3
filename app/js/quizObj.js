@@ -56,7 +56,7 @@ function quizObj(root){
 		return self.active_total;
 	}
 	this.cancelAnswers = function(){
-		//console.log('cancelActions')
+		console.log('cancelActions')
 		//console.log(self.root.data.questions[self.current_question]);
 		for (var a = 0; a < self.root.data.questions.length; a++){
 			var q_obj = self.root.data.questions[a];
@@ -65,10 +65,16 @@ function quizObj(root){
 			}
 		}
 	}
+	this.setPreview = function(){
+		self.current_question = self.root.data.questions.length
+		for (var a = 0; a < self.root.data.questions.length; a++){
+			self.root.data.questions[a].obj.active = true
+			self.root.data.questions[a].selected = [1];
+		}
+		self.build();
+	}
 	this.build = function(){
-		//console.log('build')
-		
-		
+		console.log('build')
 		// reset quiz vars
 		for (var i in self.root.data.qvars)
 		{
@@ -174,12 +180,12 @@ function quizObj(root){
 			}
 			self.root.nav.updateProgress(self)
 			//console.log(a+' active = '+self.root.data.questions[a].obj.active)
-			/*if (self.checkQ(self.root.data.questions[a]))
+			if (self.checkQ(self.root.data.questions[a]))
 			{
 				i++;
-				self.root.data.questions[a].index = i;
+				//self.root.data.questions[a].index = i;
 				self.quiz_arr.push(self.root.data.questions[a]);
-			}*/
+			}
 			self.result_arr = self.root.sortUnique(self.result_arr)	
 		}
 		//
@@ -329,6 +335,7 @@ function quizObj(root){
 		output['quiz_summary'] = self.quiz_summary
 		output['quiz_arr'] = self.quiz_arr
 		output['quiz_vars'] = self.quiz_vars
+		console.log(output)
 		return output;
 	}
 }

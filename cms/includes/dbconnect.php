@@ -5,7 +5,7 @@ function openDb(){
 	$host = "localhost"; 
 	$user = "root"; 
 	$pass = "member"; 
-	$db = "self_assessments"; 
+	$db = "self_assessments_v3"; 
 	// open connection 
 	global $connection;
 	$connection = mysqli_connect($host, $user, $pass) or die ("Unable to connect!");
@@ -17,7 +17,7 @@ function openDb(){
 	$host = "109.228.1.16"; 	
 	$user = "root"; 
 	$pass = "Dinosaur202";
-	$db = "self_assessments"; 
+	$db = "self_assessments_v3"; 
 	// open connection 
 	global $connection;
 	$connection = mysqli_connect($host, $user, $pass) or die ("Unable to connect!");

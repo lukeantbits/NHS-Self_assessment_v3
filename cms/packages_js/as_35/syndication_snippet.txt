@@ -1,4 +1,0 @@
-<div id="assessment_webpart_wrapper" style="width:px;">
-  <iframe style="width:100%;height:px;" title="self assessments" src="http://media.nhschoices.nhs.uk/tools/documents/self_assessments_js/assessment.html?ASid=35&syndicate=true" frameborder="no" scrolling="no"></iframe>
-  <div id="assessment_webpart_branding" style="float:right;"><a href="http://nhs.uk/tools/" alt="content provided by NHS Choices"><img src="http://media.nhschoices.nhs.uk/tools/documents/self_assessments_js/images/syndication.png" width="264" height="38" border="0" alt="content provided by NHS Choices" /></a></div>
-</div>

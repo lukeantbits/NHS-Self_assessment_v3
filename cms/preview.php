@@ -18,9 +18,6 @@ foreach($vars as $key){
 openDb();
 ?>
 <?php require_once("includes/head.php");?>
-
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script> 
-<script type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"> </script>
 <style type="text/css">
 #new_window {
 	font-weight:bold;
@@ -120,49 +117,42 @@ if($pg == 5){
 </div>
 
 <div id="assessment_webpart_wrapper">		
+<div id = "antbits-SA_<?php echo $as_id;?>" class = "antbits-SA"></div> 
 <script type="text/javascript">
-$(document).ready(function() {
-	var __assessment = document.createElement('script'); 
-	var __assessment_obj = document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 1]; 
-	__assessment.id = 'assessment_webpart';
-	__assessment.preview= '<?php echo $p;?>';  
-	__assessment.ASid = '<?php echo $as_id;?>'; 
-	__assessment.APPpath = '../app/';
-	__assessment.dimensions = Array(<?php echo $w_j;?>,<?php echo $h_j;?>);
-	__assessment.XMLpath = 'data/';
-	__assessment.type = 'text/javascript';
-	__assessment.async = true;
-	__assessment.src = __assessment.APPpath+'js/assessment.js';
-	__assessment_obj.parentNode.insertBefore(__assessment, __assessment_obj); 
-	
-	$("#new_window").click(function(){
-		//window.open('../self_assessment_js/assessment.html?preview=&XMLpath=data/&ASid=<?php echo $as_id;?>','_blank');
-		window.open('../app/assessment.html?preview=&XMLpath=data/&ASid=<?php echo $as_id;?>','_blank');
-	})
-	
-})
+	var antbits_sa_container = {};
+	(function(){
+		var antbits_sa = document.createElement('script');
+		antbits_sa.id = 'antbits-SA_<?php echo $as_id;?>'; 
+		antbits_sa.async = true; 
+		antbits_sa.src = '../app/js/sa_launcher.js'; 
+		var antbits_sa_obj = document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 1]; 
+		antbits_sa_obj.parentNode.insertBefore(antbits_sa, antbits_sa_obj);
+	})();
 </script>
 </div>		
 		</div>
         <script>
  $(document).ready(function(){
 	$("#platform").change(function(event){
-		window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=<?php echo $pg;?>&q=<?php echo $q;?>&platform="+$("#platform").val();
+		window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=<?php echo $pg;?>&q=<?php echo $q;?>";
+	})
+	$("#new_window").click(function(){
+		window.open("preview.php?as_id=<?php echo $as_id;?>&pg=0&q=0",'_blank');
 	})
 	$("#preview_mode").change(function(event){
 		switch(event.target.value){
 			case "splash":
-				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=0&q=0&platform="+$("#platform").val();
+				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=0&q=0";
 			break;
 			case "results":
-				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=4&q=0&platform="+$("#platform").val();
+				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=4&q=0";
 			break;
 			case "links":
-				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=5&q=0&platform="+$("#platform").val();
+				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=5&q=0";
 			break;
 			default:
 				//alert((event.target.value).slice(1,1))
-				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=3&q="+event.target.value.slice(1)+"&platform="+$("#platform").val()
+				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=3&q="+event.target.value.slice(1)
 			break
 		}
 		//window.location.href = "preview.php?as_id=&pg=&q=";

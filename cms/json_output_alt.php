@@ -17,7 +17,7 @@ function is_quiz_active($id){
 	$sql = "SELECT answer,id FROM answers WHERE question = ".$id." ORDER BY ind";
 	$result = mysqli_query($connection,$sql);
 	while($row = mysqli_fetch_assoc($result)){
-		$subsql = "SELECT id FROM actions WHERE answer_id = ".$row['id']." AND type = 'quiz'";
+		$subsql = "SELECT id FROM actions WHERE answer_id = ".$row['id']." AND stype = 'quiz'";
 		$subresult = mysqli_query($connection,$subsql);
 		if(mysqli_num_rows($subresult)>0){
 			$output = 1;
@@ -51,18 +51,18 @@ function list_answers($id){
 function list_answer_actions($id){
 	global $connection;
 	global $results,$links,$qvars;
-	$sql = "SELECT type,sub_type,operator,value FROM actions WHERE answer_id = ".$id;
+	$sql = "SELECT stype,sub_type,operator,svalue FROM actions WHERE answer_id = ".$id;
 	$result = mysqli_query($connection,$sql);
 	$output = array();
 	while($row = mysqli_fetch_assoc($result)){
 		$ac = array();
 		$i = 0;
-		switch($row['type']){
+		switch($row['stype']){
 			case "result":
-				array_push($results,$row['value']);
+				array_push($results,$row['svalue']);
 			break;
 			case "link":
-				array_push($links,$row['value']);
+				array_push($links,$row['svalue']);
 			break;
 			case "set variable":
 				array_push($qvars,$row['sub_type']);
@@ -102,12 +102,12 @@ function format_question_action($arr){
 					break;
 					case 11:
 						if($p == 0){
-							$output['value'] = $key;
+							$output['svalue'] = $key;
 						}
 					break;
 					case 12:
 						if($p == 1){
-							$output['value'] = $key;
+							$output['svalue'] = $key;
 						}
 					break;
 				}
@@ -121,7 +121,7 @@ if($as_id > 1){
 	$output = array();
 	// CONFIG
 	openDb();
-	$sql = "SELECT id,title,replace(colour_1,'#','')as colour_1,replace(colour_2,'#','')as colour_2,colour_3,intro_title,intro_copy,intro_foot,intro_graphic,h_max,h_min,print_title,reporting,syndication_footer,progress_bar,quiz FROM assessments WHERE id = ".$as_id;
+	$sql = "SELECT id,title,replace(colour_1,'#','')as colour_1,replace(colour_2,'#','')as colour_2,colour_3,intro_title,intro_copy,intro_foot,intro_graphic,h_max,h_min,print_title,reporting,syndication_footer,quiz FROM assessments WHERE id = ".$as_id;
 	$result = mysqli_query($connection,$sql);
 	$as_row = mysqli_fetch_assoc($result);
 	for($i =0;$i < sizeof($as_row);$i++){
@@ -159,21 +159,21 @@ if($as_id > 1){
 	}
 	// RESULTS
 	$output['results'] = array();
-	$sql = "SELECT type,p1,p2,p3,body as text FROM result_page_items WHERE as_id = ".$as_id." ORDER BY ind";
+	$sql = "SELECT stype,p1,p2,p3,body as text FROM result_page_items WHERE as_id = ".$as_id." ORDER BY ind";
 	$result = mysqli_query($connection,$sql);
 	while($row = mysqli_fetch_assoc($result)){
 		array_push($output['results'],$row);
 	}
 	// LINKS
 	$output['links'] = array();
-	$sql = "SELECT type,p1,p2,body as text FROM link_page_items WHERE as_id = ".$as_id." ORDER BY ind";
+	$sql = "SELECT stype,p1,p2,body as text FROM link_page_items WHERE as_id = ".$as_id." ORDER BY ind";
 	$result = mysqli_query($connection,$sql);
 	while($row = mysqli_fetch_assoc($result)){
 		array_push($output['links'],$row);
-		if($row['type'] == "obligatory link"){
+		if($row['stype'] == "obligatory link"){
 			array_push($links,$row['text']);
 		}
-		if($row['type'] == "obligatory video"){
+		if($row['stype'] == "obligatory video"){
 			array_push($videos,$row['text']);
 		}
 	}
@@ -230,12 +230,12 @@ if($as_id > 1){
 	}
 	// VIDEOS
 	$output['videos'] = array();
-	$sql = "SELECT distinct(value)FROM self_assessments_v3.actions INNER JOIN self_assessments_v3.answers ON self_assessments_v3.answers.id = self_assessments_v3.actions.answer_id WHERE type = 'video' AND self_assessments_v3.answers.ref = ".$as_id;
+	$sql = "SELECT distinct(svalue)FROM self_assessments_v3.actions INNER JOIN self_assessments_v3.answers ON self_assessments_v3.answers.id = self_assessments_v3.actions.answer_id WHERE stype = 'video' AND self_assessments_v3.answers.ref = ".$as_id;
 	$result = mysqli_query($connection,$sql);
 	while($row = mysqli_fetch_assoc($result)){
-		array_push($output['videos'],$row['value']);
+		array_push($output['videos'],$row['svalue']);
 	}
-	$sql = "SELECT body FROM link_page_items  WHERE type = 'obligatory video' AND as_id = ".$as_id;
+	$sql = "SELECT body FROM link_page_items  WHERE stype = 'obligatory video' AND as_id = ".$as_id;
 	$result = mysqli_query($connection,$sql);
 	while($row = mysqli_fetch_assoc($result)){
 		array_push($output['videos'],$row['body']);

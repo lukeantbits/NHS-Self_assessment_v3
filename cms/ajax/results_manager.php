@@ -30,7 +30,7 @@ switch($_REQUEST['cmd']){
 			$lock = false;
 			while($row = mysqli_fetch_assoc($result)){
 				if($_REQUEST['ind'] == $i-1 && $lock == false){
-					mysqli_query("INSERT INTO result_page_items (body,ind,as_id,type) VALUES ('',".$i.",".$_REQUEST['as_id'].",'text')");
+					mysqli_query($connection,"INSERT INTO result_page_items (body,ind,as_id,type) VALUES ('',".$i.",".$_REQUEST['as_id'].",'text')");
 					$i++;
 					$lock = true;
 				}
@@ -47,7 +47,7 @@ switch($_REQUEST['cmd']){
 	case "delete":
 		  if(isset($_REQUEST['id'])){
 			  $status = "success";
-			  mysqli_query("DELETE FROM result_page_items WHERE id = ".$_REQUEST['id'])or die($status = "fail");
+			  mysqli_query($connection,"DELETE FROM result_page_items WHERE id = ".$_REQUEST['id'])or die($status = "fail");
 			  echo $status;
 		  }
 		  indexResults();

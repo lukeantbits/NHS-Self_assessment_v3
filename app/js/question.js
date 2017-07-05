@@ -68,7 +68,11 @@ function questionObj(root,qdata,$c,$r,index){
 	}
 	self.data.obj = this
 	this.updateHeader = function(a,b){
-		$(self.$node.find('h2')).html('Q '+a+' of '+b)
+		if(self.root.data.config.progress_bar == '1'){
+			$(self.$node.find('h2')).html('Q '+a+' of '+b)
+		}else{
+			$(self.$node.find('h2')).html('Q '+a)
+		}
 	}
 	this.focusFirst = function(){
 		setTimeout(function(){
@@ -124,6 +128,7 @@ function questionObj(root,qdata,$c,$r,index){
 	}
 	this.showAnswer = function(){
 		$answer_pane.stop().fadeIn(300,function(){
+			console.log($answer_pane)
 			self.$pane.find('a').hide();
 		});
 		if(self.root.quiz.checkCorrect(self.data.id) == 1){

@@ -17,19 +17,22 @@ function saIndex(path,id,layout) {
 	self.nav_h = 66;
 	self.header_h = 48;
 	var locked = false;
+	var BCtoken = "kW3Z5VuyO6u1bG7j5Yy0PjaOyjHF6ALA80MONlg8ydJGTZ3b0K2COA.."
 	this.path = path;
 	this.pages = null;
 	this.redirect_path = ''
 	this.url_vars = getUrlVars();
-	var $nav,$answers,$qpanes,$header,$splash,$results,$links,$bg_fill,$wrap,$preload,$preload_message,$container,$questions,$results,$links,outer_h,inner_h,$start_btn,$finish_btn;
+	var $nav,$answers,$qpanes,$header,$splash,$results,$links,$results_inner,$links_inner,$bg_fill,$wrap,$preload,$preload_message,$container,$questions,$results,$links,outer_h,inner_h,$start_btn,$finish_btn;
 	switch(mode){
 		case 'cms':
 		self.asset_path = path+'../cms/archive/as_'+id
 		$.getJSON(path+'../cms/json_output.php?as_id='+id,function(data){
 			self.data = data
-			console.log(path+'templates/sa.html')
 			$('#antbits-SA_'+id).load(path+'templates/sa.html',function(){
-				self.init();
+				$('#antbits-SA_'+self.id).find('img').each(function(index, element) {
+                    $(element).attr('src',path+$(element).attr('src'))
+                });
+				self.getVidData();
 			})
 		})
 		break;
@@ -47,6 +50,32 @@ function saIndex(path,id,layout) {
 		}else{
 			window.top.location.href = url; 
 		}
+	}
+	this.getVidData = function(){
+		self.data.bc_lookup = {}
+		var vids_indexed = 0;
+		if(self.data.videos.length>0){
+			for(var i = 0; i < self.data.videos.length; i++) {
+				$.ajax({
+					url: "//api.brightcove.com/services/library?command=find_video_by_id&video_id="+self.data.videos[i]+"&video_fields=name,id&token="+BCtoken,
+					dataType: 'jsonp'
+				}).done(function(data) { 
+					if(data != null){
+						self.data.bc_lookup[data.id] = data
+						vids_indexed++;
+						if(vids_indexed == self.data.videos.length){
+							self.init();
+						}
+					}
+				});
+			}
+		}else{
+			self.init();
+		}
+	}
+	this.launchVid = function(id){
+		var output = '<video class = "antbits-SA-vid" onmousedown="dcsMultiTrack(\'DCSext.BCVid\',\'Play\',\'WT.dl\',\'121\')" data-video-id="'+id+'" data-account="79227729001" data-player="default" data-embed="default" data-application-id class="video-js" controls></video><script src="//players.brightcove.net/79227729001/default_default/index.min.js"></script>'
+		self.dialog.launch({'body':output,'title':self.data.bc_lookup[id].name})
 	}
 	this.restoreState = function (rdata){
 		if(rdata.area != 'splash'){
@@ -95,8 +124,10 @@ function saIndex(path,id,layout) {
 	}
 	this.resizeLayout = function(){
 		//console.log('Resizing layout for '+self.area)
+		
 		self.nav_h = $nav.outerHeight();
 		self.header_h = $header.outerHeight();
+		self.dialog.resizeLayout();
 		outer_h = 0;
 		inner_h = 0;
 		var p_max = 0;
@@ -109,6 +140,10 @@ function saIndex(path,id,layout) {
 		$qpanes.each(function(index,element){
 			$(element).height('auto').css('overflow-y',null);
 		})
+		$results_inner.css('height',null)
+		$links_inner.css('height',null)
+		$results.css('height',null)
+		$links.css('height',null)
 		for(var i =0;i<self.pages.length;i++){
 			$(self.pages[i]).width($container.outerWidth()-32).css('height',null).css('overflow-y',null);
 			var tmp_h = $(self.pages[i]).outerHeight();
@@ -118,10 +153,10 @@ function saIndex(path,id,layout) {
 					$(self.pages[i]).outerHeight(Math.max(tmp_h,(self.data.config.h_min-(self.header_h+10))))
 				break;
 				case 'antbits-SA-results':
-					//$(self.pages[i]).outerHeight(Math.max(tmp_h,(self.data.config.h_min-(self.header_h+10))))
+					$(self.pages[i]).width($container.outerWidth())
 				break;
 				case 'antbits-SA-links':
-					
+					$(self.pages[i]).width($container.outerWidth())
 				break;
 				default:
 					tmp_h-=32;
@@ -145,7 +180,11 @@ function saIndex(path,id,layout) {
 				break;
 				case 'results':
 					inner_h =  $(window).height()-$header.height()
-					$results.css('height',inner_h-(self.nav_h+28)).css('overflow-y','auto')
+					$results_inner.css('height',inner_h-(self.nav_h+28)).css('overflow-y','auto')
+				break;
+				case 'links':
+					inner_h =  $(window).height()-$header.height()
+					$links_inner.css('height',inner_h-(self.nav_h+28)).css('overflow-y','auto')
 				break;
 			}
 			$container.css('top',self.header_h).height(inner_h);
@@ -163,14 +202,17 @@ function saIndex(path,id,layout) {
 					}
 				break;	
 				case 'results':
-					outer_h = Math.min(self.data.config.h_max,Math.max(outer_h,$results.outerHeight()+60)+56)
-					inner_h = Math.min(self.data.config.h_max-56,Math.max(inner_h,$results.outerHeight()+60))
-					$results.css('height',inner_h-self.nav_h).css('overflow-y','auto')
+					var h = Math.max($results.height()-14,$links.height()-14);
+					outer_h = Math.min(self.data.config.h_max,Math.max(outer_h,h+80)+56);
+					inner_h = Math.min(self.data.config.h_max-56,Math.max(inner_h,h+80));
+					$results_inner.css('height',inner_h-self.nav_h).css('overflow-y','auto');
+					self.results.resizeLayout('results');
 				break;	
 				case 'links':
-					outer_h = Math.min(self.data.config.h_max,Math.max(outer_h,$results.outerHeight()+60)+56)
-					inner_h = Math.min(self.data.config.h_max-56,Math.max(inner_h,$results.outerHeight()+60))
-					$links.css('height',inner_h-self.nav_h).css('overflow-y','auto')
+					var h = Math.max($results.height()-14,$links.height()-14);
+					outer_h = Math.min(self.data.config.h_max,Math.max(outer_h,h+80)+56);
+					inner_h = Math.min(self.data.config.h_max-56,Math.max(inner_h,h+80));
+					$links_inner.css('height',inner_h-self.nav_h).css('overflow-y','auto');
 				break;	
 			}
 			$wrap.stop().animate({height:outer_h},500);
@@ -211,7 +253,6 @@ function saIndex(path,id,layout) {
 			if(self.quiz.isComplete() && self.area == 'questions'){
 				self.area = 'results'
 			}
-			
 			switch(self.area){
 				case 'splash':
 					$splash.animate({'left':0-($container.outerWidth())},300,function(){
@@ -230,6 +271,7 @@ function saIndex(path,id,layout) {
 					self.quiz.getCurrent().obj.slideOut(1);
 					self.quiz.getNext().obj.slideIn(1);
 					self.quiz.current_index++
+					self.nav.setState(1)
 					self.nav.updateProgress(self.quiz)
 					if(self.keynav){
 						self.focusActiveQ()
@@ -249,7 +291,8 @@ function saIndex(path,id,layout) {
 				case 'links':
 					self.nav.setState(3)
 					self.results.slideOut(1);
-					$links.css('left',$container.outerWidth()).animate({'left':0},300)
+					$links.show().css('left',$container.outerWidth()).animate({'left':0},300)
+					self.resizeLayout();
 				break;
 			}
 			self.nav.checkState();
@@ -299,7 +342,10 @@ function saIndex(path,id,layout) {
 					self.area = 'results'
 					self.nav.setState(2)
 					self.results.slideIn(-1);
-					$links.animate({'left':$container.outerWidth()},300)
+					$links.animate({'left':$container.outerWidth()},300,function(){
+						$links.hide();
+					})
+					self.resizeLayout();
 				break;
 			}
 			self.nav.checkState();
@@ -311,6 +357,44 @@ function saIndex(path,id,layout) {
 		for(var i =0;i<self.data.questions.length;i++){
 			self.data.questions[i].id = i;
 			self.questions.push(new questionObj(self,self.data.questions[i],$container,$results,i))
+		}
+	}
+	this.setPreview = function(){
+		switch(self.qstr.pg){
+			case '3':
+				self.nav.preview = true;
+				$nav.show();
+				var q = parseInt(self.qstr.q)+1;
+				self.quiz.current_index = q-1;
+				self.quiz.current_question = q-1;
+				self.area = 'questions';
+				self.nav.setState(1);
+				$(self.pages[0]).hide();
+				$(self.pages[q]).show();
+				self.questions[q-1].updateHeader(q,self.questions.length);
+			break;
+			case '4':
+				self.nav.preview = true;
+				self.area = 'results';
+				$nav.show();
+				self.nav.setState(2);
+				$(self.pages[0]).hide();
+				$results.show();
+				self.quiz.setPreview();
+				self.results.populate();
+				//self.resizeLayout();
+			break;
+			case '5':
+				self.nav.preview = true;
+				self.area = 'results';
+				$nav.show();
+				self.nav.setState(2);
+				$(self.pages[0]).hide();
+				$links.show();
+				self.quiz.setPreview();
+				self.results.populate();
+				//self.resizeLayout();
+			break;
 		}
 	}
 	this.focusActiveQ = function(){
@@ -348,6 +432,8 @@ function saIndex(path,id,layout) {
 		$splash = $('#antbits-SA_'+self.id+' #antbits-SA-splash')
 		$results = $('#antbits-SA_'+self.id+' #antbits-SA-results').hide()
 		$links = $('#antbits-SA_'+self.id+' #antbits-SA-links').hide()
+		$results_inner = $('#antbits-SA_'+self.id+' #antbits-SA-results>div')
+		$links_inner = $('#antbits-SA_'+self.id+' #antbits-SA-links>div')
 		$preload = $('#antbits-SA_'+self.id+' .antbits-SA-preloader')
 		$preload_message = $('#antbits-SA_'+self.id+' .antbits-SA-preloader>div')
 		$container = $('#antbits-SA_'+self.id+' #antbits-SA-container')
@@ -360,7 +446,7 @@ function saIndex(path,id,layout) {
 		$splash.append('<h2>'+self.data.config.intro_title+'</h2>');
 		$splash.append('<div>'+self.data.config.intro_copy+'</div>');
 		// prep result area
-		self.results = new resultsObj($results,this.quiz,this)
+		self.results = new resultsObj($results,$links,this.quiz,this)
 		//
 		if(self.data.config.intro_graphic != ''){
 			$splash.css('background-image','url('+self.asset_path+'/'+self.data.config.intro_graphic+')')
@@ -397,7 +483,9 @@ function saIndex(path,id,layout) {
 				}
 		}); 
 		$links_btn.on('click',function(){
-			self.slideNext()
+			if(!self.nav.preview){
+				self.slideNext()
+			}
 		})
 		$finish_btn.css('background-color','#'+self.data.config.colour_2[0])
 		$finish_btn.bind("mouseenter focus focusout mouseleave", 
@@ -429,7 +517,11 @@ function saIndex(path,id,layout) {
 				}
 			break;
 			default:
-				self.stateObj.restoreState();
+				if(self.qstr.pg != undefined){
+					self.setPreview();
+				}else{
+					self.stateObj.restoreState();
+				}
 			break;
 		}
 		$wrap.on('keydown',function(evt){

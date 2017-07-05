@@ -13,7 +13,8 @@ function include(file, callback) {
   head.appendChild(script);
 }
 
-include('vendor/jquery-3.2.1.min.js', function(){
+include('http://localhost/git/NHS-Self_assessment_v3/app/vendor/jquery-3.2.1.min.js', function(){
+//include('/preview/content/NHS-Self_assessment_v3/app/vendor/jquery-3.2.1.min.js', function(){
 	$.extend({
 	antbitsMultiLoad: function(urls,path, callback, nocache){
 		if (typeof nocache=='undefined') nocache=false;
@@ -58,7 +59,7 @@ include('vendor/jquery-3.2.1.min.js', function(){
 	var self = this;
 	var saObj
 	var path
-	var filelist = ['package.php','css/desktop.css']
+	var filelist = ['package.php','css/shared.css','js/webtrends.min.js']
 	scripts = document.getElementsByTagName('script');
 	self.init = function(data){
 		self.data = data
@@ -69,6 +70,8 @@ include('vendor/jquery-3.2.1.min.js', function(){
 		
 		if(self.data.layout == 'phone'){
 			$.antbitsMultiLoad(['css/phone.css'],path,null,false);
+		}else{
+			$.antbitsMultiLoad(['css/desktop.css'],path,null,false);
 		}
 		
 		saObj = new saIndex(path,id,self.data.layout);

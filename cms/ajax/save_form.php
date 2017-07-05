@@ -22,6 +22,11 @@ if(isset($_REQUEST['page'])){
 			}else{
 				$sql.= " , reporting = 0";
 			}
+			if($_REQUEST['progress_bar'] == 'true'){
+				$sql.= " , progress_bar = 1";
+			}else{
+				$sql.= " , progress_bar = 0";
+			}
 			if($_REQUEST['syndication_footer'] == 'true'){
 				$sql.= " , syndication_footer = 1";
 			}else{
@@ -33,8 +38,12 @@ if(isset($_REQUEST['page'])){
 		break;
 		case 2:
 			$fields = array("intro_title","intro_copy","intro_foot","intro_graphic","img_alt");
+			
 			$sql = "UPDATE assessments SET touch = '".$_SESSION['ac_email']."|".time()."' , ";
 			foreach($fields as $key){
+				if($_REQUEST[$key] == '<br>'){
+					$_REQUEST[$key] = '';
+				}
 				$sql.= $key." = '".mysqli_real_escape_string($connection,$_REQUEST[$key])."' , ";
 			}
 			$sql = substr($sql,0,-2);

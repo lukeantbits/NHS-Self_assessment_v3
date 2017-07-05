@@ -31,7 +31,5 @@ if($page_row['touch'] != ""){
 }
 //print_r($_SESSION);
 ?>
-&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#" id="export_all" class="footer_link">Batch export all swf's</a>
 </div>
 <?php //require_once("../../includes/nav.php");?>

@@ -52,7 +52,7 @@ body{
 		var antbits_sa = document.createElement('script');
 		antbits_sa.id = 'antbits-SA_<?php echo $_GET['asid']?>'; 
 		antbits_sa.async = true; 
-		antbits_sa.src = 'js/sa_launcher.js'; 
+		antbits_sa.src = '../js/sa_launcher.js'; 
 		var antbits_sa_obj = document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 1]; 
 		antbits_sa_obj.parentNode.insertBefore(antbits_sa, antbits_sa_obj);
 	})();

@@ -2,6 +2,7 @@ function navObj(root){
 	var self = this;
 	self.root = root
 	self.qObj = null;
+	self.preview = false;
 	var $header = $('#antbits-SA_'+root.id+' #antbits-SA-header')
 	var $nav = $('#antbits-SA_'+root.id+' #antbits-SA-nav')
 	var $nav_q = $('#antbits-SA_'+root.id+' #antbits-SA-nav_q')
@@ -15,27 +16,35 @@ function navObj(root){
 	var $links = $('#antbits-SA_'+root.id+' .antbits-SA-nav_links')
 	var $finish = $('#antbits-SA_'+root.id+' .antbits-SA-nav_finish')
 	//
-	$progress_bar.css('background-color','#'+self.root.data.config.colour_1[0])
+	
+	if(root.data.config.progress_bar == '1'){
+		$progress_bar.css('background-color','#'+self.root.data.config.colour_1[0])
+	}else{
+		$progress_bar.remove();
+		$progress.remove();
+	}
 	$next.css('background-color','#'+self.root.data.config.colour_1[0]).on('click',function(){
-		if(!$next.hasClass('antbits-SA_inactive')){
-			self.root.slideNext()
-			
+		if(!self.preview){
+			if(!$next.hasClass('antbits-SA_inactive')){
+				self.root.slideNext()
+			}
+			setTimeout(function(){
+				$next.css('background-color','#'+self.root.data.config.colour_1[0]);
+			},100)
 		}
-		setTimeout(function(){
-			$next.css('background-color','#'+self.root.data.config.colour_1[0]);
-		},100)
 	})
 	$back.css('background-color','#'+self.root.data.config.colour_1[0]).on('click',function(){
-		self.root.slideBack()
-		setTimeout(function(){
-			$back.css('background-color','#'+self.root.data.config.colour_1[0]);
-		},100)
-		
+		if(!self.preview){
+			self.root.slideBack();
+			setTimeout(function(){
+				$back.css('background-color','#'+self.root.data.config.colour_1[0]);
+			},100);
+		}
 	})
 	$check.css('background-color','#'+self.root.data.config.colour_1[0]).on('click',function(){
 		if(!$check.hasClass('antbits-SA_inactive')){
-			$next.removeClass('antbits-SA_inactive')
-			$check.addClass('antbits-SA_inactive')
+			$next.removeClass('antbits-SA_inactive');
+			$check.addClass('antbits-SA_inactive');
 			self.qObj.obj.showAnswer();
 		}
 	})
@@ -43,9 +52,9 @@ function navObj(root){
 	$nav.find('.antbits-SA-nav_button').bind("mouseenter focus focusout mouseleave click", 
         function(event) {
 			if(event.type == 'mouseenter' || event.type == 'focus' || event.type == 'click'){
-				$(this).css('background-color','#'+self.root.data.config.colour_1[1])
+				$(this).css('background-color','#'+self.root.data.config.colour_1[1]);
 			}else{
-				$(this).css('background-color','#'+self.root.data.config.colour_1[0])
+				$(this).css('background-color','#'+self.root.data.config.colour_1[0]);
 			}
 	}); 
 	
@@ -53,48 +62,50 @@ function navObj(root){
 	self.checkState = function(){
 		switch(root.area){
 			case 'splash':
-				$nav.stop().fadeOut(500)
+				$nav.stop().fadeOut(500);
 			break;
 			case 'questions':
 				$nav.stop().fadeIn(500)
 				if(self.qObj.quiz_active && self.qObj.selected.length>0){
-					$check.removeClass('antbits-SA_inactive')
+					$check.removeClass('antbits-SA_inactive');
 				}
 			break;
 			case 'results':
-				$nav.stop().fadeIn(500)
+				$nav.stop().fadeIn(500);
 			break;
 			case 'links':
-				$nav.stop().fadeIn(500)
+				$nav.stop().fadeIn(500);
 			break;
 		}
 		
 	}
 	self.unlock = function(){
 		if(self.qObj.quiz_active){
-			self.showQuizAnswer()
+			self.showQuizAnswer();
 		}else{
-			$next.removeClass('antbits-SA_inactive')
+			$next.removeClass('antbits-SA_inactive');
 		}
 	}
 	self.showQuizAnswer = function(){
-		$check.removeClass('antbits-SA_inactive')
+		$check.removeClass('antbits-SA_inactive');
 	}
 	self.updateProgress = function(quiz){
-		self.qObj = root.getCurrentQ();
-		$progress_bar.stop().animate({width:(Math.min(1,quiz.getIndex() / quiz.getTotal())*100)+'%'},300)
+		if(root.data.config.progress_bar == '1'){
+			self.qObj = root.getCurrentQ();
+			$progress_bar.stop().animate({width:(Math.min(1,quiz.getIndex() / quiz.getTotal())*100)+'%'},300);
+		}
 	}
 	self.setState = function(val){
 		self.qObj = root.getCurrentQ();
 		switch(val){
 			case 0:
-				$nav_q.show()
-				$nav_r.hide()
-				$nav_l.hide()
+				$nav_q.show();
+				$nav_r.hide();
+				$nav_l.hide();
 				$progress.show()
-				$next.addClass('antbits-SA_inactive')
-				$back.removeClass('antbits-SA_inactive')
-				$check.hide()
+				$next.addClass('antbits-SA_inactive');
+				$back.removeClass('antbits-SA_inactive');
+				$check.hide();
 				
 			break;
 			case 1:
@@ -102,7 +113,11 @@ function navObj(root){
 				$nav_r.hide()
 				$nav_l.hide()
 				$progress.show()
-				$next.removeClass('antbits-SA_inactive')
+				if(self.qObj.selected.length > 0){
+					$next.removeClass('antbits-SA_inactive')
+				}else{
+					$next.addClass('antbits-SA_inactive')
+				}
 				$back.removeClass('antbits-SA_inactive')
 				$check.hide()
 			break;
@@ -123,7 +138,12 @@ function navObj(root){
 			break;
 		}
 		if(self.qObj.quiz_active){
-			$back.hide();
+			if(val >= 3 || (val == 0 && self.qObj.id == 0)){
+				$back.show();
+			}else{
+				$back.hide();
+			}
+			$next.addClass('antbits-SA_inactive')
 			$progress.hide();
 			$check.show();
 			$check.addClass('antbits-SA_inactive')
