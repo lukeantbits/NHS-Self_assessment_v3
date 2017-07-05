@@ -9,8 +9,8 @@ openDb();
 
 
 
-$url = 'http://localhost/git/NHS-Self_assessment_v3/cms/json_output.php?as_id='.$as_id; 
-//$url = 'http://preview.antbits.com/preview/content/NHS-Self_assessment_v3/cms/json_output.php?as_id='.$as_id; 
+//$url = 'http://localhost/git/NHS-Self_assessment_v3/cms/json_output.php?as_id='.$as_id; 
+$url = 'http://preview.antbits.com/preview/content/NHS-Self_assessment_v3/cms/json_output.php?as_id='.$as_id; 
 //echo $url;
 $header[] = "Content-type: application/json ";
 $ch = curl_init($url); 

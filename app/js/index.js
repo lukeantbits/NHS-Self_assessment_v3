@@ -1,6 +1,6 @@
 
 function saIndex(path,id,layout) {
-	var mode = 'cms'
+	var mode = 'production'
 	var self = this
 	self.area = 'splash'
 	self.display = 'desktop'
@@ -27,6 +27,18 @@ function saIndex(path,id,layout) {
 		case 'cms':
 		self.asset_path = path+'../cms/archive/as_'+id
 		$.getJSON(path+'../cms/json_output.php?as_id='+id,function(data){
+			self.data = data
+			$('#antbits-SA_'+id).load(path+'templates/sa.html',function(){
+				$('#antbits-SA_'+self.id).find('img').each(function(index, element) {
+                    $(element).attr('src',path+$(element).attr('src'))
+                });
+				self.getVidData();
+			})
+		})
+		break;
+		case 'production':
+		self.asset_path = path+'packages/as_'+id+'/images/'
+		$.getJSON(path+'packages/as_'+id+'/data.json',function(data){
 			self.data = data
 			$('#antbits-SA_'+id).load(path+'templates/sa.html',function(){
 				$('#antbits-SA_'+self.id).find('img').each(function(index, element) {

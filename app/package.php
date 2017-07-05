@@ -6,7 +6,7 @@ if ($handle = opendir('js/')) {
     while (false !== ($entry = readdir($handle))) {
 		
         
-		if(strlen($entry)>3 && !strstr($entry,"min") && strstr($entry,".js") && !strstr($entry,"assessment.js") && !strstr($entry,"webtrends") && !strstr($entry,"wt_init")){
+		if(strlen($entry)>3 && !strstr($entry,"min") && strstr($entry,".js") && !strstr($entry,"sa_launcher.js") && !strstr($entry,"webtrends") && !strstr($entry,"wt_init")){
 			//echo "<br>js/$entry\n";
 			$h = fopen("js/$entry", "rb");
 			$output.= stream_get_contents($h)."
@@ -17,6 +17,6 @@ if ($handle = opendir('js/')) {
 	}
     closedir($handle);
 }
-//echo JSMin::minify($output);
-echo $output;
+echo JSMin::minify($output);
+//echo $output;
 ?>

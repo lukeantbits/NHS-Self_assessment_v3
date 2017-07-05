@@ -59,7 +59,7 @@ include('http://localhost/git/NHS-Self_assessment_v3/app/vendor/jquery-3.2.1.min
 	var self = this;
 	var saObj
 	var path
-	var filelist = ['package.php','css/shared.css','js/webtrends.min.js']
+	var filelist = ['app.main.js','css/shared.css','vendor/webtrends.min.js','js/wt_init.js']
 	scripts = document.getElementsByTagName('script');
 	self.init = function(data){
 		self.data = data
