@@ -11,24 +11,29 @@ switch($_REQUEST['cmd']){
 	break;
 	case "add_answer":
 		$sql = "SELECT quiz FROM assessments WHERE id = ".$_REQUEST['ref'];
+		//echo $sql.'<br>';
 		$result = mysqli_query($connection,$sql);
 		$as_row = mysqli_fetch_assoc($result);
 		$a = $_REQUEST['a'];
 		$sql = "SELECT ind,id FROM answers WHERE ref = ".$ref." AND question = ".$q." ORDER BY ind ASC";
+		//echo $sql.'<br>';
 		$result = mysqli_query($connection,$sql);
-		
+		//print_r($result);
 		$i = 0;
 		$tmp = 0;
 		while($row = mysqli_fetch_assoc($result)){
 			if($row['id'] == $a){
 				$i++;
 				$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$ref.",".$q.",".$i.",' ')";
+				//echo $sql.'<br>';
 				mysqli_query($connection,$sql);
 				if($as_row['quiz'] == 0){
-					$sql = "INSERT INTO actions (answer_id,type) VALUES (".mysqli_insert_id().",'points')";
+					$sql = "INSERT INTO actions (answer_id,type) VALUES (".mysqli_insert_id($connection).",'points')";
+					//echo $sql.'<br>';
 					mysqli_query($connection,$sql);
 				}else{
-					$sql = "INSERT INTO actions (answer_id,type) VALUES (".mysqli_insert_id().",'correct')";
+					$sql = "INSERT INTO actions (answer_id,type) VALUES (".mysqli_insert_id($connection).",'correct')";
+					//echo $sql.'<br>';
 					mysqli_query($connection,$sql);
 				}
 				
@@ -36,6 +41,7 @@ switch($_REQUEST['cmd']){
 			}
 			if($tmp>=0){
 				$sql = "UPDATE answers SET ind = ".$i." WHERE id = ".$row['id'];
+				//echo $sql.'<br>';
 				mysqli_query($connection,$sql);
 			}
 			

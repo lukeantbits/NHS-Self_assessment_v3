@@ -12,9 +12,9 @@ if(isset($_REQUEST['mode'])){
 			$_SESSION['as_id'] = mysqli_insert_id($connection);
 			$result = mysqli_query($connection,"INSERT INTO questions (ref,question_title) VALUES (".$_SESSION['as_id'].",'New question')");
 			$q = mysqli_insert_id($connection);
-			$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$_SESSION['as_id'].",".mysqli_insert_id().",0,' ')";
+			$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$_SESSION['as_id'].",".mysqli_insert_id($connection).",0,' ')";
 			mysqli_query($connection,$sql);
-			$sql = "INSERT INTO actions (answer_id,type) VALUES (".mysqli_insert_id().",'points')";
+			$sql = "INSERT INTO actions (answer_id,type) VALUES (".mysqli_insert_id($connection).",'points')";
 			mysqli_query($connection,$sql);
 			$sql = "INSERT INTO links (as_id) VALUES (".$_SESSION['as_id'].")";
 			mysqli_query($connection,$sql);

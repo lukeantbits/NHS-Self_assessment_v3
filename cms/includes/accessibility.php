@@ -113,6 +113,20 @@ function renderAccessible($id){
 		}
 		$output.= '</ul></div>';
 	}
-	//$output = str_replace('â€™','\'',$output);
+	$l_sql= 'SELECT * FROM link_page_items WHERE as_id = '.$id.' AND type = "obligatory link"';
+	$l_result = mysqli_query($connection,$l_sql);
+	if(mysqli_num_rows($l_result)>0){
+		$output.= '<h2>Useful links</h2><div style = "results"><ul>';
+		$l = 0;
+		while($l_row = mysqli_fetch_assoc($l_result)){
+			$l++;
+			$l_sub_sql= 'SELECT * FROM links WHERE id = '.$l_row['body'];
+			$l_sub_result = mysqli_query($connection,$l_sub_sql);
+			$l_sub_row = mysqli_fetch_assoc($l_sub_result);
+			$output.='<li><a href = "'.$l_sub_row['link_url'].'">'.$l_sub_row['link_copy'].'</a></li>';	
+			
+		}
+		$output.= '</ul></div>';
+	}
 	return $output;
 }?>

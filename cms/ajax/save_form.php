@@ -17,27 +17,27 @@ if(isset($_REQUEST['page'])){
 			}else{
 				$sql.= " quiz = 0";
 			}
-			if($_REQUEST['reporting'] == 'true'){
+			/*if($_REQUEST['reporting'] == 'true'){
 				$sql.= " , reporting = 1";
 			}else{
 				$sql.= " , reporting = 0";
-			}
+			}*/
 			if($_REQUEST['progress_bar'] == 'true'){
 				$sql.= " , progress_bar = 1";
 			}else{
 				$sql.= " , progress_bar = 0";
 			}
-			if($_REQUEST['syndication_footer'] == 'true'){
+			/*if($_REQUEST['syndication_footer'] == 'true'){
 				$sql.= " , syndication_footer = 1";
 			}else{
 				$sql.= " , syndication_footer = 0";
-			}
+			}*/
 			$sql.= " , h_max = ".intval($_REQUEST['h_max'])." , h_min = ".intval($_REQUEST['h_min'])." WHERE id = ".$_REQUEST['id'];
 			mysqli_query($connection,$sql);
 			//echo $sql;
 		break;
 		case 2:
-			$fields = array("intro_title","intro_copy","intro_foot","intro_graphic","img_alt");
+			$fields = array("intro_title","intro_copy","intro_foot","intro_foot_title","intro_graphic");
 			
 			$sql = "UPDATE assessments SET touch = '".$_SESSION['ac_email']."|".time()."' , ";
 			foreach($fields as $key){

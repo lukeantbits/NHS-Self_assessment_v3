@@ -57,19 +57,20 @@ if (curl_errno($ch)) {
 	$target = fopen("../packages_js/".$working_name."/webpart.txt","w");
 	fwrite($target,$str);
 	array_push($files,"../packages_js/".$working_name."/webpart.txt");
+	
 	/*
 	$template_handle = fopen("../template_js_dated.html","rw");
 	$str = str_replace(array("{id}","{w}","{h}","{datekey}"),array($as_id,$w,$h,$row['review_key']),fread($template_handle,10000000));
 	$target = fopen("../packages_js/".$working_name."/webpart_inline.txt","w");
 	fwrite($target,$str);
 	array_push($files,"../packages_js/".$working_name."/webpart_inline.txt");
-	
+	*/
 	$template_handle = fopen("../template_syndicated.html","rw");
 	$str = str_replace(array("{id}","{w}","{h}"),array($as_id,$w,$h),fread($template_handle,10000000));
 	$target = fopen("../packages_js/".$working_name."/syndication_snippet.txt","w");
 	fwrite($target,$str);
 	array_push($files,"../packages_js/".$working_name."/syndication_snippet.txt");
-	*/
+	
 	$template_handle = fopen("../accessibility.html","rw");
 	$str = str_replace("{content}",renderAccessible($as_id),fread($template_handle,10000000));
 	$target = fopen("../packages_js/".$working_name."/accessible.html","w");

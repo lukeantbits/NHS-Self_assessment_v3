@@ -46,3 +46,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 **/dbconnect.php
+cms/archive
+cms/packages_js
+app/packages

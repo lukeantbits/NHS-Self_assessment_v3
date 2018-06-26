@@ -7,25 +7,41 @@ function bcNav(target,callback,bc_id){
 	this.total_count = 0
 	this.data = null
 	this.debug = null
+	var policy_key = 'BCpkADawqM1OT2ano_knYrgXDGshdXSIXJT1Ub8BNAkFbAJLfdq8AjXZZGk1NfX5zNghRqGT3tjvzF4AVg6hwGkTdpwDh8jbgha1u3WT0HeJoUPaD8wKhoBT-Es'
+	var account_id = '79227729001'
 	this.bc_token = 'kW3Z5VuyO6u1bG7j5Yy0PjaOyjHF6ALA80MONlg8ydJGTZ3b0K2COA..'
+	
+	
 	this.fetchPage = function(){
 		self.pg_size = 15
 		$(".bc_wrap").fadeOut("fast");
-		var url = 'http://api.brightcove.com/services/library?command=find_all_videos&sort_by=publish_date&sort_order_type=DESC&get_item_count=true&page_number='+self.pg+'&page_size='+this.pg_size+'&video_fields=name,id,thumbnailURL&token='+self.bc_token;
+		//https://edge.api.brightcove.com/playback/v1/accounts/79227729001/videos/2163764869001
+		self.getBrightcoveData('https://edge.api.brightcove.com/playback/v1/accounts/79227729001/videos?q=name:Moodzone',function(){
+			
+		})
+		//self.getBrightcoveData('https://edge.api.brightcove.com/playback/v1/accounts/'+account_id+'/videos?name:nhs',function(){
+			//console.log(this)
+		//})
+		/*var url = 'http://api.brightcove.com/services/library?command=find_all_videos&sort_by=publish_date&sort_order_type=DESC&get_item_count=true&page_number='+self.pg+'&page_size='+this.pg_size+'&video_fields=name,id,thumbnailURL&token='+self.bc_token;
 		//alert(url)
             $.getJSON(url + "&callback=?", function (data) {
                 self.data = data['items'];
 				self.total_count = data['total_count'];
 				self.debug = data
 				self.renderPage();
-          });
+          });*/
 	}
 	this.searchPage = function(search_str){
 		if(search_str != 'undefined'){
 			self.pg = 0
 			self.pg_size = 100
 			$(".bc_wrap").fadeOut("fast");
-			var url = 'http://api.brightcove.com/services/library?command=search_videos&any='+search_str+'&sort_by=publish_date&sort_order_type=DESC&get_item_count=true&page_number='+self.pg+'&page_size='+this.pg_size+'&video_fields=name,id,thumbnailURL&token='+self.bc_token;
+			self.getBrightcoveData('https://edge.api.brightcove.com/playback/v1/accounts/'+account_id+'/videos?q=name:'+search_str,function(){
+				console.log(this)
+			})
+			
+			
+			/*var url = 'http://api.brightcove.com/services/library?command=search_videos&any='+search_str+'&sort_by=publish_date&sort_order_type=DESC&get_item_count=true&page_number='+self.pg+'&page_size='+this.pg_size+'&video_fields=name,id,thumbnailURL&token='+self.bc_token;
 			self.debug = url
 				$.getJSON(url + "&callback=?", function (data) {
 					//self.debug = data
@@ -39,9 +55,33 @@ function bcNav(target,callback,bc_id){
 			  });
 		}else{
 			self.fetchPage();
+		}*/
 		}
 	}
-	
+
+
+	this.getBrightcoveData = function(url,callback) {
+		var response_data,parsed_data
+    	var http_request = new XMLHttpRequest(),response_data,parsed_data,
+		  getResponse = function() {
+			try {
+			  if (http_request.readyState === 4) {
+				if (http_request.status === 200) {
+				  response_data = http_request.responseText;
+				  parsed_data = JSON.parse(response_data);
+				  console.log(parsed_data)
+				  callback()
+				}
+			  }
+			} catch (e) {
+			  console.log('Caught Exception: ' + e);
+			}
+		  };
+		http_request.onreadystatechange = getResponse;
+		http_request.open('GET', url);
+		http_request.setRequestHeader('Accept', 'application/json;pk=' + policy_key);
+		http_request.send();
+	}
 	this.renderPage = function(){
 		var output = "<div id=\"bc_nav\">"+self.renderNav()+"</div><div id = \"bc_content\">";
 		for(var i = 0;i<self.data.length;i++){

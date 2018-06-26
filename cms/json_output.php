@@ -121,7 +121,7 @@ if($as_id > 1){
 	$output = array();
 	// CONFIG
 	openDb();
-	$sql = "SELECT id,title,replace(colour_1,'#','')as colour_1,replace(colour_2,'#','')as colour_2,colour_3,intro_title,intro_copy,intro_foot,intro_graphic,h_max,h_min,print_title,reporting,syndication_footer,progress_bar,quiz FROM assessments WHERE id = ".$as_id;
+	$sql = "SELECT id,title,replace(colour_1,'#','')as colour_1,replace(colour_2,'#','')as colour_2,colour_3,intro_title,intro_copy,intro_foot,intro_foot_title,intro_graphic,h_max,h_min,print_title,reporting,syndication_footer,progress_bar,quiz FROM assessments WHERE id = ".$as_id;
 	$result = mysqli_query($connection,$sql);
 	$as_row = mysqli_fetch_assoc($result);
 	for($i =0;$i < sizeof($as_row);$i++){

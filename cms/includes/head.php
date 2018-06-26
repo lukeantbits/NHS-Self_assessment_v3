@@ -17,6 +17,7 @@ while($fname = readdir($handle)) {
 <link rel="stylesheet" type="text/css" href="fancyapps/source/jquery.fancybox.css" media="screen" />
 <script type="text/javascript" src="fancyapps/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 <script type="text/javascript" src="fancyapps/source/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
 <script language="javascript">
 <?php
 echo $head_str;

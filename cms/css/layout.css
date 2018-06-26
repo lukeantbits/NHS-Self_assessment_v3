@@ -59,11 +59,9 @@ body {
 }
 
 .nav_bar ul , .dialog_nav_bar ul{
-	margin: 10px;
-	margin-left:0px;
+	margin: 10px 10px -20px 0px;
 	padding: 0;
 	font-size:16px;
-	margin-bottom:-20px;
 }
 .dialog_nav_bar {
 	margin-top: -20px;
@@ -169,7 +167,7 @@ body {
 }
 .nav_1_right{
 	position:absolute;
-	top:50px;
+	top:51px;
 	right:10px;
 	text-align:right;
 }
@@ -437,7 +435,7 @@ hr{
 	color:#FFF;
 }
 #flashContent{
-	padding:30px;
+	margin:30px;
 	text-align:center;
 }
 .session_warning{

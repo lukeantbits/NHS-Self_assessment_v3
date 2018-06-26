@@ -1,15 +1,17 @@
-<div id = "antbits-SA_{id}" class = "antbits-SA"></div> 
+<!--antbits webpart start-->
+<div id = "antbits-SA_{id}" class = "antbits-SA"></div>
 <script type="text/javascript">
 	var antbits_sa_container = {};
 	(function(){
 		var antbits_sa = document.createElement('script');
 		antbits_sa.id = 'antbits-SA_{id}'; 
 		antbits_sa.async = true; 
-		antbits_sa.src = '//nhs.uk/tools/documents/Self_assessment_v3/js/sa_launcher.js'; 
+		antbits_sa.src = '/tools/self-assessments/js/sa_launcher.js'; 
 		var antbits_sa_obj = document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 1]; 
 		antbits_sa_obj.parentNode.insertBefore(antbits_sa, antbits_sa_obj);
 	})();
 </script>
 <noscript>
-Your browser appears to have Javascript disabled, to view this information in an accessible format please go to <a href = "http://nhs.uk/tools/documents/Self_assessment_v3/packages/as_{id}/accessible.html">http://nhs.uk/tools/documents/Self_assessment_v3/packages/as_{id}/accessible.html</a>
+Your browser appears to have Javascript disabled, to view this information in an accessible format please go to <a href = "/tools/self-assessments/packages/as_{id}/accessible.html">/tools/self-assessments/packages/as_{id}/accessible.html</a>
 </noscript>
+<!--antbits webpart end-->

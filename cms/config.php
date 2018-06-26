@@ -88,14 +88,6 @@
           <td><input name="quiz" type="checkbox" id="quiz" value="1" <?php if($page_row['quiz'] == 1){?>checked="checked"<?php }?> /></td>
         </tr>
         <tr>
-          <td align="right"><strong>Report stats</strong></td>
-          <td><input name="reporting" type="checkbox" id="reporting" value="1" <?php if($page_row['reporting'] == 1){?>checked="checked"<?php }?> /></td>
-        </tr>
-        <tr>
-          <td align="right"><strong>Syndicate</strong></td>
-          <td><input name="syndication_footer" type="checkbox" id="syndication_footer" value="1" <?php if($page_row['syndication_footer'] == 1){?>checked="checked"<?php }?> /></td>
-        </tr>
-        <tr>
           <td align="right"><strong>Progess bar?</strong></td>
           <td><input name="progress_bar" type="checkbox" id="progress_bar" value="1" <?php if($page_row['progress_bar'] == 1){?>checked="checked"<?php }?> /></td>
         </tr>

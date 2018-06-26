@@ -60,9 +60,42 @@ echo $head_str;
 h2{
 	color:#231f20;
 }
+#ac_nav {
+	color: #FFF;
+	background-color: #0759a5;
+	padding:15px;
+	padding-top:8px;
+	padding-bottom:12px;
+	position:absolute;
+	right:10px;
+	top:0px;
+	margin-top:-30px;
+	padding-top:35px;
+	text-align:center;
+	border:5px solid #FFF;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-moz-box-shadow: 0px 5px 6px #ccc;
+	-webkit-box-shadow: 0px 5px 6px #ccc;
+	box-shadow: 0px 5px 6px #ccc;
+}
+#ac_nav a{
+	color: #FFF;
+}
+#ac_nav a:hover{
+	color: #FFF;
+	text-decoration:none;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	background-color:#fff;
+	margin-top:100px;
+}
 </style>
 <body style="background-color:#FFFFFF;">
-
+<div id="ac_nav"><a href="../../../index.php">Index</a>&nbsp;|&nbsp;<a href="../../../logout.php">Logout</a></div>
 <?php 
 $sql = "SELECT * FROM assessments WHERE id = ".$as_id;
 $result = mysqli_query($connection,$sql);
@@ -141,9 +174,6 @@ if($pg == 5){
 
 ?>
 </select>
-
-<input name="" id = "new_window" type="button" value="  Open in new tab ►  " />
-
 <br />
 <br />
 
@@ -159,28 +189,28 @@ if($pg == 5){
         <script>
  $(document).ready(function(){
 	$("#platform").change(function(event){
-		window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=<?php echo $pg;?>&q=<?php echo $q;?>";
+		window.location.href = "shared_preview.php?as_id=<?php echo $as_id;?>&pg=<?php echo $pg;?>&q=<?php echo $q;?>";
 	})
 	$("#new_window").click(function(){
-		window.open("preview.php?as_id=<?php echo $as_id;?>&pg=0&q=0",'_blank');
+		window.open("shared_preview.php?as_id=<?php echo $as_id;?>&pg=0&q=0",'_blank');
 	})
 	$("#preview_mode").change(function(event){
 		switch(event.target.value){
 			case "splash":
-				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=0&q=0";
+				window.location.href = "shared_preview.php?as_id=<?php echo $as_id;?>&pg=0&q=0";
 			break;
 			case "results":
-				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=4&q=0";
+				window.location.href = "shared_preview.php?as_id=<?php echo $as_id;?>&pg=4&q=0";
 			break;
 			case "links":
-				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=5&q=0";
+				window.location.href = "shared_preview.php?as_id=<?php echo $as_id;?>&pg=5&q=0";
 			break;
 			default:
 				//alert((event.target.value).slice(1,1))
-				window.location.href = "preview.php?as_id=<?php echo $as_id;?>&pg=3&q="+event.target.value.slice(1)
+				window.location.href = "shared_preview.php?as_id=<?php echo $as_id;?>&pg=3&q="+event.target.value.slice(1)
 			break
 		}
-		//window.location.href = "preview.php?as_id=&pg=&q=";
+		//window.location.href = "shared_preview.php?as_id=&pg=&q=";
 	})
  });
 </script>

@@ -151,7 +151,7 @@ function linksPage(root){
 				
 			break;
 			case 'obligatory video':
-			    output += "<td style=\"width:100%;\" colspan = \"2\" ><div style=\"margin-top:-33px;margin-left:220px;\">Brightcove ID: <input type=\"text\" id = \"t_"+data.id+"\" name = \"t_"+data.id+"\" value=\""+data.body+"\" /><input class=\"preview_button\" style=\"margin-left:30px;\" value=\"Preview\" type=\"button\" name = \""+data.id+"_preview_1\" id = \""+data.id+"_0_"+data.id+"_preview_1\"><input type=\"button\" name=\"bc_"+data.id+"\" id=\"bc_"+data.id+"\" value=\"▶\" class=\"black_button\" /><br></div></td>";
+			    output += "<td style=\"width:100%;\" colspan = \"2\" ><div style=\"margin-top:-33px;margin-left:220px;\">Brightcove ID: <input type=\"text\" id = \"t_"+data.id+"\" name = \"t_"+data.id+"\" value=\""+data.body+"\" /><input class=\"preview_button\" value=\"Preview\" type=\"button\" name = \""+data.id+"_preview_1\" id = \""+data.id+"_0_"+data.id+"_preview_1\"><br></div></td>";
 				output+="</tr></table>"
 				container.html(output)
 			break;

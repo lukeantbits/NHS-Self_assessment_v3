@@ -24,7 +24,9 @@ if(isset($_REQUEST['submit'])){
 	}
 	foreach($_REQUEST as $key){
 		if(strpos("_".key($_REQUEST),$type_arr[$type]['values'][0])>0){
-			$id = array_pop(explode("_",key($_REQUEST)));
+			$tmp = key($_REQUEST);
+			$tmp_arr = explode("_",$tmp);
+			$id = array_pop($tmp_arr);
 			if(isset($_REQUEST['delete_'.$id])){
 				$sql = "DELETE FROM ".$type_arr[$type]['table']." WHERE id = ".$id;
 				mysqli_query($connection,$sql);

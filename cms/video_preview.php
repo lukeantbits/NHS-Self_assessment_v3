@@ -1,54 +1,16 @@
-<link href="css/layout.css" rel="stylesheet" type="text/css" />
-<div id="place_holder"></div>
-<!-- Brightcove Player Script --> 
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script> <!-- Flash-only Player API script --> <script type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"> </script> <script type="text/javascript">
-var BCL = {};
-BCL.playerData = { "playerID" : "775256332001",
-                    "playerKey" : "AQ~~,AAAAEnJXNGk~,eUsJGAd8lWobfgtFKcyKbHFr8ujAb7tR",
-                    "width" : "479",
-                    "height" : "289",
-                    "videoID" : "681613285001" };
-BCL.isPlayerAdded = false;
-BCL.playerTemplate = "<div style=\"display:none\"></div><object id=\"myExperience\" class=\"BrightcoveExperience\"><param name=\"bgcolor\" value=\"#64AAB2\" /><param name=\"width\" value=\"{{width}}\" /><param name=\"height\" value=\"{{height}}\" /><param name=\"playerID\" value=\"{{playerID}}\" /><param name=\"playerKey\" value=\"{{playerKey}}\" /><param name=\"isVid\" value=\"true\" /><param name=\"isUI\" value=\"true\" /><param name=\"dynamicStreaming\" value=\"true\" /><param name=\"@videoPlayer\" value=\"{{videoID}}\"; /><param name=\"templateLoadHandler\" value=\"BCL.onTemplateLoaded\"</object>";
-window.onload = function () {
-  BCL.addPlayer(<?php echo $_REQUEST['id'];?>)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Video preview</title>
+<style type="text/css">
+#preview_vid {
+	height: 330px;
+	width: 588px;
 }
-BCL.addPlayer = function (id) {
-  if (BCL.isPlayerAdded == false) {
-    BCL.isPlayerAdded = true;
-    var playerHTML = "";
-    BCL.playerData.videoID = id;
-    playerHTML = BCL.markup(BCL.playerTemplate, BCL.playerData);
-    document.getElementById("place_holder").innerHTML = playerHTML;
-    brightcove.createExperiences();
-  }
-  else {
-    console.log(BCL.videoSelect.selectedIndex);
-    BCL.videoPlayer.loadVideo(BCL.videoData[BCL.videoSelect.selectedIndex].videoID);
-  }
-};
-BCL.removePlayer = function () {
-  if(BCL.isPlayerAdded == true) {
-    BCL.isPlayerAdded = false;
-    BCL.experienceModule.unload();
-    document.getElementById("place_holder").innerHTML = "";
-  }
-};
-BCL.onTemplateLoaded = function (id) {
-  BCL.player = brightcove.getExperience(id);
-  BCL.experienceModule = BCL.player.getModule(APIModules.EXPERIENCE);
-  BCL.videoPlayer = BCL.player.getModule(APIModules.VIDEO_PLAYER);
-};
-BCL.markup = function (html, data) {
-    var m;
-    var i = 0;
-    var match = html.match(data instanceof Array ? /{{\d+}}/g : /{{\w+}}/g) || [];
-
-    while (m = match[i++]) {
-        html = html.replace(m, data[m.substr(2, m.length-4)]);
-    }
-
-    return html;
-};
-
-</script>
+</style>
+</head>
+<body>
+<video class = "antbits-SA-vid" data-video-id="<?php echo $_REQUEST['id'];?>" id = "preview_vid" data-account="79227729001" data-player="default" data-embed="default" data-application-id class="video-js" controls></video><script src="//players.brightcove.net/79227729001/default_default/index.min.js"></script>
+</body>
+</html>

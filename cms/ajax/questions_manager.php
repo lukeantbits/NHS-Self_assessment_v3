@@ -29,14 +29,14 @@ switch($_REQUEST['cmd']){
 	break;
 	case "add_question":
 			$result = mysqli_query($connection,"INSERT INTO questions (ref,question_title,ind) VALUES (".$_REQUEST['ref'].",'New question',9999)");
-			$q = mysql_insert_id();
+			$q = mysqli_insert_id($connection);
 			$sql = "SELECT id FROM questions WHERE ref = ".$_REQUEST['ref'];
 			$result = mysqli_query($connection,$sql);
 			$_SESSION['q'] =mysqli_num_rows($result)-1;
 			$_SESSION['a'] =0;
 			$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$_REQUEST['ref'].",".$q.",0,' ')";
 			mysqli_query($connection,$sql);
-			$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysql_insert_id().",'points','+','0')";
+			$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysqli_insert_id($connection).",'points','+','0')";
 			mysqli_query($connection,$sql);
 			indexQuestions();
 			listQuestions();
@@ -61,11 +61,11 @@ switch($_REQUEST['cmd']){
 			mysqli_query($connection,$sql);
 			$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$_REQUEST['ref'].",".$_REQUEST['q'].",0,'male')";
 			mysqli_query($connection,$sql);
-			$sql = "INSERT INTO actions (answer_id,type,operator,sub_type,value) VALUES (".mysql_insert_id().",'set variable','=','gender','male')";
+			$sql = "INSERT INTO actions (answer_id,type,operator,sub_type,value) VALUES (".mysqli_insert_id($connection).",'set variable','=','gender','male')";
 			mysqli_query($connection,$sql);
 			$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$_REQUEST['ref'].",".$_REQUEST['q'].",1,'female')";
 			mysqli_query($connection,$sql);
-			$sql = "INSERT INTO actions (answer_id,type,operator,sub_type,value) VALUES (".mysql_insert_id().",'set variable','=','gender','female')";
+			$sql = "INSERT INTO actions (answer_id,type,operator,sub_type,value) VALUES (".mysqli_insert_id($connection).",'set variable','=','gender','female')";
 			mysqli_query($connection,$sql);
 			listQuestions();
 		}
@@ -78,11 +78,11 @@ switch($_REQUEST['cmd']){
 			mysqli_query($connection,$sql);
 			$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$_REQUEST['ref'].",".$_REQUEST['q'].",0,'yes')";
 			mysqli_query($connection,$sql);
-			$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysql_insert_id().",'points','+','0')";
+			$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysqli_insert_id($connection).",'points','+','0')";
 			mysqli_query($connection,$sql);
 			$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$_REQUEST['ref'].",".$_REQUEST['q'].",1,'no')";
 			mysqli_query($connection,$sql);
-			$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysql_insert_id().",'points','+','0')";
+			$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysqli_insert_id($connection).",'points','+','0')";
 			mysqli_query($connection,$sql);
 			listQuestions();
 		}
@@ -96,17 +96,17 @@ switch($_REQUEST['cmd']){
 			$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$_REQUEST['ref'].",".$_REQUEST['q'].",0,'True')";
 			mysqli_query($connection,$sql);
 			if($as_row['quiz'] == 1){
-				$sql = "INSERT INTO actions (answer_id,type,value) VALUES (".mysql_insert_id().",'quiz','1')";
+				$sql = "INSERT INTO actions (answer_id,type,value) VALUES (".mysqli_insert_id($connection).",'quiz','1')";
 			}else{
-				$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysql_insert_id().",'points','+','0')";
+				$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysqli_insert_id($connection).",'points','+','0')";
 			}
 			mysqli_query($connection,$sql);
 			$sql = "INSERT INTO answers (ref,question,ind,answer) VALUES (".$_REQUEST['ref'].",".$_REQUEST['q'].",1,'False')";
 			mysqli_query($connection,$sql);
 			if($as_row['quiz'] == 1){
-				$sql = "INSERT INTO actions (answer_id,type,value) VALUES (".mysql_insert_id().",'quiz','0')";
+				$sql = "INSERT INTO actions (answer_id,type,value) VALUES (".mysqli_insert_id($connection).",'quiz','0')";
 			}else{
-				$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysql_insert_id().",'points','+','0')";
+				$sql = "INSERT INTO actions (answer_id,type,operator,value) VALUES (".mysqli_insert_id($connection).",'points','+','0')";
 			}
 			mysqli_query($connection,$sql);
 			listQuestions();

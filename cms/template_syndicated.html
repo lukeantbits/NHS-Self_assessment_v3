@@ -1,13 +1,30 @@
+<!--antbits webpart start-->
+<iframe id="antbits-SA_{id}" src="//assets.nhs.uk/tools/self-assessments/index.html?syn_id=test&variant={id}" style = "width:100%;height:600px;" frameborder="0" scrolling="no" seamless></iframe>
 <script language="javascript">
-$(window).on('message', function(e) {
-	var tmp = (eval('(' +e.originalEvent.data+')'));
-	window.hasOwnProperty = window.hasOwnProperty || Object.prototype.hasOwnProperty;
-	if(tmp.hasOwnProperty('nhs_redirect')){
-		window.location.href = tmp.nhs_redirect;
-	}
-});    
+		jQuery(function($){
+			window.hasOwnProperty = window.hasOwnProperty || Object.prototype.hasOwnProperty;
+			var iframe = document.getElementById('antbits-SA_{id}');
+			iframe.setAttribute('scrolling','no')
+			$(window).on('message', function(e) {
+				var params = (eval('(' +e.originalEvent.data+')'));
+				iframe.contentWindow.postMessage('{"postmessage": "true","win_h":"'+$(window).height()+'"}', '*'); 
+				if(params.hasOwnProperty('antbits_redirect')){
+					window.location = params.antbits_redirect.url;
+				}
+				if(params.hasOwnProperty('antbits_get_scroll')){
+					iframe.contentWindow.postMessage('{"offset_y": "'+($(window).scrollTop()-$('#antbits-SA_{id}').offset().top)+'","win_h":"'+$(window).height()+'"}', '*'); 
+				}
+				if(params.hasOwnProperty('antbits_set_scroll')){
+					if(params.antbits_set_scroll.ypos != null){
+						$('body').animate({'scrollTop':(params.antbits_set_scroll.ypos+$('#antbits-SA_{id}').offset().top)},300);
+						
+					}
+					$('#antbits-SA_{id}').height(params.antbits_set_scroll.height)
+				}
+			}); 
+		});  
 </script>
-<div id="assessment_webpart_wrapper" style="width:{w}px;">
-  <iframe style="width:100%;height:{h}px;" title="self assessments" src="http://media.nhschoices.nhs.uk/tools/documents/self_assessments_js/assessment.html?ASid={id}&syndicate=true" frameborder="no" scrolling="no"></iframe>
-  <div id="assessment_webpart_branding" style="float:right;"><a href="http://nhs.uk/tools/" alt="content provided by NHS Choices"><img src="http://media.nhschoices.nhs.uk/tools/documents/self_assessments_js/images/syndication.png" width="264" height="38" border="0" alt="content provided by NHS Choices" /></a></div>
-</div>
+<noscript>
+Your browser appears to have Javascript disabled, to view this information in an accessible format please go to <a href = "//assets.nhs.uk/tools/self-assessments/packages/as_{id}/accessible.html">//assets.nhs.uk/tools/self-assessments/packages/as_{id}/accessible.html</a>
+</noscript>
+<!--antbits webpart end-->

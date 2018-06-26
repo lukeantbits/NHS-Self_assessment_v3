@@ -32,4 +32,4 @@ if($page_row['touch'] != ""){
 //print_r($_SESSION);
 ?>
 </div>
-<?php //require_once("../../includes/nav.php");?>
+<?php //require_once("../../../includes/nav.php");?>

@@ -39,7 +39,7 @@ switch($_REQUEST['cmd']){
 				$i++;
 			}
 			if($lock == false){
-				mysqli_query("INSERT INTO result_page_items (body,ind,as_id,type) VALUES ('',".$i.",".$_REQUEST['as_id'].",'text')");
+				mysqli_query($connection,"INSERT INTO result_page_items (body,ind,as_id,type) VALUES ('',".$i.",".$_REQUEST['as_id'].",'text')");
 			}
 			indexResults();
 			listResults();
@@ -60,7 +60,7 @@ function listResults(){
 	//echo $sql;
 	$result = mysqli_query($connection,$sql);
 	if(mysqli_num_rows($result) == 0){
-		mysqli_query("INSERT INTO result_page_items (as_id,type,body) VALUES (".$_REQUEST['as_id'].",'text','Opening paragraph')");
+		mysqli_query($connection,"INSERT INTO result_page_items (as_id,type,body) VALUES (".$_REQUEST['as_id'].",'text','Opening paragraph')");
 		$sql = "SELECT * FROM result_page_items WHERE as_id = ".$_REQUEST['as_id'];
 		$result = mysqli_query($connection,$sql);
 	}

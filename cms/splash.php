@@ -27,6 +27,12 @@
             </div></td>
         </tr>
         <tr>
+          <td align="right" valign="top"><strong>Info title</strong></td>
+          <td >
+              <input type="text"  name="intro_foot_title" id="intro_foot_title" style = "width:500px;" value = "<?php echo $page_row['intro_foot_title'];?>">
+            </td>
+        </tr>
+        <tr>
           <td align="right" valign="top"><strong>Info</strong></td>
           <td ><div class="nic_bg" style="width:500px;">
               <textarea name="intro_foot" id="intro_foot" style = "width:500px;height:300px;"><?php echo $page_row['intro_foot'];?></textarea>

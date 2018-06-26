@@ -322,10 +322,10 @@ function questionsPage(root){
 				self.saveAll([ref.pg,ref.pg],null);
 				$.fancybox("<iframe id=\"info_frame\" class=\"dialog\" frameborder=\"0\" src=\"edit_info.php?info_id="+$("#info_box").val()+"&type="+$("#"+this.id.replace("button","select")).val()+"\"></iframe>",{"beforeClose" : function() { self.dialogClose($("#info_frame").contents().find("#info_id").val()); }});
 		});
-		$(".action_button").click(function(event){
+		/*$(".action_button").click(function(event){
 				self.saveAll([ref.pg,ref.pg],null);
 				$.fancybox("<iframe class=\"dialog\" frameborder=\"0\" src=\"edit_dialog.php?callback="+event.target.id+"&type="+$("#"+this.id.replace("button","select")).val()+"\"></iframe>",{"beforeClose" : function() { self.dialogClose(null); }});
-		});	
+		});*/
 		$(".preview_button").click(function(event){
 				self.saveAll([ref.pg,ref.pg],null);
 				$.fancybox("<iframe class=\"bc_preview\" frameborder=\"0\" src=\"video_preview.php?id="+$("#"+this.id.replace("preview","value")).val()+"\"></iframe>",{"beforeClose" : function() { self.dialogClose(null); }});
@@ -417,7 +417,7 @@ function questionsPage(root){
 			output+="<select class=\"action_select\" name = \""+data[i].id+"_select_3\" id = \""+i+"_"+answer_id+"_"+data[i].id+"_select_3\"></select>"
 			output+="<select class=\"action_select\" name = \""+data[i].id+"_select_4\" id = \""+i+"_"+answer_id+"_"+data[i].id+"_select_4\"></select>"
 			output+="<input class=\"action_vals\" type=\"text\" name = \""+data[i].id+"_value_1\" id = \""+i+"_"+answer_id+"_"+data[i].id+"_value_1\">"
-			output+="<input class=\"action_button\" value=\"\" type=\"button\" name = \""+data[i].id+"_button_1\" id = \""+i+"_"+answer_id+"_"+data[i].id+"_button_1\">"
+			
 			output+="<input class=\"preview_button\" value=\"\" type=\"button\" name = \""+data[i].id+"_preview_1\" id = \""+i+"_"+answer_id+"_"+data[i].id+"_preview_1\">"
 			output+="</div>";
 		}
